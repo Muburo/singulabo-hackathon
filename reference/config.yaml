@@ -2,13 +2,13 @@
 
 # Simulation Parameters
 simulation:
-  duration: 100  # Number of simulation steps
+  duration: 5  # Number of simulation steps (smoke test: 5)
   half_space_size: 25  # Half of grid size (agents can move in range -25 to +25)
   half_place_size: 5   # Half of place size (place covers -5 to +5)
-  
+
 # Agent Parameters
 agents:
-  num_agents: 20
+  num_agents: 2
   communication_radius: 5  # Radius for agent communication
   memory_limit: 20  # Maximum number of memory entries to store
   memory_size: 5  # Number of recent memory entries used in LLM prompt
@@ -34,8 +34,7 @@ places:
   
 # LLM Parameters
 llm:
-  #model: "qwen3:4b-instruct-2507-q4_K_M"
-  model: "gpt-oss:20b"  # Ollama model name
+  model: "qwen3:4b-instruct-2507-q4_K_M"  # Ollama model name
   base_url: "http://localhost:11434"  # Ollama API endpoint
   temperature: 0.2
   max_tokens: 2048  # Thinking models need more tokens (thinking + response)
