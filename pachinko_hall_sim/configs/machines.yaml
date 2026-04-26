@@ -1,0 +1,33 @@
+# 機種パラメータ（v4 §1.Q2 より）
+# 1 step = 1000円分の遊技
+
+machines:
+  - machine_type_id: 0
+    name: AT
+    description: 2000s AT 爆裂機（ミリオンゴッド系）— 短期で大きく振れる
+    p_initial_hit: 0.08
+    continue_prob: 0.35
+    stake_per_step: 1000
+    payout_mean: 3500
+    payout_std: 1600
+    cue_decay_steps: 1
+
+  - machine_type_id: 1
+    name: Hokuto
+    description: 2000s後半 4.5号機（北斗の拳系）— 中間的
+    p_initial_hit: 0.07
+    continue_prob: 0.58
+    stake_per_step: 1000
+    payout_mean: 2500
+    payout_std: 1000
+    cue_decay_steps: 2
+
+  - machine_type_id: 2
+    name: ART
+    description: 2010s ART 爆裂機 — 長く引っ張る（本命）
+    p_initial_hit: 0.06
+    continue_prob: 0.82
+    stake_per_step: 1000
+    payout_mean: 1200
+    payout_std: 500
+    cue_decay_steps: 4

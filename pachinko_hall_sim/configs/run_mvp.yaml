@@ -1,0 +1,30 @@
+# 案A MVP run 設定（10 persona × 30 step）
+
+run_id: mvp_seed_42
+seed: 42
+
+n_personas: 10
+n_steps: 30
+
+machines_config: configs/machines.yaml
+persona_data: data/persona_cards.jsonl
+
+# 各機種を何台ずつ置くか（合計 6 台）
+machine_layout:
+  - {machine_type_id: 0, count: 2}  # AT × 2
+  - {machine_type_id: 1, count: 2}  # Hokuto × 2
+  - {machine_type_id: 2, count: 2}  # ART × 2
+
+# Persona 初期設定
+persona_init:
+  initial_cash: 20000
+
+llm:
+  enabled: false  # Day1-3 は rule-only。Day4 で true に切り替え
+  model: qwen3:4b-instruct-2507-q4_K_M
+  base_url: http://localhost:11434
+  policy_interval: 5  # 5 step ごとに LLM 行動決定
+  timeout_sec: 30
+  max_retries: 1
+
+output_dir: outputs/
