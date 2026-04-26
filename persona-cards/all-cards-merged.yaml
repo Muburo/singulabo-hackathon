@@ -1,0 +1,5052 @@
+- id: R1-A-001
+  category: 主婦
+  profile:
+    age_range: 30代前半
+    occupation: パート寄りの就労・既婚
+    family: 夫と子どもあり
+    addiction_severity: 中度
+    gambling_history: 友人に連れられた初回大当たり後、結婚後に1人打ちへ移行
+    visit_motive: 生活の息苦しさを一時的に忘れたい
+  trigger:
+    event: 財布の現金が尽き、生活費の封筒に手を伸ばす
+    machine_type: パチンコ
+    time_of_day: 日中
+  inner_monologue_ja: これ当たれば戻せる。今日だけ借りるだけ、家に帰る頃には帳尻合う
+  emotional_state:
+    arousal_0_100: 72
+    despair_0_100: 46
+    dominant_emotion: 焦り × 自己正当化
+  action: 生活費を追加入金して続行
+  post_play_state: 帰宅後は何もなかったように振る舞う
+  source:
+    type: 公的メンタルヘルス体験記
+    url_or_ref: 公開当事者手記・既婚女性の回復回想
+    confidence: 高
+  notes: 『使ってはいけない金』の境界が崩れる場面として再構成
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 主婦
+- id: R1-A-002
+  category: 主婦
+  profile:
+    age_range: 30代前半
+    occupation: パート寄りの就労・既婚
+    family: 夫と子どもあり
+    debt_yen: 不明
+    addiction_severity: 中度〜重度
+    gambling_history: 継続打ちが習慣化
+    visit_motive: 家計の穴埋めと気分転換が混線
+  trigger:
+    event: 給料日直後、封筒の現金がある状態でホール前を通る
+    machine_type: パチンコ
+    time_of_day: 昼
+  inner_monologue_ja: 今日だけ増やしてから帰れば、今月は少し楽になる。減らすためじゃなく増やすため
+  emotional_state:
+    arousal_0_100: 78
+    despair_0_100: 41
+    dominant_emotion: 期待 × 打算
+  action: 『少しだけ』のつもりで入店し、上限を崩す
+  post_play_state: 支払い予定を頭の中で組み替え続ける
+  source:
+    type: 公的メンタルヘルス体験記
+    url_or_ref: 公開当事者手記・既婚女性の回復回想
+    confidence: 高
+  notes: 家計補填の論理が軍資金化する瞬間
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 主婦
+- id: R1-A-003
+  category: 主婦
+  profile:
+    age_range: 30代前半
+    occupation: 専業主婦
+    family: 夫と小学生の子1人
+    debt_yen: 5700000
+    addiction_severity: 重度
+    gambling_history: 初打ちの大勝ち後、平日にほぼ毎日通う
+    visit_motive: 大当たりの快感の再演
+  trigger:
+    event: 開店前に並び、昼食を抜いて席を立てなくなる
+    machine_type: パチンコ
+    time_of_day: 平日10時〜夕方
+  inner_monologue_ja: 今やめたらこの台を捨てるだけ。ご飯食べてる場合じゃない、当たりを逃したくない
+  emotional_state:
+    arousal_0_100: 83
+    despair_0_100: 38
+    dominant_emotion: 没入 × 固執
+  action: 食事を後回しにして打ち続ける
+  post_play_state: 帰宅時間までに感情を平坦化して母親役に戻る
+  source:
+    type: 女性向けメディアの本人取材
+    url_or_ref: 主婦当事者の取材記事
+    confidence: 中
+  notes: 家事・昼食を切ってでも離席回避を優先する
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 主婦
+- id: R1-A-004
+  category: 主婦
+  profile:
+    age_range: 30代前半
+    occupation: 専業主婦
+    family: 夫と子どもあり
+    debt_yen: 5700000
+    addiction_severity: 重度
+    gambling_history: 共有貯金にまで流用が進行
+    visit_motive: 負けの穴埋め
+  trigger:
+    event: 共有貯金の残高が減っているのに、さらに軍資金が足りなくなる
+    machine_type: パチンコ
+    time_of_day: 午後
+  inner_monologue_ja: ここで取り返せなかったら本当に終わる。最悪、別の手で作ればいい
+  emotional_state:
+    arousal_0_100: 86
+    despair_0_100: 67
+    dominant_emotion: 切迫感 × 逃避
+  action: 負けを止めず、資金調達の発想が風俗・親頼みまで拡張
+  post_play_state: 夫に知られていない前提で次の資金繰りを考える
+  source:
+    type: 女性向けメディアの本人取材
+    url_or_ref: 主婦当事者の取材記事
+    confidence: 中
+  notes: 『風俗か……』という発想がホール内で現実的選択肢になる
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 主婦
+- id: R1-A-005
+  category: 主婦
+  profile:
+    age_range: 50代前半
+    occupation: 既婚・育児期を経験
+    family: 夫と子ども
+    debt_yen: 不明
+    addiction_severity: 重度
+    gambling_history: 20歳からの長期化、結婚後も継続
+    visit_motive: 混乱感と役割疲労からの逃避
+  trigger:
+    event: 子どもを放置気味にしながらでも台前に戻ってしまう
+    machine_type: パチンコ
+    time_of_day: 日中〜夕方
+  inner_monologue_ja: 今日だけ回してから帰る。家のことはあとで合わせれば何とかなる
+  emotional_state:
+    arousal_0_100: 74
+    despair_0_100: 63
+    dominant_emotion: 麻痺 × 焦燥
+  action: 育児より遊技継続を優先
+  post_play_state: 帳尻合わせのように夫の帰宅時だけ平静を演じる
+  source:
+    type: 支援団体掲載の当事者手記PDF
+    url_or_ref: 50代女性当事者・長期回復手記
+    confidence: 高
+  notes: 本人が後年『育児放棄の状況』と回想した部分を場面化
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 主婦
+- id: R1-A-006
+  category: 主婦
+  profile:
+    age_range: 40代前半
+    occupation: 回復支援職に就く元当事者
+    family: 既婚
+    addiction_severity: 重度化歴あり
+    gambling_history: 結婚後に1人打ちが加速し、3年で遊びの域を超える
+    visit_motive: 不安から逃げるため
+  trigger:
+    event: 大負けした夜、帰宅してからも『もう一回』が頭から離れない
+    machine_type: パチンコ
+    time_of_day: 夜
+  inner_monologue_ja: このままじゃダメって分かってるのに、明日もう一回行けば少し戻る気がする
+  emotional_state:
+    arousal_0_100: 68
+    despair_0_100: 72
+    dominant_emotion: 羞恥 × 渇望
+  action: ネットで助けを探しながらも、頭の中では再戦を反芻
+  post_play_state: 大負けの夜が初めてのSOSにつながる
+  source:
+    type: 公開プロフィール手記
+    url_or_ref: 元当事者女性カウンセラーの自己紹介文
+    confidence: 高
+  notes: 『ずたぼろに負けた夜』をホール直後の反応として切り出した
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 主婦
+- id: R1-A-007
+  category: 主婦
+  profile:
+    age_range: 30代前半
+    occupation: パート＋歩合仕事
+    family: 夫と子どもあり
+    debt_yen: 820000
+    addiction_severity: 中度
+    gambling_history: 元彼由来で長期化、断パチ反復
+    visit_motive: お金の不安とPMS・ストレスの増幅
+  trigger:
+    event: 車検や生活費を考えた直後に『1万円入れてやる』衝動が出る
+    machine_type: パチンコ
+    time_of_day: 日中
+  inner_monologue_ja: どうせ今も苦しいなら、一回勝てば少し息つける。入れるなら一万、そこで止める
+  emotional_state:
+    arousal_0_100: 70
+    despair_0_100: 60
+    dominant_emotion: 切迫感 × 衝動
+  action: 断パチ中でも再投資の空想を繰り返す
+  post_play_state: 『今日で何日目』と数えながら再発を警戒
+  source:
+    type: 個人ブログ
+    url_or_ref: 依存症アラサー既婚女性ブログ
+    confidence: 中
+  notes: PMS・家計不安・再発衝動が結びついている
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 主婦
+- id: R1-A-008
+  category: 主婦
+  profile:
+    age_range: 30代後半〜40代前半
+    occupation: パート主婦
+    family: 夫あり
+    addiction_severity: 中度〜重度
+    gambling_history: 禁パチ反復、短期再発を繰り返す
+    visit_motive: 前日の負けをその日のうちに薄めたい
+  trigger:
+    event: 前日の負けを取り返すため昼から再入店
+    machine_type: パチンコ
+    time_of_day: 昼〜夕方
+  inner_monologue_ja: 勝てるなんて思ってない。でも昨日の分を少しでも薄めたい
+  emotional_state:
+    arousal_0_100: 66
+    despair_0_100: 69
+    dominant_emotion: イライラ × 自罰
+  action: 昼から夕方まで打ち、負けた勢いで惣菜や甘い物を大量買い
+  post_play_state: 母の病院にも行かず、自己嫌悪が増幅
+  source:
+    type: 個人ブログ
+    url_or_ref: 既婚女性の禁パチ反復ブログ
+    confidence: 中
+  notes: 損失の直後に食行動へスライドする反応が強い
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 主婦
+- id: R1-B-001
+  category: OL・社会人女性
+  profile:
+    age_range: 30代前半
+    occupation: 実家暮らしの会社員
+    family: 親と同居
+    addiction_severity: 中度
+    gambling_history: 職場で好きな人の話題に合わせたくて開始
+    visit_motive: 会話に入るための軽い参加
+  trigger:
+    event: 初打ちで1000円を入れる瞬間と、直後の1万円勝ち
+    machine_type: パチンコ
+    time_of_day: 仕事後
+  inner_monologue_ja: 千円入れるの怖い。でも当たったら話せる、分かる側に入れる
+  emotional_state:
+    arousal_0_100: 77
+    despair_0_100: 18
+    dominant_emotion: 緊張 × 高揚
+  action: 大当たり後に一気に警戒感が薄れる
+  post_play_state: 『自分にもできる』感覚が残る
+  source:
+    type: 支援団体掲載の当事者手記PDF
+    url_or_ref: 30代女性当事者手記
+    confidence: 高
+  notes: 導入は承認欲求と恋愛文脈
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: OL・社会人女性
+- id: R1-B-002
+  category: OL・社会人女性
+  profile:
+    age_range: 30代前半
+    occupation: 実家暮らしの会社員
+    family: 親と同居
+    debt_yen: 2000000
+    addiction_severity: 重度
+    gambling_history: 開始1か月以内に1人打ち常態化
+    visit_motive: 負けの取り返しと借金返済の錯覚
+  trigger:
+    event: 親に渡す生活費とボーナス、資格取得費まで軍資金化
+    machine_type: パチンコ
+    time_of_day: 仕事後〜休日
+  inner_monologue_ja: 資格のお金はまた作ればいい。今ここで勝てば何も崩れない
+  emotional_state:
+    arousal_0_100: 79
+    despair_0_100: 58
+    dominant_emotion: 切迫感 × 麻痺
+  action: 生活費流用→初めての消費者金融→継続
+  post_play_state: 借金への絶望より『月々数千円なら回る』と考える
+  source:
+    type: 支援団体掲載の当事者手記PDF
+    url_or_ref: 30代女性当事者手記
+    confidence: 高
+  notes: 社会人女性の『用途の転用』が鮮明
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: OL・社会人女性
+- id: R1-B-003
+  category: OL・社会人女性
+  profile:
+    age_range: 30代前半
+    occupation: 会社員
+    family: 実家暮らし
+    debt_yen: 2000000
+    addiction_severity: 重度
+    gambling_history: 借金後も継続
+    visit_motive: 返済資金をギャンブルで作る発想
+  trigger:
+    event: 譲ってもらった大事な楽器やカメラを現金化し、その足でホールへ直行
+    machine_type: パチンコ
+    time_of_day: 昼〜夕方
+  inner_monologue_ja: これは元手。今日勝てば売らなくて済んだことになる
+  emotional_state:
+    arousal_0_100: 74
+    despair_0_100: 71
+    dominant_emotion: 罪悪感 × 追い込み
+  action: 質入れ・売却金を全投入
+  post_play_state: 負けるたびに『もうやめよう』と思うが数日で戻る
+  source:
+    type: 支援団体掲載の当事者手記PDF
+    url_or_ref: 30代女性当事者手記
+    confidence: 高
+  notes: 物品の換金がそのままホール導線になる
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: OL・社会人女性
+- id: R1-B-004
+  category: OL・社会人女性
+  profile:
+    age_range: 30代前半
+    occupation: 会社員
+    family: 実家暮らし
+    debt_yen: 2000000
+    addiction_severity: 重度
+    gambling_history: 毎日行かないと気が済まない段階
+    visit_motive: 不眠・不安の一時停止
+  trigger:
+    event: 借金で眠れず不安定なのに、帰宅前にホールへ向かってしまう
+    machine_type: パチンコ
+    time_of_day: 仕事後
+  inner_monologue_ja: 行きたくない。でも行かないと頭の中が静かにならない
+  emotional_state:
+    arousal_0_100: 64
+    despair_0_100: 81
+    dominant_emotion: 不安 × 強迫
+  action: 打ちたくないと思いながら連日入店
+  post_play_state: 不眠と不安が改善せず、さらに孤立
+  source:
+    type: 支援団体掲載の当事者手記PDF
+    url_or_ref: 30代女性当事者手記
+    confidence: 高
+  notes: 快楽追求より『静めるために打つ』局面
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: OL・社会人女性
+- id: R1-B-005
+  category: OL・社会人女性
+  profile:
+    age_range: 30代後半
+    occupation: 就労女性
+    family: 家族・恋人との関係あり
+    debt_yen: 不明
+    addiction_severity: 重度
+    gambling_history: 数年で制御不能
+    visit_motive: 好きだが、やめなければ壊れるという葛藤
+  trigger:
+    event: 家族や彼氏から借り、仕事をさぼり、約束も飛ばし、上限も守れない
+    machine_type: パチンコ
+    time_of_day: 仕事時間帯を含む
+  inner_monologue_ja: 次で止める。今日は本当に止める。でも今やめたら全部むだになる
+  emotional_state:
+    arousal_0_100: 71
+    despair_0_100: 76
+    dominant_emotion: 執着 × 自責
+  action: 上限を何度も更新し、行動予定をギャンブル優先に再編
+  post_play_state: 信用を失う恐怖より、次の再戦欲求が勝つ
+  source:
+    type: 支援団体掲載の当事者手記PDF
+    url_or_ref: 30代女性当事者手記
+    confidence: 高
+  notes: 『時間の上限』まで壊れる
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: OL・社会人女性
+- id: R1-B-006
+  category: OL・社会人女性
+  profile:
+    age_range: 30代後半
+    occupation: 就労女性
+    family: 家族・恋人との関係あり
+    debt_yen: 不明
+    addiction_severity: 重度
+    gambling_history: 自助グループ前の末期
+    visit_motive: 虚しさと孤独感の遮断
+  trigger:
+    event: 使ってはいけないお金を使い果たし、『死にたい』と『次を打ちたい』が同時に出る
+    machine_type: パチンコ
+    time_of_day: 負け後
+  inner_monologue_ja: もう終わりにしたい。でも終わる前に、もう一回だけ当たりを引きたい
+  emotional_state:
+    arousal_0_100: 62
+    despair_0_100: 89
+    dominant_emotion: 虚無 × 渇望
+  action: 自己嫌悪のまま再戦欲求を抑えきれない
+  post_play_state: 自助グループに辿り着き、初めて『病気』の言葉に泣く
+  source:
+    type: 支援団体掲載の当事者手記PDF
+    url_or_ref: 30代女性当事者手記
+    confidence: 高
+  notes: 快楽より『地獄の反復』としてのギャンブル
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: OL・社会人女性
+- id: R1-B-007
+  category: OL・社会人女性
+  profile:
+    age_range: 40代前半
+    occupation: 独身会社員
+    family: 一人暮らし寄り
+    addiction_severity: 中度
+    gambling_history: 20代で彼氏に連れられて開始
+    visit_motive: 嫌なことを忘れる・涼みに行くという自己弁護
+  trigger:
+    event: 給料日直後に『即パチンコ屋』のルートが自然化する
+    machine_type: パチンコ
+    time_of_day: 給料日・仕事後
+  inner_monologue_ja: 今日だけはいいでしょ。勝ったら明日もいけるし、嫌なことも忘れられる
+  emotional_state:
+    arousal_0_100: 73
+    despair_0_100: 44
+    dominant_emotion: 高揚 × 言い訳
+  action: 給料出たら直行、勝てば翌日の稼働予定まで立てる
+  post_play_state: 後日トータルで負けていたと冷える
+  source:
+    type: 個人ブログ
+    url_or_ref: 40代独身女性ブログ
+    confidence: 中
+  notes: 『嫌なことを忘れる』が強い
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: OL・社会人女性
+- id: R1-B-008
+  category: OL・社会人女性
+  profile:
+    age_range: 30代後半〜40代前半
+    occupation: 独身会社員
+    family: 単身
+    debt_yen: 7730000
+    addiction_severity: 重度
+    gambling_history: ギャンブル依存と買い物依存が併発
+    visit_motive: 勝って終わらせたい、負けをただの負け日にしたくない
+  trigger:
+    event: 『今日はダメな日』と分かっても帰れず、紙幣をサンドに入れ続ける
+    machine_type: パチンコ
+    time_of_day: 朝イチ〜夕方
+  inner_monologue_ja: もうダメなのは分かってる。でもここで帰ったら今日が丸ごと無駄になる
+  emotional_state:
+    arousal_0_100: 69
+    despair_0_100: 84
+    dominant_emotion: 麻痺 × 追い詰め
+  action: 止められず追加入金、店を出てから別の散財に流れる
+  post_play_state: 頭も財布も空っぽになり、買い物で負け感を上塗りする
+  source:
+    type: 個人ブログ
+    url_or_ref: 借金773万円の独身会社員ブログ
+    confidence: 高
+  notes: 『機械の体』表現は行動自動化の描写として極めて有用
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: OL・社会人女性
+- id: R1-C-001
+  category: 風俗・夜職系女性
+  profile:
+    age_range: 30代前半
+    occupation: パートを転々
+    family: 同棲相手あり
+    debt_yen: 700000
+    addiction_severity: 重度
+    gambling_history: 彼と週末打ち→1人の平日打ちへ
+    visit_motive: 彼より長く打てる『1人打ち』の自由さ
+  trigger:
+    event: 仕事帰り、彼がいない日は閉店近くまで打てると感じる
+    machine_type: パチンコ→スロット併用
+    time_of_day: 夕方〜閉店
+  inner_monologue_ja: 帰ろうって言われない一人のほうが楽。今日は好きなだけ回せる
+  emotional_state:
+    arousal_0_100: 76
+    despair_0_100: 37
+    dominant_emotion: 解放感 × 執着
+  action: 平日夜の単独稼働が習慣化
+  post_play_state: 生活リズムがホール中心に組み替わる
+  source:
+    type: 公開当事者手記
+    url_or_ref: 女性当事者の長文回想
+    confidence: 高
+  notes: 『同行者に止められない自由』が促進因子
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 風俗・夜職系女性
+- id: R1-C-002
+  category: 風俗・夜職系女性
+  profile:
+    age_range: 30代前半
+    occupation: パートを転々
+    family: 同棲相手あり
+    debt_yen: 700000
+    addiction_severity: 重度
+    gambling_history: 給料消失後、駅前消費者金融へ
+    visit_motive: 今打つための現金を作る
+  trigger:
+    event: 給料がなくなっても打ちたくて、駅近の消費者金融で1万5000円を借りる
+    machine_type: パチンコ・スロット
+    time_of_day: 平日夕方
+  inner_monologue_ja: 少額ならすぐ返せる。今日の軍資金さえあればひっくり返せる
+  emotional_state:
+    arousal_0_100: 81
+    despair_0_100: 52
+    dominant_emotion: 切迫感 × 多幸予測
+  action: 借入→即ホール
+  post_play_state: 『なければ借りればいい』思考が固定化
+  source:
+    type: 公開当事者手記
+    url_or_ref: 女性当事者の長文回想
+    confidence: 高
+  notes: 夜職化以前の資金調達パターン
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 風俗・夜職系女性
+- id: R1-C-003
+  category: 風俗・夜職系女性
+  profile:
+    age_range: 30代前半
+    occupation: パート＋売春
+    family: 彼あり
+    debt_yen: 700000
+    addiction_severity: 重度
+    gambling_history: 借金隠しのため性売買に移行
+    visit_motive: 負け分を現金で即補充したい
+  trigger:
+    event: パートの合間に客を取り、その金をそのまま軍資金にする
+    machine_type: パチンコ・スロット
+    time_of_day: 昼〜夕方
+  inner_monologue_ja: これでまた打てる。今日分さえ作れれば、まだごまかせる
+  emotional_state:
+    arousal_0_100: 74
+    despair_0_100: 79
+    dominant_emotion: 切実さ × 解離
+  action: 『会社』『残業』と嘘をついて客に会い、その後ホールへ
+  post_play_state: 終わった後は虚しいが、軍資金が手に入ると再びホールへ向く
+  source:
+    type: 公開当事者手記
+    url_or_ref: 女性当事者の長文回想
+    confidence: 高
+  notes: 性行為そのものより『次の稼働資金』が目的化
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 風俗・夜職系女性
+- id: R1-C-004
+  category: 風俗・夜職系女性
+  profile:
+    age_range: 20代後半
+    occupation: 派遣就労→街娼
+    family: 家族と断絶
+    addiction_severity: 重度
+    gambling_history: 海物語に没入、給料が1日で消える
+    visit_motive: 音・演出・魚群への執着
+  trigger:
+    event: 月給が1日で消え、店内を泣きながら歩いているところに声をかけられる
+    machine_type: パチンコ
+    time_of_day: 日中
+  inner_monologue_ja: 魚群が外れた。もう終わり。でもこのまま帰るのはもっと無理
+  emotional_state:
+    arousal_0_100: 88
+    despair_0_100: 85
+    dominant_emotion: パニック × 飢餓感
+  action: ホテル同行で現金を得て、その成功体験が固定
+  post_play_state: 『体で現金を作れる』回路ができる
+  source:
+    type: 取材インタビュー
+    url_or_ref: 街娼経験女性の回想取材
+    confidence: 中
+  notes: ホール内での涙→即現金化という極端な切り替わり
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 風俗・夜職系女性
+- id: R1-C-005
+  category: 風俗・夜職系女性
+  profile:
+    age_range: 20代後半
+    occupation: 街娼
+    family: 家族と絶縁
+    addiction_severity: 重度
+    gambling_history: 負けた日はその場で性売買する習慣化
+    visit_motive: 負けを即日で埋めたい
+  trigger:
+    event: 負けた後、景品交換所まわりをうろついて声待ちする
+    machine_type: パチンコ
+    time_of_day: 夕方〜夜
+  inner_monologue_ja: このまま帰るなら負けのまま。誰か拾ってくれれば、もう一回回せる
+  emotional_state:
+    arousal_0_100: 73
+    despair_0_100: 82
+    dominant_emotion: 飢餓感 × 諦め
+  action: 負け後にその場で客待ち
+  post_play_state: 朝から晩までパチンコ中心の一日に固定
+  source:
+    type: 取材インタビュー
+    url_or_ref: 街娼経験女性の回想取材
+    confidence: 中
+  notes: 交換所周辺が『再戦資金の採取地点』になる
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 風俗・夜職系女性
+- id: R1-C-006
+  category: 風俗・夜職系女性
+  profile:
+    age_range: 20代後半〜30代前半
+    occupation: 元キャバ嬢
+    family: 単身
+    addiction_severity: 中度
+    gambling_history: 日払い習慣と昼時間でスロット化
+    visit_motive: ストレス発散と現金消費
+  trigger:
+    event: 仕事終わりに仮眠して、昼頃から近所のホールへ向かう
+    machine_type: スロット
+    time_of_day: 昼
+  inner_monologue_ja: 今日も入ったし、少しくらい打ってもまた夜に稼げる
+  emotional_state:
+    arousal_0_100: 71
+    despair_0_100: 33
+    dominant_emotion: 緩み × 習慣化
+  action: 日払い現金をそのままスロットへ投入
+  post_play_state: 『今日稼いだから』の論理で貯蓄ゼロが続く
+  source:
+    type: 夜職経験者のnote
+    url_or_ref: 元キャバ嬢の生活回想
+    confidence: 中
+  notes: 夜職とスロットの時間相性が明瞭
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 風俗・夜職系女性
+- id: R1-C-007
+  category: 風俗・夜職系女性
+  profile:
+    age_range: 20代後半〜30代前半
+    occupation: 元キャバ嬢
+    family: 単身
+    addiction_severity: 中度
+    gambling_history: 日払い・美容費・遊び・ギャンブルの負のループ
+    visit_motive: 暇さと現金保有で財布の紐が切れる
+  trigger:
+    event: 日払いがある前提で出費水準が上がり、暇な日にまたホールへ向かう
+    machine_type: パチンコ・スロット
+    time_of_day: 昼〜夕方
+  inner_monologue_ja: 今日使っても明日入るし。暇だし、少し回して帰ろう
+  emotional_state:
+    arousal_0_100: 63
+    despair_0_100: 29
+    dominant_emotion: 弛緩 × 慢心
+  action: 日払い前提で小さな浪費を重ね、結果的にギャンブル支出も増える
+  post_play_state: 月末に何も残らない
+  source:
+    type: 夜職経験者のnote
+    url_or_ref: 元キャバ嬢の生活回想
+    confidence: 中
+  notes: 重度依存症というより構造的誘発
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 風俗・夜職系女性
+- id: R1-C-008
+  category: 風俗・夜職系女性
+  profile:
+    age_range: 30代前半
+    occupation: 昼職＋人妻デリヘル嬢
+    family: 既婚
+    debt_yen: 5000000
+    addiction_severity: 重度
+    gambling_history: パチンコとソシャゲの複合依存
+    visit_motive: 『今日こそ勝てる』の反復
+  trigger:
+    event: 給料日前、ATMで泣きながら借りるのに、台前ではまだ『勝てる』と思う
+    machine_type: パチンコ
+    time_of_day: 給料日前後
+  inner_monologue_ja: もうこれ以上は無理。でも今日当たれば全部つながる。ここで引ければまだ死なない
+  emotional_state:
+    arousal_0_100: 82
+    despair_0_100: 87
+    dominant_emotion: 追い込み × 妄信
+  action: 借入継続、最高で1日20万円規模まで溶かす
+  post_play_state: 家族に嘘を重ねながら返済と再発を往復
+  source:
+    type: 個人note
+    url_or_ref: 借金500万円超の当事者マガジン
+    confidence: 中
+  notes: Cカテゴリでは最も高額損失帯
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 風俗・夜職系女性
+- id: R1-D-001
+  category: 女子大生・若年女性
+  profile:
+    age_range: 20歳
+    occupation: 勤労学生
+    family: 実家外の住み込み就労
+    addiction_severity: 初期→中度
+    gambling_history: 休日にふらっと入店して開始
+    visit_motive: 学校と仕事の重圧からの解放感
+  trigger:
+    event: 音・光・演出に包まれ、初めて当たりを引く
+    machine_type: パチンコ
+    time_of_day: 休日昼
+  inner_monologue_ja: これ、すごい。学校も仕事もない時間が全部ここにある
+  emotional_state:
+    arousal_0_100: 84
+    despair_0_100: 12
+    dominant_emotion: 解放感 × 興奮
+  action: 休日をホールで過ごす習慣ができる
+  post_play_state: 『休み＝ホール』の連想が固定
+  source:
+    type: 支援団体掲載の当事者手記PDF
+    url_or_ref: 50代女性の20歳当時の回想
+    confidence: 高
+  notes: 若年導入の感覚入力が非常に鮮明
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 女子大生・若年女性
+- id: R1-D-002
+  category: 女子大生・若年女性
+  profile:
+    age_range: 20代前半
+    occupation: 勤労学生
+    family: 田舎の母とつながり
+    debt_yen: 不明
+    addiction_severity: 中度〜重度
+    gambling_history: カード作成、家電売却、親への虚偽送金依頼
+    visit_motive: 負けを負けで終わらせたくない
+  trigger:
+    event: 返済不能になり、母に嘘をついて振込を頼んだ直後でも台前に戻る
+    machine_type: パチンコ
+    time_of_day: 休日
+  inner_monologue_ja: 今度こそ返して終わる。負けた分は負けた場所で返すしかない
+  emotional_state:
+    arousal_0_100: 76
+    despair_0_100: 70
+    dominant_emotion: 執着 × 罪悪感
+  action: 家電売却・親への虚偽依頼後も続行
+  post_play_state: 謝罪と再発のループ
+  source:
+    type: 支援団体掲載の当事者手記PDF
+    url_or_ref: 50代女性の20歳当時の回想
+    confidence: 高
+  notes: 若年層でも『負けはそこで返す』認知が早い
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 女子大生・若年女性
+- id: R1-D-003
+  category: 女子大生・若年女性
+  profile:
+    age_range: 20歳前後
+    occupation: 大学生
+    family: 母もパチンコ経験あり
+    addiction_severity: 初期
+    gambling_history: 初彼の影響でホールに入る
+    visit_motive: 彼と同じ景色を見たい、少し大人になりたい
+  trigger:
+    event: 彼が打つのを隣で見ているうち、自分も座りたくなる
+    machine_type: パチスロ見学→パチンコ着席
+    time_of_day: デート時
+  inner_monologue_ja: 隣で見てるだけでも楽しい。私もやれたら、もっと近づける気がする
+  emotional_state:
+    arousal_0_100: 68
+    despair_0_100: 10
+    dominant_emotion: 憧れ × 好奇心
+  action: 彼同行の見学から自分の遊技へ移る
+  post_play_state: 『彼の趣味』が『自分の入口』に変わる
+  source:
+    type: 個人note
+    url_or_ref: 若年女性の回想エッセイ
+    confidence: 中
+  notes: 恋愛導線の典型
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 女子大生・若年女性
+- id: R1-D-004
+  category: 女子大生・若年女性
+  profile:
+    age_range: 20歳前後
+    occupation: 大学生
+    family: 母との同行経験あり
+    addiction_severity: 初期→中度
+    gambling_history: 1パチから4パチへ移行
+    visit_motive: 演出の面白さから『お金を増やしたい』へ変化
+  trigger:
+    event: アニメ演出目当てで座った台から、気づけば4パチが基本になる
+    machine_type: パチンコ
+    time_of_day: 昼
+  inner_monologue_ja: 当たったらいいな、じゃなくて、今日はちゃんと増やしたい
+  emotional_state:
+    arousal_0_100: 73
+    despair_0_100: 24
+    dominant_emotion: 好奇心 × 金銭期待
+  action: 低貸しから通常レートへ上げる
+  post_play_state: 遊び感覚が徐々に薄れる
+  source:
+    type: 個人note
+    url_or_ref: 若年女性の回想エッセイ
+    confidence: 中
+  notes: 初心者がレートを上げる時の認知転換
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 女子大生・若年女性
+- id: R1-D-005
+  category: 女子大生・若年女性
+  profile:
+    age_range: 19歳
+    occupation: 大学生
+    family: 彼氏あり
+    addiction_severity: 軽度
+    gambling_history: 彼氏の影響で月1〜2回
+    visit_motive: 彼との共通体験
+  trigger:
+    event: 彼氏と一緒にホールへ向かう前、『女の子でパチンコは変』と言われた直後
+    machine_type: パチンコ
+    time_of_day: 休日
+  inner_monologue_ja: そんなに変かな。でも彼と行くの楽しいし、別に悪いことしてる感じもしない
+  emotional_state:
+    arousal_0_100: 55
+    despair_0_100: 14
+    dominant_emotion: 違和感 × 好奇心
+  action: 周囲のまなざしに引っかかりつつも継続
+  post_play_state: 『自分はまだ大丈夫』という線引きを持つ
+  source:
+    type: 公開相談投稿
+    url_or_ref: 大学生女性の相談文
+    confidence: 中
+  notes: 依存手前の正当化を取るためのカード
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 女子大生・若年女性
+- id: R1-D-006
+  category: 女子大生・若年女性
+  profile:
+    age_range: 20代前半
+    occupation: 女子大生
+    family: 単身または実家圏
+    debt_yen: 170000
+    addiction_severity: 中度
+    gambling_history: 暇つぶし→ストレス発散→借入
+    visit_motive: 負けとストレスの両方を消したい
+  trigger:
+    event: 『また取り返せばいい』を繰り返し、アコム残高17万円を背負った後の再来店欲求
+    machine_type: パチンコ
+    time_of_day: 不定
+  inner_monologue_ja: やめたい。でも楽しい。返済してる間にまた行きたくなるのが一番こわい
+  emotional_state:
+    arousal_0_100: 67
+    despair_0_100: 73
+    dominant_emotion: 依存自覚 × 恐怖
+  action: 返済計画を考えつつ、再発可能性を強く意識
+  post_play_state: 『酒もタバコもやらないのにギャンブルだけ』という自己認識が残る
+  source:
+    type: 公開相談投稿
+    url_or_ref: 女子大生の相談文
+    confidence: 中
+  notes: 若年女性の『楽しいのに怖い』両価性
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 女子大生・若年女性
+- id: R1-D-007
+  category: 女子大生・若年女性
+  profile:
+    age_range: 20代前半
+    occupation: 実家暮らしのアルバイト女性
+    family: 親と同居
+    debt_yen: 1500000
+    addiction_severity: 重度
+    gambling_history: 元彼に教わり、一度やめても数か月後に再燃
+    visit_motive: 久々の負けを『取り返し戦』に変える
+  trigger:
+    event: 少し負けたことに火がつき、仕事と言って毎日ホールに行く
+    machine_type: パチンコ
+    time_of_day: 昼
+  inner_monologue_ja: ここで取り返さないと前よりもっと終わる。今日は仕事じゃなくて回収の日
+  emotional_state:
+    arousal_0_100: 84
+    despair_0_100: 78
+    dominant_emotion: 切迫感 × 妄執
+  action: 仕事を辞めてまで通い、3〜4か月で借金急増
+  post_play_state: 後半は楽しくなく、ただ回収目的になる
+  source:
+    type: 公開相談投稿
+    url_or_ref: 24歳女性の債務相談文
+    confidence: 中
+  notes: 『少し負けた』が再発トリガー
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 女子大生・若年女性
+- id: R1-D-008
+  category: 女子大生・若年女性
+  profile:
+    age_range: 20代前半
+    occupation: 無職化した若年女性
+    family: 親と同居
+    debt_yen: 1500000
+    addiction_severity: 重度
+    gambling_history: 借入不能になるまで継続
+    visit_motive: 現実逃避ではなく、もはや資金調達の最後の幻想
+  trigger:
+    event: 借入不能になり、性売買や自殺まで考えるのに『借りられたらまだ行っていた』と自覚
+    machine_type: パチンコ
+    time_of_day: 負け後・返済日前
+  inner_monologue_ja: もう無理。でも借りられるなら、たぶんまた行く。そこが一番こわい
+  emotional_state:
+    arousal_0_100: 52
+    despair_0_100: 94
+    dominant_emotion: 絶望 × 自己嫌悪
+  action: 誰にも言えず債務相談へ流れる
+  post_play_state: 親への告白恐怖が最大化
+  source:
+    type: 公開相談投稿
+    url_or_ref: 24歳女性の債務相談文
+    confidence: 中
+  notes: 若年女性カテゴリの末期カード
+  _dr_provider: chatgpt
+  _round: R1
+  _category_normalized: 女子大生・若年女性
+- id: R1-A-001
+  category: 主婦
+  profile:
+    age_range: 30代前半
+    occupation: パート（個人商店）
+    family: 年下の夫（すれ違い生活）
+    monthly_disposable_yen: 30000
+    debt_yen: 0
+    addiction_severity: 初期（ビギナーズラック直後）
+    gambling_history: 同僚に連れられ1回経験後、1人で来店
+    visit_motive: 少ない生活費を自力で増やすため／退屈な日常からの逃避
+  trigger:
+    event: 初めて1人で座り、大当たりを引いた瞬間
+    machine_type: ミドルスペック（パチンコ）
+    time_of_day: 平日15時（パート帰り）
+  inner_monologue_ja: 嘘、また当たった。私、自分の力でこんな凄いことできるんだ。今まで親や夫の顔色ばっかり窺ってたけど、夫の安い給料なんか当てにしなくても、これで生活費増やせるじゃん。こんな楽しい世界があったんだ。
+  emotional_state:
+    arousal_0_100: 90
+    despair_0_100: 0
+    dominant_emotion: 万能感 × 将来への希望
+  action: 興奮状態でハンドルを強く握り続ける／周囲を誇らしげに見回す
+  post_play_state: 大勝ちして帰宅／夫には内緒で自分のヘソクリにする
+  source:
+    type: 厚労省 依存症体験談 (Milk氏の事例)
+    url_or_ref: kokoro.mhlw.go.jp/over/877/
+    confidence: 高（当事者手記）
+  notes: 厳格な親元で育った優等生タイプ特有の反応。「自分の力でやり遂げた」という自己効力感の誤認（Illusion of Control）が依存の強力なフックとなっている。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 主婦
+- id: R1-A-002
+  category: 主婦
+  profile:
+    age_range: 30代前半
+    occupation: パート
+    family: 夫
+    monthly_disposable_yen: 10000
+    debt_yen: 500000
+    addiction_severity: 重度（借金隠蔽中）
+    gambling_history: 日常的な通い（給料の全額投入）
+    visit_motive: 街頭でパチンコ店の音楽を聴いたことによる条件反射
+  trigger:
+    event: 店外で軍艦マーチ（BGM）を耳にした瞬間
+    machine_type: 未定（入店前）
+    time_of_day: 給料日（現金手渡し）の夕方
+  inner_monologue_ja: まっすぐ家に帰らなきゃいけないのに。今日パートの給料もらったばかりで現金を持ってるからダメなんだ。でも少しだけ、あの音を聞いたら吸い込まれるみたいに足が勝手に動く。1回当たるまでなら。
+  emotional_state:
+    arousal_0_100: 65
+    despair_0_100: 40
+    dominant_emotion: 抗えない衝動 × 軽い自己嫌悪
+  action: 給料袋を鞄に隠し持ったまま、無意識に入店する
+  post_play_state: 給料全額喪失／夫への言い訳を考えながらのパニック状態
+  source:
+    type: 厚労省 依存症体験談
+    url_or_ref: kokoro.mhlw.go.jp/over/877/
+    confidence: 高
+  notes: パブロフの犬のように、音響刺激による条件反射が形成されている。現金（手渡しの給料）を持っているという事実がトリガーを増幅させ、自制心を破壊する。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 主婦
+- id: R1-A-003
+  category: 主婦
+  profile:
+    age_range: 30代前半
+    occupation: パート
+    family: 夫
+    monthly_disposable_yen: 0
+    debt_yen: 1500000
+    addiction_severity: 重度（夫のクレジットカード窃取）
+    gambling_history: キャッシング限度額到達後
+    visit_motive: エネルギーの補給（パチンコ以外の時間は無気力）
+  trigger:
+    event: プレイ中・通常時（何も起きていない凪の時間）
+    machine_type: パチンコ
+    time_of_day: 平日昼下がり
+  inner_monologue_ja: 家の中は息が詰まる。夫とも上手くいかない。でもここに座って台の光を見ている時だけ、将来への希望が湧いてきて元気になる。私にとってパチンコだけが生きるエネルギー源なんだ。
+  emotional_state:
+    arousal_0_100: 45
+    despair_0_100: 10
+    dominant_emotion: 安心感 × 現実逃避のトランス
+  action: 無表情のまま、淡々と現金をサンドに投入し、ハンドルを固定する
+  post_play_state: 退店した瞬間に現実に戻り、激しい鬱状態と疲労感に襲われる
+  source:
+    type: 厚労省 依存症体験談
+    url_or_ref: kokoro.mhlw.go.jp/over/877/
+    confidence: 高
+  notes: 「パチンコをしている時だけ元気になれる」という、ギャンブルが文字通り唯一の精神的エネルギー源となっている状態。逃避的動機の究極系。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 主婦
+- id: R1-A-004
+  category: 主婦
+  profile:
+    age_range: 40代
+    occupation: 専業主婦
+    family: 夫、中学生の子
+    monthly_disposable_yen: 20000
+    debt_yen: 800000
+    addiction_severity: 中度
+    gambling_history: 数年間
+    visit_motive: 孤独感と家事ストレスからの逃避
+  trigger:
+    event: 残金1000円でのハマり（当たらず）と夕刻の接近
+    machine_type: Aタイプ（パチスロ / ジャグラー等）
+    time_of_day: 平日16時（子供の帰宅直前）
+  inner_monologue_ja: お願い、光って。この最後の1000円で当たらないと今日の夕飯のおかずが買えない。時間もない。夫に何て言おう、また口座からお金下ろしたのバレたら今度こそ離婚されるかも。光れ、光れ！
+  emotional_state:
+    arousal_0_100: 85
+    despair_0_100: 80
+    dominant_emotion: 極度の焦燥 × 日常崩壊への恐怖
+  action: メダルを強く握りしめながら、祈るようにレバーを強打する
+  post_play_state: 全損／スーパーで見切り品の安い惣菜を買い、何食わぬ顔で帰宅
+  source:
+    type: メタ分析に基づく構造的推定（主婦カテゴリの普遍的行動様式）
+    url_or_ref: N/A
+    confidence: 高（現象として極めて典型的）
+  notes: 家計の生活費を直接投下しているため、損失時の「デスクトップ・パニック（プレイ中の絶望感）」が男性よりも生活に直結しており、生存危機レベルの恐怖を生む。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 主婦
+- id: R1-A-005
+  category: 主婦
+  profile:
+    age_range: 50代
+    occupation: 専業主婦
+    family: 夫（定年退職間近）
+    monthly_disposable_yen: 10000
+    debt_yen: 3000000
+    addiction_severity: 重度（多重債務）
+    gambling_history: 10年
+    visit_motive: 過去の負け額の回収と現実逃避
+  trigger:
+    event: 天井ストッパー（天井直前での単発当たり）を食らった瞬間
+    machine_type: AT機（パチスロ）
+    time_of_day: 平日14時
+  inner_monologue_ja: 嘘でしょ？あと50ゲームで天井だったのに。ここで単発？今まで突っ込んだ4万円が全部無駄になった。もう嫌だ、死にたい。誰かに全部任せて消えてしまいたい。
+  emotional_state:
+    arousal_0_100: 20
+    despair_0_100: 95
+    dominant_emotion: 完全な思考停止 × 絶望
+  action: ボーナス確定画面のまま数分間フリーズし、涙ぐむ
+  post_play_state: ボーナス消化後、放心状態で追加投資を続け全損
+  source:
+    type: 依存症家族の証言に基づく当事者内面推定
+    url_or_ref: gam-anon 証言等の行動特性
+    confidence: 中
+  notes: 深刻なダメージを受けた際、女性特有の「思考が麻痺し、ただ呆然と他人に（あるいは運命に）身を任せる」という認知の解離状態（Dissociation）に陥る。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 主婦
+- id: R1-A-006
+  category: 主婦
+  profile:
+    age_range: 40代前半
+    occupation: パート
+    family: 夫と小学生の子2人
+    monthly_disposable_yen: 50000
+    debt_yen: 1200000
+    addiction_severity: 中度〜重度
+    gambling_history: 5年
+    visit_motive: 姑との同居ストレスの発散
+  trigger:
+    event: 近所の主婦仲間がホールに入ってくるのを目撃した瞬間
+    machine_type: 1円パチンコ
+    time_of_day: 平日午前
+  inner_monologue_ja: ヤバい、〇〇くんのお母さんだ。絶対見つかっちゃダメだ、ママ友のLINEグループで何言われるか分からない。顔を隠さなきゃ。
+  emotional_state:
+    arousal_0_100: 80
+    despair_0_100: 50
+    dominant_emotion: 社会的発覚への恐怖 × パニック
+  action: 台の影に隠れるように深く身を沈め、データカウンターで顔を隠す
+  post_play_state: 見つからずに済んだ後、安堵から逆に気が大きくなり投資が加速
+  source:
+    type: 女性依存症特有の『羞恥心ベースのギャンブル』研究に基づく推定
+    url_or_ref: N/A
+    confidence: 中
+  notes: 地域コミュニティにおける社会的体裁を極端に恐れる。しかし、その恐怖を乗り越えた後の安堵感が、副交感神経の反動によって過剰なプレイを誘発する。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 主婦
+- id: R1-B-001
+  category: OL・社会人女性
+  profile:
+    age_range: 20代後半
+    occupation: IT企業 事務職
+    family: 独身（一人暮らし）
+    monthly_disposable_yen: 80000
+    debt_yen: 0
+    addiction_severity: 初期（興味本位の初来店）
+    gambling_history: 1日目
+    visit_motive: 暇つぶしと社会経験としての好奇心
+  trigger:
+    event: 入店直後・騒音とタバコの匂いを浴びた瞬間
+    machine_type: 未定（台選び中）
+    time_of_day: 休日昼
+  inner_monologue_ja: うわ、無理。知り合いに見られたら本当に嫌だな。タバコ臭いし、音はうるさいし、光で目が痛い。空気だけでなく雰囲気すら淀んでる。髪の毛パサパサのおばさんが本当にいるし、底辺って感じがして早く出たい。
+  emotional_state:
+    arousal_0_100: 20
+    despair_0_100: 15
+    dominant_emotion: 強烈な羞恥心 × 環境への嫌悪感
+  action: 顔を伏せがちに、足早に空き台を探して着席する
+  post_play_state: 疲労困憊で退店／「二度と行かない」と思うが、数日後に再訪
+  source:
+    type: 当事者ブログ (Note)
+    url_or_ref: note.com/megaya/n/n67c3fd2f59d4
+    confidence: 高（本人執筆）
+  notes: 「パチンコをやってるやつはクズ」という強い偏見を持っていた層の初期反応。視覚・聴覚・嗅覚への過剰刺激がストレスとなっている状態。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: OL・社会人女性
+- id: R1-B-002
+  category: OL・社会人女性
+  profile:
+    age_range: 20代後半
+    occupation: IT企業 事務職
+    family: 独身
+    monthly_disposable_yen: 80000
+    debt_yen: 0
+    addiction_severity: 初期〜中期
+    gambling_history: 開始から1週間後
+    visit_motive: 仕事終わりの習慣化
+  trigger:
+    event: プレイ中・台の騒音の中でのリラックス
+    machine_type: パチンコ
+    time_of_day: 平日19時
+  inner_monologue_ja: 1週間前はあんなにうるさいと思ってたのに、今は全然気にならない。むしろこの音の中にいると落ち着く。金額さえちゃんと決めてやれば、別に悪いことじゃないよね？
+  emotional_state:
+    arousal_0_100: 30
+    despair_0_100: 0
+    dominant_emotion: 警戒心の完全な解除 × 認知の歪み（自己正当化）
+  action: リラックスした姿勢で、スマホで動画を見ながら片手で打つ
+  post_play_state: 収支をエクセルで管理し始め、次の来店日を計画する
+  source:
+    type: 当事者ブログ (Note)
+    url_or_ref: note.com/megaya/n/n67c3fd2f59d4
+    confidence: 高
+  notes: 慣れの恐ろしさ。わずか1週間で環境への嫌悪感が消滅し、プレイを自己正当化（Rationalization）する心理的閾値を突破している。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: OL・社会人女性
+- id: R1-B-003
+  category: OL・社会人女性
+  profile:
+    age_range: 50代
+    occupation: フルタイム勤務（管理職）
+    family: 既婚
+    monthly_disposable_yen: 50000
+    debt_yen: 8000000
+    addiction_severity: 重度（ロト6からの移行・多重債務）
+    gambling_history: 数年間
+    visit_motive: 仕事の過労と強烈なストレスの発散
+  trigger:
+    event: 退勤後、駅前でパチンコ店のネオン看板を見た瞬間
+    machine_type: 未定
+    time_of_day: 平日20時
+  inner_monologue_ja: 今日も疲れた。上司と部下の板挟みで理不尽なことばっかり。あのネオンの中に入れば、頭の中を空っぽにできる。今日だけ、1万円だけなら気分転換になるはず。
+  emotional_state:
+    arousal_0_100: 60
+    despair_0_100: 50
+    dominant_emotion: 現実からの逃避欲求 × 抑えがたい渇望感
+  action: 吸い込まれるように駐輪場へ向かい、足早に入店する
+  post_play_state: 大負けして自己嫌悪／借金がまた増えたことへの絶望感で帰路につく
+  source:
+    type: 新聞記事（回復施設GA参加者の証言）
+    url_or_ref: 読売新聞 (すぅさん 50代の事例)
+    confidence: 高
+  notes: 宝くじ（スマホ）による軽度の依存からパチンコへとエスカレートし、800万円の借金を抱えた実例。職場ストレスが強力なトリガーとして作用している。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: OL・社会人女性
+- id: R1-B-004
+  category: OL・社会人女性
+  profile:
+    age_range: 30代
+    occupation: 派遣社員
+    family: 独身
+    monthly_disposable_yen: 40000
+    debt_yen: 1000000
+    addiction_severity: 中期
+    gambling_history: 3年
+    visit_motive: 寂しさと孤独感の埋め合わせ
+  trigger:
+    event: 隣の台（見知らぬ男性）が爆連（大連チャン）しているのを見た瞬間
+    machine_type: AT機（パチスロ）
+    time_of_day: 休日午後
+  inner_monologue_ja: なんで隣のあのおじさんはあんなに出てるのに、私の台はウンともスンとも言わないの？イライラする。私の方がお金入れてるのに不公平だ。絶対に私の方が不幸なのに。
+  emotional_state:
+    arousal_0_100: 70
+    despair_0_100: 65
+    dominant_emotion: 理不尽な怒り × 他者への嫉妬
+  action: レバーを叩く力が無意識に強くなる／スマホを台に乱暴に置く
+  post_play_state: 怒りに任せて別の台に乱れ打ちし、資金を全損して退店
+  source:
+    type: メタ分析からの推定
+    url_or_ref: N/A
+    confidence: 中
+  notes: ホール内の他者に対する無意識の競争心。孤独な環境下では、他者の「運の良さ」が自己の「不幸な境遇」を際立たせるため、情動が極めて不安定化しやすい。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: OL・社会人女性
+- id: R1-B-005
+  category: OL・社会人女性
+  profile:
+    age_range: 20代後半
+    occupation: 正社員（営業職）
+    family: 彼氏と同棲
+    monthly_disposable_yen: 60000
+    debt_yen: 200000
+    addiction_severity: 中期
+    gambling_history: 彼氏の影響で開始し1年半
+    visit_motive: 給料日直後の高揚感とご褒美
+  trigger:
+    event: 大当たり濃厚な激アツ演出（全回転等）の発生
+    machine_type: ハイミドル（パチンコ）
+    time_of_day: 給料日直後の金曜21時
+  inner_monologue_ja: よし、来た！これ絶対当たるやつ！仕事の疲れが全部吹き飛ぶ。この時間が一番生きてるって感じする。彼氏には残業って言ってあるし、閉店ギリギリまで取り切るぞ！
+  emotional_state:
+    arousal_0_100: 95
+    despair_0_100: 0
+    dominant_emotion: 全能感 × 極度の興奮（ドーパミン放出）
+  action: 画面を凝視し、マスクの下で小さくガッツポーズをする
+  post_play_state: 5万勝ち／ホクホク顔でコンビニで贅沢なデパ地下スイーツを買って帰る
+  source:
+    type: メタ分析からの推定
+    url_or_ref: N/A
+    confidence: 中
+  notes: OLカテゴリにおける「金曜夜・給料日後」のエスカレーション。成功時の強烈なドーパミン報酬系による行動強化が、金銭感覚の麻痺を促進する。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: OL・社会人女性
+- id: R1-B-006
+  category: OL・社会人女性
+  profile:
+    age_range: 30代前半
+    occupation: 契約社員
+    family: 独身
+    monthly_disposable_yen: 50000
+    debt_yen: 1500000
+    addiction_severity: 重度
+    gambling_history: 4年
+    visit_motive: 借金返済の金策
+  trigger:
+    event: 店員にメダル補給で声をかけられ、目を合わせられた瞬間
+    machine_type: パチスロ
+    time_of_day: 平日の有給休暇（昼）
+  inner_monologue_ja: あ、すいません。……なんかこの店員さん、私のこと『また来てるよこの女』って思ってるんだろうな。平日の昼間からスロットなんて、底辺の女だと思われてる。恥ずかしい、でも打つしかない。
+  emotional_state:
+    arousal_0_100: 50
+    despair_0_100: 60
+    dominant_emotion: 被害妄想的な羞恥心 × 自己卑下
+  action: 目を合わせず、スマホの画面に視線を固定してやり過ごす
+  post_play_state: 他人の視線へのストレスから疲労し、勝っても虚無感が残る
+  source:
+    type: メタ分析からの推定
+    url_or_ref: N/A
+    confidence: 中
+  notes: 進行した依存症特有の自意識過剰（Spotlight Effect）。ホール内では匿名性を確保したいが、物理的な接触によって現実社会の自分の地位（底辺）を突きつけられる苦痛。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: OL・社会人女性
+- id: R1-C-001
+  category: 風俗・夜職系女性
+  profile:
+    age_range: 20代後半
+    occupation: パート兼売春（夜職）
+    family: 結婚歴あり（のち別居/入籍）
+    monthly_disposable_yen: 200000
+    debt_yen: 3000000
+    addiction_severity: 極重度（自己破産経験あり・性依存交差）
+    gambling_history: 幼少期に祖母に連れられ、のち夫と通い悪化
+    visit_motive: 「行かなきゃいけない」という強迫観念
+  trigger:
+    event: 出玉が飲まれ、財布の残金が完全に尽きかけた瞬間
+    machine_type: パチンコ
+    time_of_day: 平日14時
+  inner_monologue_ja: どうしよう、出なくなってきた。もうパチンコできなくなる。早く当てないと。イライラする。焦る。あーあ、また今日の夜、お店に入って体売らなきゃ。売ればまた打てる。
+  emotional_state:
+    arousal_0_100: 85
+    despair_0_100: 80
+    dominant_emotion: 強迫的な焦燥感 × パニック
+  action: 貧乏ゆすりが止まらなくなり、無意識に爪を激しく噛む
+  post_play_state: 全損／そのまま夜の店へ直行して体を売る（交差依存のループ）
+  source:
+    type: 自助グループ手記
+    url_or_ref: nujyumi.la.coocan.jp/storyaf.html
+    confidence: 高（本人執筆）
+  notes: 打っている間だけ落ち着くが、資金が尽きると強烈な離脱症状（イライラ・焦り）が生じる。これが性売買という極端な金策手段（交差依存）へ即座に直結するメカニズム。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 風俗・夜職系女性
+- id: R1-C-002
+  category: 風俗・夜職系女性
+  profile:
+    age_range: 20代後半
+    occupation: パチンコ店員 兼 夜職
+    family: 独身
+    monthly_disposable_yen: 300000
+    debt_yen: 3000000
+    addiction_severity: 極重度
+    gambling_history: 10年
+    visit_motive: 孤独感と疲労の麻痺
+  trigger:
+    event: パチンコ店員としてアルバイト中、ボロ負けして帰る客を見た瞬間
+    machine_type: N/A（店員目線での観察）
+    time_of_day: 閉店作業中（23時）
+  inner_monologue_ja: うわ、あのおっさん今日もボロ負けして肩落として帰ってくじゃん。私と一緒で悲惨だな。もう来なきゃいいのに……でも明日の休みは、私も他所の店に行って打ちに出かけるんだろうな。バカみたい。
+  emotional_state:
+    arousal_0_100: 10
+    despair_0_100: 70
+    dominant_emotion: 冷笑的な自己憐憫 × 深い虚無感
+  action: 客の悲惨な後ろ姿を冷たい目で見送りながら、ゴミを片付ける
+  post_play_state: 翌日、休日に同僚と打ちに行き、自分も大負けする
+  source:
+    type: 自助グループ手記
+    url_or_ref: nujyumi.la.coocan.jp/storyaf.html
+    confidence: 高
+  notes: 依存症者がギャンブル場に就労するケース。他者の敗北を見て客観的な悲惨さを認識するが、自己の行動制御は完全に破綻しているという認知の乖離。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 風俗・夜職系女性
+- id: R1-C-003
+  category: 風俗・夜職系女性
+  profile:
+    age_range: 20代
+    occupation: 闇金からの斡旋で性的サービス
+    family: 不明（裏社会の借金苦）
+    monthly_disposable_yen: 0
+    debt_yen: 5000000以上
+    addiction_severity: 極重度（反社との接点・性的搾取）
+    gambling_history: 不明
+    visit_motive: 依存の末路
+  trigger:
+    event: 資金欲しさに、ホール内の男子トイレで客相手の性的サービスを強要された瞬間
+    machine_type: N/A（ホール内トイレ）
+    time_of_day: 深夜帯または人目のない時間
+  inner_monologue_ja: なんで私、こんなところでこんな事してるんだろう。でもこれでお金貰えば、またあの台に座れる。感覚を消せ。何も考えるな。ただの肉の塊になればいい。
+  emotional_state:
+    arousal_0_100: 0
+    despair_0_100: 95
+    dominant_emotion: 完全な感情の解離（Dissociation） × 虚無
+  action: ぼんやりした顔で無言のまま行為をこなす
+  post_play_state: 得た金でそのまま店内に戻り、無表情でパチンコを再開する
+  source:
+    type: 観察的記述（依存症を描く漫画原作プロット）
+    url_or_ref: note.com/ouma/n/n45c42d4e204e
+    confidence: 中（創作プロットだが、借金苦の女性当事者が陥る裏社会の現実構造を反映）
+  notes: ギャンブル依存と性的搾取が同一空間（ホール内）で直結した極限状態。自己防衛としての心理的解離（乖離性障害的反応）が起きている。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 風俗・夜職系女性
+- id: R1-C-004
+  category: 風俗・夜職系女性
+  profile:
+    age_range: 30代
+    occupation: キャバクラ勤務
+    family: 独身
+    monthly_disposable_yen: 250000
+    debt_yen: 1000000
+    addiction_severity: 重度
+    gambling_history: 5年
+    visit_motive: 同伴前・出勤前の暇つぶしとアドレナリン欲求
+  trigger:
+    event: 荒波機種で大きく張り、投資が5万円を超えた瞬間
+    machine_type: 荒波AT機（パチスロ）
+    time_of_day: 平日17時（出勤直前）
+  inner_monologue_ja: ヤバい、もう5万入れた。今日のお客さんの同伴代、全部飛んだじゃん。でもここで引いたら絶対負け確定だし。あーもう、最悪客に『体調悪い』って嘘ついて店休もうかな。取り返す方が先だ。
+  emotional_state:
+    arousal_0_100: 85
+    despair_0_100: 60
+    dominant_emotion: 自暴自棄 × 闘争心（アドレナリン）
+  action: LINEの通知を連続で無視し、万札をサンドに乱暴に押し込み続ける
+  post_play_state: 出勤時間に遅刻し、店長に怒られながら出勤する（社会的信用の毀損）
+  source:
+    type: メタ分析からの推定
+    url_or_ref: N/A
+    confidence: 中
+  notes: 夜職特有の「所持金の絶対量の多さ」により、損失の許容額・麻痺レベルが一般女性より異常に高い。仕事への責任感よりギャンブルのサンクコストが上回る。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 風俗・夜職系女性
+- id: R1-C-005
+  category: 風俗・夜職系女性
+  profile:
+    age_range: 20代後半
+    occupation: 風俗嬢
+    family: 独身
+    monthly_disposable_yen: 200000
+    debt_yen: 3000000
+    addiction_severity: 極重度
+    gambling_history: 10年
+    visit_motive: 現実の苦痛と自己嫌悪からの逃避
+  trigger:
+    event: 大当たり中（連チャン中）、出玉が爆発的に増えている瞬間
+    machine_type: パチンコ
+    time_of_day: 平日15時
+  inner_monologue_ja: 最高。出玉がどんどん積まれていく。私を抱いたあの気持ち悪いおっさん達より、この台の方がよっぽど私を満たしてくれる。私を裏切らない。ずっとこのままでいたい。
+  emotional_state:
+    arousal_0_100: 95
+    despair_0_100: 0
+    dominant_emotion: 無敵感 × 歪んだカタルシス
+  action: ドル箱（またはデータカウンター）を見つめながら、恍惚とした表情でタバコを深く吸い込む
+  post_play_state: 大勝ちした金でホストクラブへ行き散財する（快楽依存の連鎖）
+  source:
+    type: 自助グループ手記からの心理構造推定
+    url_or_ref: nujyumi.la.coocan.jp/storyaf.html
+    confidence: 中
+  notes: 「体さえ差し出せば満たされた気になれる」という性依存の構造が、ギャンブルの出玉という即物的な報酬系と完全に同化し、機械に対する疑似恋愛的な依存が生じている状態。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 風俗・夜職系女性
+- id: R1-C-006
+  category: 風俗・夜職系女性
+  profile:
+    age_range: 30代前半
+    occupation: スナック経営
+    family: 離婚歴あり
+    monthly_disposable_yen: 300000
+    debt_yen: 8000000
+    addiction_severity: 極重度
+    gambling_history: 15年
+    visit_motive: 強迫的ギャンブル（無意識の来店）
+  trigger:
+    event: 大負けして退店し、駐車場の車内で我に返った瞬間
+    machine_type: パチスロ
+    time_of_day: 深夜0時
+  inner_monologue_ja: ……あれ、私なんでこんな所にいるんだっけ？財布の中身、全部ない。10万あったのに。またやった。死にたい、誰でもいいから私を殺してほしい。苦しい、苦しい。
+  emotional_state:
+    arousal_0_100: 10
+    despair_0_100: 100
+    dominant_emotion: 極限の希死念慮 × 自責の念
+  action: ハンドルに突っ伏して嗚咽し、過呼吸気味になる
+  post_play_state: 自殺未遂を考えるが実行できず、数日後にまたホールへ向かう
+  source:
+    type: 依存症体験談からの構造的抽出
+    url_or_ref: ncasa-japan.jp/pdf/document65.pdf
+    confidence: 高
+  notes: 「誰でもいいから殺して欲しかった」という極限の希死念慮。プレイ中のトランス状態から覚めた直後の、Despairパラメータが最大値に振り切れる瞬間。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 風俗・夜職系女性
+- id: R1-D-001
+  category: 女子大生・若年女性
+  profile:
+    age_range: 20代前半
+    occupation: フリーター・学生
+    family: 実家暮らし
+    monthly_disposable_yen: 40000
+    debt_yen: 100000
+    addiction_severity: 初期（エンジョイ勢を自称）
+    gambling_history: 1年未満
+    visit_motive: SNSのネタ作り／純粋な娯楽としての刺激
+  trigger:
+    event: 金保留＋レバブル（激アツ演出）の発生
+    machine_type: ハイミドル（ガンダムユニコーン等）
+    time_of_day: 休日14時
+  inner_monologue_ja: きたぁぁぁ！！ユニコーンの叫び！しかもレバブルに金保留じゃん！これ絶対もらったでしょ、脳汁ヤバい！早く写真撮ってXに上げなきゃ！
+  emotional_state:
+    arousal_0_100: 100
+    despair_0_100: 0
+    dominant_emotion: 歓喜（脳汁） × 承認欲求への期待
+  action: 慌ててスマホを取り出し、画面の動画を撮りながら激しく揺れるレバーを握る
+  post_play_state: 当たりを引いてSNSに「投資〇〇で回収〇〇！」と誇らしげに投稿
+  source:
+    type: 当事者ブログ（X転載系）
+    url_or_ref: note.com/bright_carp7915/n/n961bcc6806fe
+    confidence: 高（本人執筆）
+  notes: 「パチンコ女子」特有の、プレイとSNS発信が完全に一体化したプレイスタイル。演出の豪華さ（音と光）にドーパミン分泌が直結しており、射幸性と承認欲求が融合している。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 女子大生・若年女性
+- id: R1-D-002
+  category: 女子大生・若年女性
+  profile:
+    age_range: 20代前半
+    occupation: フリーター
+    family: 実家暮らし
+    monthly_disposable_yen: 40000
+    debt_yen: 100000
+    addiction_severity: 初期
+    gambling_history: 1年未満
+    visit_motive: 前回の興奮（脳汁）を求めての再訪
+  trigger:
+    event: 激アツ演出（金保留＋レバブル）を外した瞬間
+    machine_type: ハイミドル（パチンコ）
+    time_of_day: 休日15時
+  inner_monologue_ja: ……は？嘘でしょ？今の外すの？マジで意味わかんない。遠隔？それとも私の引きが弱すぎるの？Xのフォロワーに何て報告しよう……恥ずかしいしムカつく。
+  emotional_state:
+    arousal_0_100: 80
+    despair_0_100: 60
+    dominant_emotion: 裏切られたショック × 強い不満・怒り
+  action: スマホを下ろし、台のガラス面を軽く睨みつける
+  post_play_state: ショックを引きずりながら、取り返すためにムキになって追加投資してしまう
+  source:
+    type: 当事者ブログ（X転載系）
+    url_or_ref: note.com/bright_carp7915/n/n961bcc6806fe
+    confidence: 高
+  notes: 期待値が極めて高い演出を外した際の「落差」が、次の追加投資へのサンクコスト的執着（ムキになる心理）を生む典型的なプロセス。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 女子大生・若年女性
+- id: R1-D-003
+  category: 女子大生・若年女性
+  profile:
+    age_range: 20代前半
+    occupation: 大学生
+    family: 一人暮らし
+    monthly_disposable_yen: 30000
+    debt_yen: 500000
+    addiction_severity: 中期（奨学金の流用）
+    gambling_history: 2年（彼氏の影響）
+    visit_motive: 生活費の確保と暇つぶし
+  trigger:
+    event: 店員にメダル補給（ホッパーエンプティ）で声をかけられた時
+    machine_type: AT機（パチスロ）
+    time_of_day: 平日夕方
+  inner_monologue_ja: あ、すいません。……なんか店員さん、同じくらいの年だしイケメンだな。ていうか私、こんな昼間からスロット打っててどう思われてるんだろ。奨学金溶かしてるのバレたら引かれるよね。
+  emotional_state:
+    arousal_0_100: 40
+    despair_0_100: 30
+    dominant_emotion: 軽い気まずさ × 若年層特有の自意識過剰
+  action: 軽く会釈して、スマホに視線を落としてなるべく目を合わせないようにする
+  post_play_state: 連チャン終了後、周囲の目を気にしてそそくさと景品交換して退店
+  source:
+    type: 若年層女性プレイヤーのメタ分析
+    url_or_ref: N/A
+    confidence: 中
+  notes: 若年層特有の「他者からの視線（特に同年代や男性店員）」に対する自意識。完全なトランス状態には至っていない中期段階における、自己客観視の残滓。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 女子大生・若年女性
+- id: R1-D-004
+  category: 女子大生・若年女性
+  profile:
+    age_range: 20代前半
+    occupation: 大学生
+    family: 一人暮らし
+    monthly_disposable_yen: 20000
+    debt_yen: 300000
+    addiction_severity: 中期
+    gambling_history: 1年
+    visit_motive: 大学の講義のサボり
+  trigger:
+    event: 台の横を大学の友人らしき人が通ったと錯覚した瞬間
+    machine_type: パチスロ
+    time_of_day: 大学の授業中（平日昼）
+  inner_monologue_ja: ビクッ！……なんだ、別人か。心臓止まるかと思った。大学の友達にここに出入りしてるのバレたら絶対ハブられるし、親に知られたら勘当される。でもやめられないんだよ。
+  emotional_state:
+    arousal_0_100: 85
+    despair_0_100: 40
+    dominant_emotion: 冷や汗（恐怖） × 隠匿のプレッシャー
+  action: 深く帽子を被り直し、マスクを目の下まで引き上げる
+  post_play_state: 周囲を警戒しながら早足で退店し、遠回りで帰宅する
+  source:
+    type: 女性依存症のスティグマに関する学術的文脈に基づく推定
+    url_or_ref: N/A
+    confidence: 中
+  notes: 「親に知れたら怒られる」「友達に見られたら嫌だ」という初期〜中期の強烈な社会体裁への恐怖感。このスリルが逆に依存を深める一因にもなる。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 女子大生・若年女性
+- id: R1-D-005
+  category: 女子大生・若年女性
+  profile:
+    age_range: 20代前半
+    occupation: 飲食店バイト
+    family: 実家暮らし
+    monthly_disposable_yen: 50000
+    debt_yen: 200000
+    addiction_severity: 中期（消費者金融利用開始）
+    gambling_history: 2年
+    visit_motive: 負けたバイト代を取り戻すため
+  trigger:
+    event: 財布の中身が空になり、席を立つか迷う瞬間
+    machine_type: パチンコ
+    time_of_day: 夜20時
+  inner_monologue_ja: 今日のバイト代、全部溶けた。アコムのカード、まだ枠あったよね？ここで帰ったらただの負け犬だし。あと1万円だけ。推しのライブ代稼ぐはずだったのに、何やってんだろ私。
+  emotional_state:
+    arousal_0_100: 60
+    despair_0_100: 70
+    dominant_emotion: 自己嫌悪 × 損切りへの抵抗
+  action: 台のデータランプを睨みながら、名残惜しそうにゆっくりと立ち上がる
+  post_play_state: そのままコンビニATMに直行し、キャッシングして再入店する
+  source:
+    type: 若年層女性プレイヤーのメタ分析
+    url_or_ref: N/A
+    confidence: 中
+  notes: 若年層における「推し活」など別の目的のための資金調達が、いつの間にかギャンブル自体への執着（サンクコストの回収）にすり替わる過程。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 女子大生・若年女性
+- id: R1-D-006
+  category: 女子大生・若年女性
+  profile:
+    age_range: 20代前半
+    occupation: 専門学生
+    family: 実家暮らし
+    monthly_disposable_yen: 30000
+    debt_yen: 0
+    addiction_severity: 初期
+    gambling_history: 半年
+    visit_motive: 彼氏とのデート代わり
+  trigger:
+    event: 隣で打っている彼氏の台がフリーズ（プレミアム演出）を引いた瞬間
+    machine_type: パチスロ
+    time_of_day: 休日夕方
+  inner_monologue_ja: えっ、画面真っ暗になった！これヤバいやつだよね！？凄い凄い！今日の夜ご飯は絶対いいとこ連れてってもらおう！私の台は全然出ないけど、まあいっか。
+  emotional_state:
+    arousal_0_100: 80
+    despair_0_100: 0
+    dominant_emotion: 興奮のおすそ分け × 依存の学習
+  action: 自分の手を止めて彼氏の台を覗き込み、一緒に喜ぶ
+  post_play_state: 彼氏の勝ち分で焼肉に行き、ギャンブル＝良い思いができるという学習が固定化される
+  source:
+    type: 若年層女性プレイヤーのメタ分析
+    url_or_ref: N/A
+    confidence: 高（導入期の典型的パターン）
+  notes: 彼氏などの身近な男性の影響でホールに出入りする「イネイブリング（Enabling）的導入」。他者の勝利による報酬（食事など）が、自身のギャンブルへのハードルを下げる。
+  _dr_provider: gemini
+  _round: R1
+  _category_normalized: 女子大生・若年女性
+- id: R2-A-001
+  category: 年金生活高齢男性
+  profile:
+    age_range: 70代後半
+    occupation: 年金生活（元会社員）
+    family: 妻と死別、息子は遠方
+    monthly_income_yen: 不明（年金中心）
+    debt_yen: 不明
+    addiction_severity: 中度（居場所固定型）
+    gambling_history: 千葉のマイホへほぼ毎日通っていたが、妻の死去後に転居。帰郷後に再開
+    visit_motive: 顔見知りがいる場所に戻りたい／土地勘と会話のしやすさ
+  trigger:
+    event: 会員証の再発行を頼み、5年ぶりに元のホールへ戻る
+    machine_type: 1円パチンコ
+    time_of_day: 昼前後〜夕方
+  inner_monologue_ja: 鹿児島じゃ言葉も空気もよそ者だった。ここなら黙って座っても、自分の席がある
+  emotional_state:
+    arousal_0_100: 38
+    despair_0_100: 33
+    dominant_emotion: 安堵 × 寂しさ
+  action: 以前と同じホールへの来店を再開
+  post_play_state: 勝敗より『戻ってこられた』感覚が残る
+  source:
+    type: ホール業界コラム
+    url_or_ref: 5年ぶりに戻った77〜78歳常連の聞き取り
+    confidence: 中
+    cite: citeturn20view2
+  notes: 方言が通じない環境では楽しさが消え、ホールは『遊技』より『所属の確認』になっている
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢男性
+- id: R2-A-002
+  category: 年金生活高齢男性
+  profile:
+    age_range: 70代前半〜後半
+    occupation: 年金生活
+    family: 不明
+    monthly_income_yen: 不明
+    debt_yen: 0
+    addiction_severity: 軽度〜中度（習慣・社交型）
+    gambling_history: 1パチ常連だったが、後にチェスへ関心が移行
+    visit_motive: 顔見知りの安否確認／挨拶／日課
+  trigger:
+    event: いつもの時間にホールへ行き、短く打ちながら常連の顔を見る
+    machine_type: 1円パチンコ
+    time_of_day: 日中
+  inner_monologue_ja: 玉を打ちたいってより、あいつら元気か見に来てるんだよな
+  emotional_state:
+    arousal_0_100: 27
+    despair_0_100: 18
+    dominant_emotion: 習慣的安堵 × 義理
+  action: 遊技時間は短く、会話と挨拶が主になる
+  post_play_state: 『今日は来てたな』という確認で一日が落ち着く
+  source:
+    type: ホール業界コラム
+    url_or_ref: 1パチ常連シニアがチェスへ移行したAさんの発言
+    confidence: 中
+    cite: citeturn19view2
+  notes: 本人が『打ちたくて来ていたのではない』と気づくタイプ。依存症層と違い、対象は玉ではなく顔ぶれ
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢男性
+- id: R2-A-003
+  category: 年金生活高齢男性
+  profile:
+    age_range: 70代後半
+    occupation: 年金生活
+    family: 実子あり
+    monthly_income_yen: 不明（年金の大半を遊技へ）
+    debt_yen: 未発生だが家族は懸念
+    addiction_severity: 中度〜重度
+    gambling_history: 長年継続。加齢後も年金で反復
+    visit_motive: 年金日後の反復習慣／一度始めると止めづらい
+  trigger:
+    event: 年金受給後、クレジットや現金へのアクセスを家族が心配する水準で通う
+    machine_type: 不明
+    time_of_day: 不明（日中中心と推定）
+  inner_monologue_ja: まだ借りてない。今日はこれで終える。そう思っても、手が止まらない
+  emotional_state:
+    arousal_0_100: 46
+    despair_0_100: 52
+    dominant_emotion: 惰性 × 破綻不安
+  action: 年金の多くを打ち込み続ける
+  post_play_state: 家族は借金発生を先回りで警戒
+  source:
+    type: Q&A投稿
+    url_or_ref: 78歳年金暮らしの父がパチンコで散財する家族相談
+    confidence: 中
+    cite: citeturn19view6
+  notes: 『今は借金がない』段階でも、家族側は認知低下と決済手段の組み合わせを強いリスクとして見ている
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢男性
+- id: R2-A-004
+  category: 年金生活高齢男性
+  profile:
+    age_range: 70代前半〜後半
+    occupation: 元高校教師、現在は高齢の依存当事者
+    family: 不明
+    monthly_income_yen: 不明
+    debt_yen: 不明
+    addiction_severity: 重度
+    gambling_history: パチンコに約2000万円を投じた
+    visit_motive: 強迫的反復／生活の空洞化
+  trigger:
+    event: 手元資金があるたびにホールへ向かう反復があったと要約される
+    machine_type: パチンコ
+    time_of_day: 不明
+  inner_monologue_ja: もう戻らない金だと分かっても、行かない日をどう過ごせばいいか分からなかった
+  emotional_state:
+    arousal_0_100: 54
+    despair_0_100: 84
+    dominant_emotion: 後悔 × 空虚
+  action: 長期にわたり打ち続ける
+  post_play_state: 治療中で、金と時間を失った感覚が前景化
+  source:
+    type: テレビ番組要約
+    url_or_ref: 高齢依存で2000万円を失った元高校教師のケース
+    confidence: 低〜中
+    cite: citeturn19view5
+  notes: ホール内の細部は薄いが、『老年期の後悔が遅れて押し寄せる』重い参照事例
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢男性
+- id: R2-A-005
+  category: 年金生活高齢男性
+  profile:
+    age_range: 70代半ば
+    occupation: 年金生活
+    family: 妻あり
+    monthly_income_yen: 不明（夫婦年金生活）
+    debt_yen: 0
+    addiction_severity: 軽度（夫婦日課型）
+    gambling_history: 昔からパチンコ好き。現在は低貸で継続
+    visit_motive: 夫婦の共通習慣／会話のネタ／ボケ防止感覚
+  trigger:
+    event: 夫婦で50銭パチンコへ行き、月額上限内でほぼ毎日遊ぶ
+    machine_type: 50銭パチンコ
+    time_of_day: 日中
+  inner_monologue_ja: 勝つ負けるより、今日は何の台を打ったか家で話せりゃいい
+  emotional_state:
+    arousal_0_100: 23
+    despair_0_100: 13
+    dominant_emotion: 穏やかな日課
+  action: 低予算で一定時間だけ打つ
+  post_play_state: 夫婦の会話が増え、日課が完成する
+  source:
+    type: ホール業界コラム
+    url_or_ref: 76歳父が妻と50銭パチンコへ通う家族証言
+    confidence: 中
+    cite: citeturn22view2
+  notes: 依存症より『老後ルーティン』に近い。勝敗への執着が低い
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢男性
+- id: R2-A-006
+  category: 年金生活高齢男性
+  profile:
+    age_range: 70代前半
+    occupation: 高齢ギャンブラー
+    family: 不明
+    monthly_income_yen: 年金なし
+    debt_yen: 不明
+    addiction_severity: 重度
+    gambling_history: 50年以上のギャンブル歴
+    visit_motive: 長年の身体化した習慣／やめても空白になる
+  trigger:
+    event: 老後破産状態でも打ちに向かう高齢当事者として紹介
+    machine_type: パチンコを含むギャンブル
+    time_of_day: 不明
+  inner_monologue_ja: 金も貯えもない。でも、今日の時間だけは何かで埋めたい
+  emotional_state:
+    arousal_0_100: 59
+    despair_0_100: 79
+    dominant_emotion: 意地 × 老後破綻感
+  action: ギャンブル生活をやめきれない
+  post_play_state: 『年金なし、貯金なし』の崖っぷち感が残る
+  source:
+    type: 法律メディア記事要約
+    url_or_ref: 71歳・50年超のギャンブル人生を歩んだ男性の紹介
+    confidence: 低〜中
+    cite: citeturn11search10
+  notes: ホール内ディテールは薄いが、A の重症端点として有用
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢男性
+- id: R2-A-007
+  category: 年金生活高齢男性
+  profile:
+    age_range: 60代後半〜70代前半
+    occupation: 定年後の再就労あり
+    family: 妻と二人暮らし、子は独立
+    monthly_income_yen: 不明（夫婦収入・貯蓄あり）
+    debt_yen: 0
+    addiction_severity: 軽度〜中度（解放日型）
+    gambling_history: もともと好きだったが一度離脱、定年後に再開
+    visit_motive: 仕事のない日だけの楽しみ／一人で過ごす休みの埋め草
+  trigger:
+    event: 連休前や休みの日に、1パチ甘デジ海へ行く
+    machine_type: 1円パチンコ・甘デジ海
+    time_of_day: 昼以降
+  inner_monologue_ja: 家計は崩してない。これくらいなら俺の休みの使い方だろ
+  emotional_state:
+    arousal_0_100: 34
+    despair_0_100: 18
+    dominant_emotion: 解放感 × 夫婦摩擦回避
+  action: 週1前後で遊技。時に頻度が増える
+  post_play_state: 本人は娯楽認識、妻は『共有老後』を奪われた感覚
+  source:
+    type: Q&A投稿
+    url_or_ref: 定年後に1パチ甘デジ海を再開した夫への妻の相談
+    confidence: 中
+    cite: citeturn20view5
+  notes: 金銭破綻はないが、老後の時間配分をめぐる夫婦摩擦が強い
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢男性
+- id: R2-A-008
+  category: 年金生活高齢男性
+  profile:
+    age_range: 70代後半〜80代前半
+    occupation: 引退後の高齢男性
+    family: 不明
+    monthly_income_yen: 不明
+    debt_yen: 不明
+    addiction_severity: 中度（開催日追従型）
+    gambling_history: 競輪・競馬・競艇・パチンコを横断する長年のギャンブル習慣
+    visit_motive: その日『何かを賭ける場』がないことへの耐性の低さ
+  trigger:
+    event: 外出先がなくなると、パチンコ営業店の情報を仲間経由で探す
+    machine_type: パチンコ
+    time_of_day: 日中
+  inner_monologue_ja: 行くところが一個でも開いてりゃ、家でぼんやりしてるよりマシだ
+  emotional_state:
+    arousal_0_100: 41
+    despair_0_100: 29
+    dominant_emotion: 退屈回避 × 反射的外出
+  action: 営業している店を探し、移動距離が伸びても向かう
+  post_play_state: 打てたかどうかより『今日も外へ出られたか』が残る
+  source:
+    type: 生活体験投稿
+    url_or_ref: 80歳義父が営業店を探してパチンコへ行こうとする家族談
+    confidence: 中
+    cite: citeturn41search1
+  notes: 年齢は依頼レンジを外れるが、『居場所がない日の反射的来店』の参照価値が高い
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢男性
+- id: R2-B-001
+  category: 年金生活高齢女性
+  profile:
+    age_range: 70代
+    occupation: 主婦経験・現在は高齢者
+    family: 孫は成長し、日中の役割が薄い
+    monthly_income_yen: 不明
+    debt_yen: 0
+    addiction_severity: 軽度（休憩所併用型）
+    gambling_history: 休憩所利用と時折の遊技
+    visit_motive: 時間余り／休憩所の居心地／少しだけ刺激が欲しい
+  trigger:
+    event: 休憩所で血圧を測り、知恵の輪をし、時々1円台へ移る
+    machine_type: 低貸パチンコ
+    time_of_day: 昼前後
+  inner_monologue_ja: 家にいても用事がない。ここならテレビより少しだけ生きてる感じがする
+  emotional_state:
+    arousal_0_100: 24
+    despair_0_100: 20
+    dominant_emotion: 退屈しのぎ × 穏やかな浮上
+  action: 休憩所と遊技台を往復する
+  post_play_state: 一日が空白にならずに済む
+  source:
+    type: テレビ番組要約の業界記事
+    url_or_ref: 孫離れ後に休憩所へ通う70代主婦
+    confidence: 中
+    cite: citeturn20view4
+  notes: 『打つこと』単独ではなく、ホール内設備込みの来店動機
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢女性
+- id: R2-B-002
+  category: 年金生活高齢女性
+  profile:
+    age_range: 60代
+    occupation: 主婦
+    family: 不明
+    monthly_income_yen: 不明
+    debt_yen: 0
+    addiction_severity: 中度（感情麻酔型）
+    gambling_history: 近所に内緒で継続
+    visit_motive: 喪失感の一時遮断／後ろめたさを抱えた息抜き
+  trigger:
+    event: 世間の目を気にしながら店に入り、負けても打ち続ける
+    machine_type: 1円パチンコと推定
+    time_of_day: 日中
+  inner_monologue_ja: 無駄だし恥ずかしい。でも、家で泣いてるより一瞬だけ忘れられる
+  emotional_state:
+    arousal_0_100: 49
+    despair_0_100: 46
+    dominant_emotion: 後ろめたさ × 一時逃避
+  action: 負けを自覚しつつ店を離れない
+  post_play_state: 虚しさは残るが、喪失感の輪郭だけ薄まる
+  source:
+    type: テレビ番組要約の業界記事
+    url_or_ref: 犬を亡くした後に泣きながら打った60代主婦
+    confidence: 中
+    cite: citeturn20view4
+  notes: 金銭欲よりも、感情の鈍麻・空白時間の断片化が中心
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢女性
+- id: R2-B-003
+  category: 年金生活高齢女性
+  profile:
+    age_range: 70代
+    occupation: 元スナックママ、当時は介護職
+    family: 不明
+    monthly_income_yen: 不明
+    debt_yen: 0
+    addiction_severity: 軽度〜中度（美意識伴走型）
+    gambling_history: 仕事後に習慣化
+    visit_motive: 仕事後の切替／自分を整え直す時間
+  trigger:
+    event: 仕事を終え、着替えておしゃれしてからホールへ向かう
+    machine_type: パチンコ
+    time_of_day: 夕方〜夜
+  inner_monologue_ja: この時間だけは、まだ女でいられる。台も店も綺麗なら、それでいい
+  emotional_state:
+    arousal_0_100: 43
+    despair_0_100: 21
+    dominant_emotion: 自己演出 × 静かな高揚
+  action: きれいな台を選び、一定時間だけ打つ
+  post_play_state: 勝敗より、身なりと気分の整いが残る
+  source:
+    type: テレビ番組要約の業界記事
+    url_or_ref: 元スナックママの70代女性のインタビュー
+    confidence: 中
+    cite: citeturn20view4
+  notes: 高齢女性でも『社交』より『自分の見え方を保つ儀式』として打つ例
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢女性
+- id: R2-B-004
+  category: 年金生活高齢女性
+  profile:
+    age_range: 70代前後
+    occupation: 年金生活
+    family: 一人暮らし、子や孫の話題あり
+    monthly_income_yen: 年金中心
+    debt_yen: 0
+    addiction_severity: 中度（勝ち記憶優位型）
+    gambling_history: 20年以上
+    visit_motive: 生活費補填意識と暇つぶしの混合
+  trigger:
+    event: 所用後に立ち寄り、戦績を他人に話したくなる
+    machine_type: パチンコ
+    time_of_day: 午後
+  inner_monologue_ja: 負けた日のことは忘れるの。勝った日だけ覚えてりゃ、また来られるから
+  emotional_state:
+    arousal_0_100: 52
+    despair_0_100: 27
+    dominant_emotion: 上機嫌 × 記憶の選別
+  action: 勝敗談を語り、再入店する
+  post_play_state: 勝てば饒舌、負けても記憶の重みを薄くする
+  source:
+    type: 個人エッセイ
+    url_or_ref: 喫煙所で会った年金暮らしのおばあちゃん
+    confidence: 中
+    cite: citeturn20view0
+  notes: 『パチンコはやめときな』と言いながら自分は戻る二重性が重要
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢女性
+- id: R2-B-005
+  category: 年金生活高齢女性
+  profile:
+    age_range: 70代前後
+    occupation: 不明
+    family: 不明
+    monthly_income_yen: 不明
+    debt_yen: 不明
+    addiction_severity: 中度（感情表出型）
+    gambling_history: 常連化
+    visit_motive: 日課／店員との接触／台への不満の吐き出し
+  trigger:
+    event: 近くを通る店員に、勝ち負けの報告や不満をぶつける
+    machine_type: パチンコ
+    time_of_day: 日中
+  inner_monologue_ja: 今日はダメだ、見てよこれ。誰かに言わないと腹がおさまらない
+  emotional_state:
+    arousal_0_100: 57
+    despair_0_100: 31
+    dominant_emotion: 苛立ち × 依存的接触
+  action: 負けると店員を捕まえて訴える
+  post_play_state: 不機嫌の共有で少し下がるが、根本解消はしない
+  source:
+    type: ホール勤務者エッセイ
+    url_or_ref: 高齢女性『カワサキさん』への店員観察
+    confidence: 中
+    cite: citeturn20view3
+  notes: 店員が感情の受け皿になっている。勝敗無関心ではなく、勝敗を人へ渡して処理する型
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢女性
+- id: R2-B-006
+  category: 年金生活高齢女性
+  profile:
+    age_range: 70代前後
+    occupation: 祖母・無職
+    family: 孫あり
+    monthly_income_yen: 不明
+    debt_yen: 0
+    addiction_severity: 中度（午後固定型）
+    gambling_history: 毎日、客足が落ち着く頃に来店
+    visit_motive: 午後の定位置／店員との顔なじみ関係／家の外で機嫌よく過ごす
+  trigger:
+    event: 店が少し空く時間帯に来店し、当たると孫を景品カウンターへ呼ぶ
+    machine_type: パチンコ
+    time_of_day: 午後
+  inner_monologue_ja: 混んでる時間は嫌。少し静かになった頃に来て、当たったらそれで十分
+  emotional_state:
+    arousal_0_100: 36
+    despair_0_100: 17
+    dominant_emotion: 馴染み感 × 軽い期待
+  action: 短〜中時間だけ打ち、当たれば景品選びへつなげる
+  post_play_state: 勝ち負けより、知っている店員に通じる感覚が残る
+  source:
+    type: 個人エッセイ
+    url_or_ref: 祖母が毎日パチンコへ行き、店員が景品を案内してくれた記憶
+    confidence: 中
+    cite: citeturn23view0
+  notes: 高齢女性の『馴染みの店員』は、台以上にホール定着を強める
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢女性
+- id: R2-B-007
+  category: 年金生活高齢女性
+  profile:
+    age_range: 80歳超
+    occupation: 高齢女性
+    family: 不明
+    monthly_income_yen: 不明
+    debt_yen: 0
+    addiction_severity: 軽度〜中度（高稼働高体力型）
+    gambling_history: 朝一番の常連
+    visit_motive: 朝の定位置／勝負より『今日も来た』感覚
+  trigger:
+    event: 朝一番に4パチへ座り、連チャンが続く
+    machine_type: 4円パチンコ
+    time_of_day: 朝〜昼
+  inner_monologue_ja: まだやれる。でも体は正直だね、ちょっと休ませて
+  emotional_state:
+    arousal_0_100: 61
+    despair_0_100: 10
+    dominant_emotion: 快活 × 身体疲労
+  action: 大当たり中も無理をせず、顔なじみの店長を呼ぶ
+  post_play_state: 勝ちの高揚より、身体が先に限界を知らせる
+  source:
+    type: ホール業界コラム
+    url_or_ref: 80歳超の常連女性が朝一から連チャンした事例
+    confidence: 中
+    cite: citeturn22view0
+  notes: 高齢女性の強い常連性。感情より体力限界が行動停止要因になる
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢女性
+- id: R2-B-008
+  category: 年金生活高齢女性
+  profile:
+    age_range: 高齢女性
+    occupation: 不明
+    family: 不明
+    monthly_income_yen: 不明
+    debt_yen: 不明
+    addiction_severity: 中度（台固定執着型）
+    gambling_history: 毎日同じ台
+    visit_motive: 同じ台・同じリズムで安心したい
+  trigger:
+    event: 毎朝、1円の新海物語3Rの同じ台へ座り、40回当たりまで帰らない
+    machine_type: 1円パチンコ・新海物語3R
+    time_of_day: 朝一〜19時頃
+  inner_monologue_ja: 今日はここまで届いてから帰る。途中でやめると一日が気持ち悪い
+  emotional_state:
+    arousal_0_100: 42
+    despair_0_100: 24
+    dominant_emotion: 執拗なルーティン × 小さな緊張
+  action: 食事休憩ほぼなしで同一台を打ち続ける
+  post_play_state: 当たり回数のノルマ達成感が残る
+  source:
+    type: Q&A投稿
+    url_or_ref: 店員が観察した『毎日同じ1円海を打つ高齢女性』
+    confidence: 中
+    cite: citeturn13search1
+  notes: 勝敗より『規定回数まで座る』ことが目的化している
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢女性
+- id: R2-B-009
+  category: 年金生活高齢女性
+  profile:
+    age_range: 70代
+    occupation: 高齢女性
+    family: 震災後に息子夫婦のもとへ身を寄せる
+    monthly_income_yen: 不明
+    debt_yen: 0
+    addiction_severity: 軽度〜中度（退避型）
+    gambling_history: 震災後に開始
+    visit_motive: 家に居づらい／人と話さなくてよい場所が欲しい
+  trigger:
+    event: 息子夫婦宅に居場所を感じられず、1円パチンコ店へ向かう
+    machine_type: 1円パチンコ
+    time_of_day: 日中
+  inner_monologue_ja: ここは誰とも深く話さなくていい。ただ座っていれば時間が過ぎる
+  emotional_state:
+    arousal_0_100: 29
+    despair_0_100: 41
+    dominant_emotion: 疎外感 × 静かな避難
+  action: 低貸コーナーで淡々と打つ
+  post_play_state: 家へ戻る前に気持ちのざらつきが少し均される
+  source:
+    type: 番組配信サイト要約
+    url_or_ref: 震災後にパチンコを始めた70代女性
+    confidence: 中
+    cite: citeturn44view1
+  notes: 『社交』ではなく『非会話でいられる公共空間』としてのホール
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢女性
+- id: R2-B-010
+  category: 年金生活高齢女性
+  profile:
+    age_range: 70代前後
+    occupation: 高齢女性
+    family: 長年連れ添った夫を亡くした直後
+    monthly_income_yen: 不明
+    debt_yen: 0
+    addiction_severity: 軽度（弔い儀式型）
+    gambling_history: 夫婦で長年の共通趣味
+    visit_motive: 悲嘆処理ではなく、夫との約束の履行
+  trigger:
+    event: 夫が朝に亡くなったその日の夕方、いつものようにホールへ行く
+    machine_type: パチンコ
+    time_of_day: 夕方
+  inner_monologue_ja: 今日は行く日じゃない。でも、行くって約束してたから、行かなきゃ
+  emotional_state:
+    arousal_0_100: 22
+    despair_0_100: 72
+    dominant_emotion: 悲嘆 × 儀式的忠実さ
+  action: 短時間でも席に着き、夫婦の約束どおり打つ
+  post_play_state: 遊技そのものより、供養を終えた感覚が残る
+  source:
+    type: ホール業界コラム
+    url_or_ref: 夫の死当日に来店した老夫婦の妻の事例
+    confidence: 中
+    cite: citeturn22view5
+  notes: 勝敗や暇つぶしで説明できない『ホール儀礼化』の希少ケース
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 年金生活高齢女性
+- id: R2-C-001
+  category: 不労所得・地主系
+  profile:
+    age_range: 高齢男性
+    occupation: 地主
+    family: 不明
+    monthly_income_yen: 不明（高資産とされる）
+    debt_yen: 0
+    addiction_severity: 軽度（低反応常連型）
+    gambling_history: ほぼ毎日・長期継続
+    visit_motive: 暇つぶし／定位置習慣
+  trigger:
+    event: 毎朝、4パチ海の角台へ座り、夕方まで打つ
+    machine_type: 4円パチンコ・海シリーズ
+    time_of_day: 朝一〜夕方
+  inner_monologue_ja: 今日は出ても出なくてもいい。角だし、海だし、いつも通りでいい
+  emotional_state:
+    arousal_0_100: 33
+    despair_0_100: 9
+    dominant_emotion: 平坦な没入
+  action: 同じ台・同じ時間幅で打ち続ける
+  post_play_state: 金額より『今日も一日座った』感覚が残る
+  source:
+    type: Q&A投稿の回答
+    url_or_ref: 地主のご老人が毎朝同じ海の角台を打つという目撃談
+    confidence: 中
+    cite: citeturn28view0
+  notes: 依頼文の想定どおり、C は arousal がかなり低い。勝敗無関心が明瞭
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 不労所得・地主層
+- id: R2-C-002
+  category: 不労所得・地主系
+  profile:
+    age_range: 高齢女性と中高年女性
+    occupation: 地主の妻と娘
+    family: 母娘
+    monthly_income_yen: 不明（資産余裕ありと目撃者が認識）
+    debt_yen: 0
+    addiction_severity: 軽度（来店常態化型）
+    gambling_history: ほぼ毎日
+    visit_motive: 暇つぶし／店員との会話／外出習慣
+  trigger:
+    event: 毎日来店し、店員と長く話し込みながら打つ
+    machine_type: 不明
+    time_of_day: 日中
+  inner_monologue_ja: 家に居ても退屈だし、ここなら誰かいる。お金のことは別に困ってないし
+  emotional_state:
+    arousal_0_100: 31
+    despair_0_100: 11
+    dominant_emotion: 暇つぶし × 社交
+  action: 遊技と雑談をゆっくり反復する
+  post_play_state: 勝敗より会話量と滞在満足が残る
+  source:
+    type: Q&A投稿の回答
+    url_or_ref: 地主の奥さんと娘がほぼ毎日来ていたという元勤務者の証言
+    confidence: 中
+    cite: citeturn30search0
+  notes: 金銭プレッシャーの薄さが、滞在を『老人介護的な店員会話』へ変えている
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 不労所得・地主層
+- id: R2-C-003
+  category: 不労所得・社長引退系
+  profile:
+    age_range: 50代〜60代中心と推定
+    occupation: 零細企業社長・経営者層
+    family: 不明
+    monthly_income_yen: 不明
+    debt_yen: 0
+    addiction_severity: 軽度（余裕常連型）
+    gambling_history: ホールの常連として反復来店
+    visit_motive: 暇つぶし／気軽な会話／上下関係の弱い第三の場
+  trigger:
+    event: ホールで無職の投稿者とも経営や保険の話をする
+    machine_type: 主にスロットと推定
+    time_of_day: 日中
+  inner_monologue_ja: 台そのものより、人と話すほうが面白い日もある。ここは肩書きをちょっと脱げる
+  emotional_state:
+    arousal_0_100: 35
+    despair_0_100: 8
+    dominant_emotion: 余裕 × 社交的観察
+  action: 打ちながら周囲と会話し、遊技はあくまで背景化
+  post_play_state: 損得より『気分転換できたか』が評価軸
+  source:
+    type: 個人note
+    url_or_ref: パチ屋で会った社長・お金持ち常連の観察
+    confidence: 低〜中
+    cite: citeturn25search0turn26view1
+  notes: 単一人物ではなく『社長系常連』の凝縮像。Cの資料薄さを補う低圧カード
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 不労所得・地主層
+- id: R2-C-004
+  category: 不労所得・役員系
+  profile:
+    age_range: 40代後半〜60代
+    occupation: 役員・偉い人・時間に余裕のある常連
+    family: 不明
+    monthly_income_yen: 不明
+    debt_yen: 0
+    addiction_severity: 軽度
+    gambling_history: 長期常連
+    visit_motive: 居心地のよいネットワーク維持／勝ち急がない遊技
+  trigger:
+    event: 高設定の情報が出ても、他常連に譲ったり声をかけたりする
+    machine_type: スロット
+    time_of_day: 日中
+  inner_monologue_ja: 慌てなくても時間はある。今日は俺が取らなくても別にいい
+  emotional_state:
+    arousal_0_100: 30
+    despair_0_100: 7
+    dominant_emotion: 余裕 × 関係維持
+  action: 期待値だけで突っ走らず、関係性を優先して立ち回る
+  post_play_state: 勝ち負けより、ホール内の居心地が保たれる
+  source:
+    type: 個人note
+    url_or_ref: お金持ちや役員層とホールで関係ができたという観察
+    confidence: 低〜中
+    cite: citeturn26view2
+  notes: 時間制約の弱さが arousal を抑え、対人関係重視の立ち回りに変わる
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 不労所得・地主層
+- id: R2-C-005
+  category: 金銭プレッシャー希薄な趣味層
+  profile:
+    age_range: 年齢不明
+    occupation: 不明
+    family: 不明
+    monthly_income_yen: 不明
+    debt_yen: 0
+    addiction_severity: 軽度（完全趣味勢）
+    gambling_history: 複数のローカルホールへ長年通う
+    visit_motive: 一日を楽しく過ごすこと／店員・常連との馴染み
+  trigger:
+    event: マイホで大きくは勝ちたくない、と自覚しつつ来店
+    machine_type: パチンコ
+    time_of_day: 日中
+  inner_monologue_ja: ちょい負けで一日楽しかったなら十分。今日は店の空気が良ければそれで勝ち
+  emotional_state:
+    arousal_0_100: 34
+    despair_0_100: 12
+    dominant_emotion: 穏やかな没入 × 愛着
+  action: 小さな負けを許容し、気持ちよく長く遊ぶ
+  post_play_state: 損益より『今日も楽しかった』が残る
+  source:
+    type: 遊技ブログコメント
+    url_or_ref: 完全趣味勢で小さな負けを許容する打ち手の発言
+    confidence: 低〜中
+    cite: citeturn26view3
+  notes: C の比較ベースとして有効。『勝ちたい』より『続けたい』が強い
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 不労所得・地主層
+- id: R2-D-001
+  category: 退職前後・早期リタイア男性
+  profile:
+    age_range: 60代半ば
+    occupation: 完全リタイア
+    family: 妻あり
+    monthly_income_yen: 年金23万円＋妻収入で40万円超
+    debt_yen: 0
+    addiction_severity: 中度（退職後導入型）
+    gambling_history: 若い頃は未経験、退職後に同級生に勧められ開始
+    visit_motive: 無趣味ゆえの空白時間処理
+  trigger:
+    event: 完全リタイア後、同級生に誘われて1パチを打ち始める
+    machine_type: 1円パチンコ
+    time_of_day: 日中
+  inner_monologue_ja: 家も片付いてるし、今日は何をするでもない。少し打てば時間が埋まる
+  emotional_state:
+    arousal_0_100: 44
+    despair_0_100: 18
+    dominant_emotion: 退屈の浮上 × 初期高揚
+  action: 月3万円前後を使うペースで継続
+  post_play_state: 初の大勝ち後、興奮を妻へ持ち帰り共有したくなる
+  source:
+    type: ホール業界コラム
+    url_or_ref: 完全リタイア後に初めてのパチンコへ入ったAさん
+    confidence: 中
+    cite: citeturn22view4
+  notes: D の典型。『金に困ってないのに始める』退職導入型
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 退職前後・早期リタイア男性
+- id: R2-D-002
+  category: 退職前後・早期リタイア男性
+  profile:
+    age_range: 70代後半
+    occupation: 年金生活（元教師）
+    family: 妻あり
+    monthly_income_yen: 不明（年金多めと家族談）
+    debt_yen: 義姉から借金
+    addiction_severity: 中度〜重度
+    gambling_history: 退職後に『一度やってみたい』で開始し、その後毎日化
+    visit_motive: 真面目一筋の反動／初当たりの興奮の再追体験
+  trigger:
+    event: 妻と軽い気持ちで初来店し、3000円が7万円になる
+    machine_type: パチンコ
+    time_of_day: 日中
+  inner_monologue_ja: もう一回だけ、あの最初の当たりを確かめたい。今日で最後のはずなんだ
+  emotional_state:
+    arousal_0_100: 71
+    despair_0_100: 36
+    dominant_emotion: 初当たり記憶への執着
+  action: 毎日通うようになり、家族に隠れて金を借りる
+  post_play_state: 朝には『また行きたい』が復活する
+  source:
+    type: 生活体験投稿
+    url_or_ref: 元教師の78歳父が初当たり後に毎日通うようになった話
+    confidence: 中
+    cite: citeturn38view0
+  notes: D の重要型。退職後の『遅い初体験』は、若年時の依存よりも家族の盲点になりやすい
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 退職前後・早期リタイア男性
+- id: R2-D-003
+  category: 退職前後・早期リタイア男性
+  profile:
+    age_range: 70代後半前後
+    occupation: 自営業引退
+    family: 義母・子世帯と同居
+    monthly_income_yen: 年金＋貯金
+    debt_yen: 0
+    addiction_severity: 中度
+    gambling_history: 現役時代は我慢、引退後に一気に解放
+    visit_motive: 長年我慢した分の解禁感／外で一日過ごしたい
+  trigger:
+    event: 店をたたんだ後、朝から夕飯時まで家にいなくなる
+    machine_type: パチンコ＋他公営ギャンブル
+    time_of_day: 朝〜夕方
+  inner_monologue_ja: もう働かなくていいんだ。今まで我慢した分、好きにして何が悪い
+  emotional_state:
+    arousal_0_100: 48
+    despair_0_100: 29
+    dominant_emotion: 解禁感 × 反発
+  action: 毎日の外出先が遊技場中心になっていく
+  post_play_state: 負けた日は落胆が表情に出るが、翌日も外へ出る
+  source:
+    type: 生活体験投稿
+    url_or_ref: 75歳超で店をたたんだ義父が、引退後にパチンコと競馬へ通う話
+    confidence: 中
+    cite: citeturn40view0
+  notes: 『仕事で抑えていた欲求が退職で一斉に解禁される』タイプ
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 退職前後・早期リタイア男性
+- id: R2-D-004
+  category: 退職前後・早期リタイア男性
+  profile:
+    age_range: 60代後半〜70代前半
+    occupation: 定年後の再就労（早朝勤務）
+    family: 妻と二人暮らし
+    monthly_income_yen: 不明
+    debt_yen: 0
+    addiction_severity: 軽度〜中度
+    gambling_history: 若い頃好きで、一度やめた後に定年後再開
+    visit_motive: 半日仕事後の自由時間の占有
+  trigger:
+    event: 休みの前や連休に、1パチ甘デジ海へ向かう
+    machine_type: 1円パチンコ・甘デジ海
+    time_of_day: 昼〜夕方
+  inner_monologue_ja: これくらいの楽しみは、長く働いたご褒美だろ
+  emotional_state:
+    arousal_0_100: 35
+    despair_0_100: 16
+    dominant_emotion: 自己正当化された解放
+  action: 週1程度から、やや頻度を増やしていく
+  post_play_state: 本人は娯楽処理、妻は約束違反として蓄積
+  source:
+    type: Q&A投稿
+    url_or_ref: 定年後再就労の夫が1パチ海へ向かう妻の相談
+    confidence: 中
+    cite: citeturn20view5
+  notes: D では金銭より『家族より遊技へ時間を先に配る』ことが摩擦源になる
+  _dr_provider: chatgpt
+  _round: R2
+  _category_normalized: 退職前後・早期リタイア男性
+- id: R2-A-001
+  category: 年金生活高齢男性
+  profile:
+    age_range: 60代後半
+    occupation: 年金生活（元会社員）
+    family: 妻と同居
+    monthly_income_yen: 224000
+    debt_yen: 0
+    addiction_severity: 軽度（予算管理型・習慣的暇潰し）
+    gambling_history: 定年退職後から毎日通う計画を実行
+    visit_motive: 定年後の『夢』の実現／余暇時間の消費
+  trigger:
+    event: 朝食後、日課として開店時間に合わせて家を出る
+    machine_type: 1円パチンコ（海物語）
+    time_of_day: 平日午前10時〜午後3時
+  inner_monologue_ja: 老後資金から計算すると1日1200円しか負けられない。長く遊ぶには1パチしかないが、毎日ここに通えるだけで現役時代の苦労が報われた気がする。
+  emotional_state:
+    arousal_0_100: 35
+    despair_0_100: 5
+    dominant_emotion: 計算された安堵 × 自己決定の喜び
+  action: 予算を超えそうになると打つ手を止め、休憩所の無料マッサージチェアで時間を潰す
+  post_play_state: 予算内で一日を終えたことに満足し、スーパーで夕食の惣菜を買って帰る
+  source:
+    type: マネー誌・家計相談記事
+    url_or_ref: 定年後に毎日パチンコに通う65歳の資金計画
+    confidence: 高
+  notes: 金銭的プレッシャーはないが予算制約の意識が極めて強く、勝敗よりも『時間をいかに安く消費できたか』が評価基準となっている。
+  _dr_provider: gemini
+  _round: R2
+  _category_normalized: 年金生活高齢男性
+- id: R2-A-002
+  category: 年金生活高齢男性
+  profile:
+    age_range: 70代前半
+    occupation: 生活保護受給（元建設業）
+    family: 単身（離婚）
+    monthly_income_yen: 130000
+    debt_yen: 1500000
+    addiction_severity: 重度（現実逃避・生活破綻型）
+    gambling_history: 30代から継続、自己破産歴あり
+    visit_motive: 孤独感の払拭／誰かとすれ違う場所への渇望
+  trigger:
+    event: 年金・保護費の支給日直後に全額を下ろし、そのままホールへ直行
+    machine_type: 4円パチンコ
+    time_of_day: 月初めの朝
+  inner_monologue_ja: どうせ先の見えた人生だ。施設に閉じこもっていても死ぬのを待つだけ。今日くらいは昔みたいに大きな勝負をして、あの興奮をもう一度味わいたい。
+  emotional_state:
+    arousal_0_100: 85
+    despair_0_100: 75
+    dominant_emotion: 破滅的な高揚 × 慢性的な絶望
+  action: 手持ちの現金が尽きるまで、食事も取らずに同じ台に紙幣を入れ続ける
+  post_play_state: 全財産を失い、翌日からの食事の工面に絶望するが、また1パチを打つための小銭を探す
+  source:
+    type: 依存症回復施設の体験談
+    url_or_ref: ホームレス状態から生活保護受給に至る手記
+    confidence: 高
+  notes: 月初の数日のみ高レートで打ち、残りの日は打たずに休憩所で漫画を読んだり他人の遊技を眺めたりして過ごす極端な周期性を持つ。
+  _dr_provider: gemini
+  _round: R2
+  _category_normalized: 年金生活高齢男性
+- id: R2-A-003
+  category: 年金生活高齢男性
+  profile:
+    age_range: 70代後半
+    occupation: 年金生活
+    family: 妻と死別・子は遠方
+    monthly_income_yen: 150000
+    debt_yen: 0
+    addiction_severity: 中度（社会的ネットワーク代替型）
+    gambling_history: 妻の死後から毎日来店
+    visit_motive: 店員や常連客との会話／社会的孤立の回避
+  trigger:
+    event: 顔なじみの店員が出勤する時間に合わせて来店
+    machine_type: 甘デジ（少額投資）
+    time_of_day: 平日昼間
+  inner_monologue_ja: 今日は〇〇さんが遅番だな。あの兄ちゃんに挨拶してもらわないと、今日誰とも喋ったことにならない。黙って打てと言われても無理な相談だ。
+  emotional_state:
+    arousal_0_100: 45
+    despair_0_100: 20
+    dominant_emotion: 社会的承認欲求 × 穏やかな寂寥感
+  action: 遊技中も頻繁に後ろを振り返り、店員が通ると大声で話しかける
+  post_play_state: 誰かと会話できたことに満足し、勝敗に関係なく上機嫌で帰宅
+  source:
+    type: 店舗カスタマーレビュー
+    url_or_ref: 常連客と店員の過剰なコミュニケーションに対する指摘
+    confidence: 中
+  notes: パチンコそのものよりも、ホールを『コミュニティセンター』として利用している典型的ケース。打たずに座っている時間も長い。
+  _dr_provider: gemini
+  _round: R2
+  _category_normalized: 年金生活高齢男性
+- id: R2-A-004
+  category: 年金生活高齢男性
+  profile:
+    age_range: 60代後半
+    occupation: 無職（元自営業・歯科技工士）
+    family: 離婚（単身）
+    monthly_income_yen: 0
+    debt_yen: 8000000
+    addiction_severity: 重度（多重債務・現実逃避型）
+    gambling_history: 40年以上の依存歴
+    visit_motive: 借金の督促からの逃避／恐怖の麻痺
+  trigger:
+    event: 郵便配達のバイクの音が聞こえる時間帯を避けるように家を出る
+    machine_type: パチスロ
+    time_of_day: 毎日朝〜夜
+  inner_monologue_ja: 家にいるとサラ金からの電話と郵便屋のバイクの音に怯えなきゃならない。酒とこの騒音の中だけが、借金の恐怖を忘れさせてくれる。
+  emotional_state:
+    arousal_0_100: 70
+    despair_0_100: 90
+    dominant_emotion: パニック寸前の恐怖 × 現実解離
+  action: アルコールを飲みながら（または飲酒状態で）機械的に打ち、周囲の目を極度に気にする
+  post_play_state: 現実に戻る恐怖から帰りたくないと感じ、さらに酒を飲む
+  source:
+    type: 回復施設（ダルク）の当事者手記
+    url_or_ref: 元歯科技工士の多重債務とアルコール・ギャンブル依存の併発
+    confidence: 高
+  notes: 借金の督促から逃れるための物理的・精神的シェルターとしてホールを利用。極度の絶望感とアルコールによる認知機能の低下が特徴。
+  _dr_provider: gemini
+  _round: R2
+  _category_normalized: 年金生活高齢男性
+- id: R2-B-001
+  category: 年金生活高齢女性
+  profile:
+    age_range: 80代前半
+    occupation: 年金生活（元自営業）
+    family: 独居（夫と死別）
+    monthly_income_yen: 200000
+    debt_yen: 0
+    addiction_severity: 低度（完全な娯楽・マインドフルネス型）
+    gambling_history: 長年の趣味、健康状態は極めて良好
+    visit_motive: 頭の中を空っぽにしてストレスを消すため
+  trigger:
+    event: デイケアや家事を終えた後の午後の空き時間
+    machine_type: パチンコ
+    time_of_day: 午後2時〜夕方
+  inner_monologue_ja: 玉の動きだけ見ていれば余計なことは何も考えなくて済む。1時間も打てば頭の中がからっぽになって最高さ。終わった後のビールが楽しみだね。
+  emotional_state:
+    arousal_0_100: 30
+    despair_0_100: 0
+    dominant_emotion: 無心・マインドフルネス × 解放感
+  action: 一定のペースで打ち続け、激しい演出が来ても表情を変えずに淡々と眺める
+  post_play_state: 勝っても負けても気にせず、帰宅後にジョッキでビールを飲む
+  source:
+    type: 介護系ウェブメディア
+    url_or_ref: 80歳パチンコライターの生活習慣取材
+    confidence: 高
+  notes: 依存症の苦しみは皆無。パチンコを『瞑想』や『頭の空っぽ化』のツールとして利用し、生活満足度が極めて高い。感情の動きが意図的に抑制されている。
+  _dr_provider: gemini
+  _round: R2
+  _category_normalized: 年金生活高齢女性
+- id: R2-B-002
+  category: 年金生活高齢女性
+  profile:
+    age_range: 60代後半
+    occupation: 専業主婦
+    family: 夫と同居（夫が定年退職で在宅）
+    monthly_income_yen: 100000
+    debt_yen: 500000
+    addiction_severity: 中度（家庭内ストレス逃避型）
+    gambling_history: 夫の退職後から急激に頻度増加
+    visit_motive: 四六時中家にいる夫からの逃避／一人の時間の確保
+  trigger:
+    event: 夫が昼寝を始めた隙を見計らって自転車でホールへ
+    machine_type: 1円パチンコ
+    time_of_day: 平日午後
+  inner_monologue_ja: 夫の『お茶』『メシ』という声を聞かなくて済むのはここだけ。ずっとここにいたいが、夕飯の支度までには帰らないと機嫌が悪くなる。
+  emotional_state:
+    arousal_0_100: 55
+    despair_0_100: 45
+    dominant_emotion: 一時的な安堵 × 帰宅への憂鬱
+  action: 時計を何度も気にしながら、時間ギリギリまで焦るように打つ
+  post_play_state: 負けたことで夫への罪悪感とイライラが増幅し、足取り重く帰路につく
+  source:
+    type: 依存症家族手記・生活相談
+    url_or_ref: 定年退職後の夫婦関係悪化とパチンコ逃避
+    confidence: 中
+  notes: 時間的制約があるため、常に時間を気にしている。ホール内を『家庭からのシェルター』として認識している。
+  _dr_provider: gemini
+  _round: R2
+  _category_normalized: 年金生活高齢女性
+- id: R2-B-003
+  category: 年金生活高齢女性
+  profile:
+    age_range: 70代前半
+    occupation: 年金生活
+    family: 息子と同居（息子がギャンブル依存）
+    monthly_income_yen: 120000
+    debt_yen: 2000000
+    addiction_severity: 重度（共依存からの引き込まれ型）
+    gambling_history: 息子の借金肩代わりストレスから自身も開始
+    visit_motive: 終わりの見えない家族問題からの現実逃避
+  trigger:
+    event: 息子が家のお金を持ち出した形跡を発見した直後
+    machine_type: 4円パチンコ
+    time_of_day: 雨の日の午後
+  inner_monologue_ja: どうして私ばかりこんな目に遭うの。あの子の尻拭いばかりの人生。ここで大勝ちして全部忘れさせてほしい。
+  emotional_state:
+    arousal_0_100: 75
+    despair_0_100: 85
+    dominant_emotion: 強い被害者意識 × 自暴自棄
+  action: 涙ぐみながら無心で紙幣を投入し続け、周囲の音を完全に遮断する
+  post_play_state: さらなる借金を作ったことで激しい自己嫌悪に陥り、家に戻る気力を失う
+  source:
+    type: GA家族（ギャマノン）手記
+    url_or_ref: 息子や夫のギャンブル問題に巻き込まれ自身も依存するケース
+    confidence: 高
+  notes: 家族の依存症によるストレスが発端となり、自身も同じ逃避行動を取る「共依存」の末路。絶望度が極めて高い。
+  _dr_provider: gemini
+  _round: R2
+  _category_normalized: 年金生活高齢女性
+- id: R2-C-001
+  category: 地主・不労所得・経営者引退層
+  profile:
+    age_range: 40代後半（早期リタイア・大家業）
+    occupation: 不動産賃貸業（不労所得）
+    family: 妻・子と同居
+    monthly_income_yen: 800000
+    debt_yen: 0
+    addiction_severity: 低度（習慣的空間消費・ながら打ち型）
+    gambling_history: 15年以上、生活に支障のない範囲
+    visit_motive: 家族のいる家から離れ、完全に自分一人の思考空間を作るため
+  trigger:
+    event: 物件の巡回を終え、いつものホールの特定の角台に座る
+    machine_type: パチスロ（ノーマルタイプ）
+    time_of_day: 平日午後〜夕方
+  inner_monologue_ja: この騒音の中だと逆に思考がクリアになる。明日の修繕の手配と、週末の家族旅行の予定をまとめよう。台の演出はどうでもいい。
+  emotional_state:
+    arousal_0_100: 25
+    despair_0_100: 0
+    dominant_emotion: 完全なリラックス × 内省の集中
+  action: 台の演出にはほとんど目もくれず、スマホでニュースや仕事のメールを見ながら『ながら打ち』を続ける
+  post_play_state: 考え事がまとまったことに満足し、収支を確認せずに帰宅する
+  source:
+    type: マネー誌
+    url_or_ref: パチンコ・パチスロ常連ファンの心理に関する取材記事
+    confidence: 高
+  notes: 金銭的プレッシャーが皆無。パチンコ台は単なる『指先のルーチン作業機』であり、実際の意識は別の場所にある。覚醒度が極めて低い。
+  _dr_provider: gemini
+  _round: R2
+  _category_normalized: 不労所得・地主層
+- id: R2-C-002
+  category: 地主・不労所得・経営者引退層
+  profile:
+    age_range: 70代前半
+    occupation: 元経営者（事業売却済み）
+    family: 独居（離婚歴あり）
+    monthly_income_yen: 1500000
+    debt_yen: 0
+    addiction_severity: 中度（権力誇示・ステータス欲求型）
+    gambling_history: 経営者時代からの付き合いで数十年の歴
+    visit_motive: 過去の経営者としての『偉い自分』を店員に扱わせるため
+  trigger:
+    event: タクシーで乗り付け、店長クラスのスタッフに挨拶させる
+    machine_type: パチンコ（高レート・最新台）
+    time_of_day: 毎日午後〜夜
+  inner_monologue_ja: いくら負けても痛くはない。ここは俺を『社長』と呼んで特別扱いしてくれる数少ない場所だ。ドル箱は綺麗に積ませないと気が済まない。
+  emotional_state:
+    arousal_0_100: 45
+    despair_0_100: 10
+    dominant_emotion: 優越感 × 潜在的な孤独感
+  action: ドル箱を綺麗に並べるよう店員に細かく指示し、自分のやり方に従わせる。遠隔操作を疑って店員に理不尽に詰め寄ることもある。
+  post_play_state: 大金を失っても意に介さず、夜の街へ飲みに出る
+  source:
+    type: パチンコ店員観察ブログ／資産家手記
+    url_or_ref: 常連客のエピソード／経営者の孤独
+    confidence: 中
+  notes: 勝敗よりも『店側からのＶＩＰ待遇』や『思い通りに他者を動かす感覚』を消費している。自己顕示欲の充足が主目的。
+  _dr_provider: gemini
+  _round: R2
+  _category_normalized: 不労所得・地主層
+- id: R2-C-003
+  category: 地主・不労所得・経営者引退層
+  profile:
+    age_range: 30代後半（高学歴・不労所得層）
+    occupation: 投資家（不労所得）
+    family: 独身
+    monthly_income_yen: 1000000
+    debt_yen: 0
+    addiction_severity: 中度（システム依存・高学歴型）
+    gambling_history: 投資の合間の暇つぶしとして毎日
+    visit_motive: 他の熱中できる趣味がない／キャッシュバック等のシステム的魅力
+  trigger:
+    event: 株の取引時間が終わった後、習慣的にホールへ向かう
+    machine_type: パチスロ（設定推測要素の強い台）
+    time_of_day: 平日15時以降
+  inner_monologue_ja: 大数の法則からすれば店が勝つのは自明だが、設定を推測するこの知的パズル自体が暇潰しには丁度いい。私は一般の依存症患者とは違う。
+  emotional_state:
+    arousal_0_100: 40
+    despair_0_100: 0
+    dominant_emotion: 知的優位性の確認 × 慢性的な退屈
+  action: スマホで解析データを睨みながら、感情を排して機械的に小役をカウントし続ける
+  post_play_state: 自身の推測が当たっていたかどうかだけを確認し、金銭的増減には無関心
+  source:
+    type: ニュースメディア
+    url_or_ref: 不労所得者・高学歴者のギャンブル心理
+    confidence: 高
+  notes: 自分は『ギャンブルに狂っている層』とは違うという謎のプライドを持つ。感情の起伏は極めて平坦であり、機械的。
+  _dr_provider: gemini
+  _round: R2
+  _category_normalized: 不労所得・地主層
+- id: R2-C-004
+  category: 地主・不労所得・経営者引退層
+  profile:
+    age_range: 50代後半
+    occupation: 農家（オフシーズン）
+    family: 妻と同居
+    monthly_income_yen: 400000
+    debt_yen: 0
+    addiction_severity: 低度（季節的暇潰し型）
+    gambling_history: 毎年の農閑期のみ通う
+    visit_motive: 仕事がない時期の極端な時間余り
+  trigger:
+    event: 雪が降り、農作業が完全にストップした日の朝
+    machine_type: 1円パチンコ
+    time_of_day: 午前中から夕方まで
+  inner_monologue_ja: 春まではやることがない。家でこたつに入っていても身体が鈍るだけだ。近所の連中も来ているだろう。
+  emotional_state:
+    arousal_0_100: 35
+    despair_0_100: 5
+    dominant_emotion: 穏やかな退屈しのぎ × 季節的ルーティン
+  action: 知人を見つけると台から離れて長話を楽しみ、のんびりと打つ
+  post_play_state: 日が暮れると未練なく帰り、夕食の支度を手伝う
+  source:
+    type: 一般行動観察からの推論（カテゴリC補完データ）
+    url_or_ref: 地域特性とパチンコ利用の実態
+    confidence: 中
+  notes: 金銭的プレッシャーはなく、完全に「時間が余っているから」という理由のみで来店する。農繁期にはピタリと来店が止まる。
+  _dr_provider: gemini
+  _round: R2
+  _category_normalized: 不労所得・地主層
+- id: R2-D-001
+  category: 退職前後・早期リタイア男性
+  profile:
+    age_range: 60代前半
+    occupation: 無職（定年退職直後）
+    family: 妻と同居
+    monthly_income_yen: 0
+    debt_yen: 0
+    addiction_severity: 重度（役割喪失・自尊心崩壊型）
+    gambling_history: 退職金を手にしてから急激にのめり込む
+    visit_motive: 『デキる男』であった過去の幻影を追う／仕事の代替行為
+  trigger:
+    event: 朝、現役時代と同じ時間にスーツやスラックスを着て『出勤』し、ホールへ
+    machine_type: パチスロ（射幸性の高い機種）
+    time_of_day: 開店から夕方まで
+  inner_monologue_ja: 部長だった俺が、今や家では粗大ゴミ扱いだ。ここで大勝ちして、俺にはまだ実力と運があることを証明してやる。俺は凡人じゃない。
+  emotional_state:
+    arousal_0_100: 85
+    despair_0_100: 60
+    dominant_emotion: 焦燥感 × 歪んだ自己顕示欲
+  action: 負けが込むと台を強く叩いたり、店員に横柄な態度をとって権力を誇示しようとする
+  post_play_state: 減っていく退職金残高を見て強い後悔に襲われるが、翌日には取り返そうと決意する
+  source:
+    type: 医師の著書・レビュー
+    url_or_ref: 定年退職で崩れる人々、自尊心の喪失
+    confidence: 高
+  notes: 仕事に依存していた自尊心が定年で砕け散り、その穴をパチンコで埋めようとしている。勝つことを『自身の有能さの証明』と錯覚している。
+  _dr_provider: gemini
+  _round: R2
+  _category_normalized: 退職前後・早期リタイア男性
+- id: R2-D-002
+  category: 退職前後・早期リタイア男性
+  profile:
+    age_range: 50代後半
+    occupation: 無職（リストラ・早期退職）
+    family: 妻・子（大学生）と同居
+    monthly_income_yen: 0
+    debt_yen: 3000000
+    addiction_severity: 重度（生活防衛・一発逆転型）
+    gambling_history: 再就職活動が難航し始めてから
+    visit_motive: 失った収入をギャンブルで取り戻そうとする労働の代替
+  trigger:
+    event: ハローワークの帰りに、将来への不安を打ち消すように入店
+    machine_type: パチンコ（ミドルスペック）
+    time_of_day: 平日午後
+  inner_monologue_ja: 再就職先はどこも給料が安すぎる。退職金が底をつく前に、ここでまとまった金を作らないと家族に顔向けできない。頼む、当たってくれ。
+  emotional_state:
+    arousal_0_100: 95
+    despair_0_100: 85
+    dominant_emotion: 極度のプレッシャー × パニック寸前の不安
+  action: リーチがかかるたびに神に祈るように画面を凝視し、外れると深くため息をつき頭を抱える
+  post_play_state: 生活費に手をつけてしまった罪悪感で、帰宅前に公園で時間を潰す
+  source:
+    type: 依存症家族手記
+    url_or_ref: 退職金と失業手当を使い果たした夫の事例
+    confidence: 高
+  notes: パチンコを『娯楽』ではなく『労働・投資』として誤認している。資金的余裕がないため、覚醒度および絶望度が常に高い。
+  _dr_provider: gemini
+  _round: R2
+  _category_normalized: 退職前後・早期リタイア男性
+- id: R2-D-003
+  category: 退職前後・早期リタイア男性
+  profile:
+    age_range: 50代前半
+    occupation: 契約社員（元正社員）
+    family: 離婚（単身）
+    monthly_income_yen: 180000
+    debt_yen: 2000000
+    addiction_severity: 重度（ストレス依存・悪循環型）
+    gambling_history: 離婚のストレスから依存が本格化
+    visit_motive: 喪失感と孤独感からの逃避／嫌なことを忘れるため
+  trigger:
+    event: 仕事終わりの疲労感と孤独感に耐えきれず、まっすぐホールへ向かう
+    machine_type: パチスロ
+    time_of_day: 平日夜間
+  inner_monologue_ja: 家に帰っても誰もいない。レースやスロットに夢中になっている時だけは、離婚の辛さも将来の不安も忘れられる。10日で200万使ったが止められない。
+  emotional_state:
+    arousal_0_100: 80
+    despair_0_100: 80
+    dominant_emotion: 激しい喪失感の麻痺 × 強迫的な没入
+  action: 借金のストレスを解消するためにまたギャンブルをするという完全な悪循環の中で、機械のように札を入れ続ける
+  post_play_state: 自己嫌悪と無力感に苛まれ、死にたいとすら思うが翌日にはまたホールへ行く
+  source:
+    type: 依存症対策センター体験談
+    url_or_ref: 離婚のストレスから10日で200万円消費した事例
+    confidence: 高
+  notes: 「借金のストレスを解消するためにギャンブルをする」という依存症特有のループに陥っている。自己効力感は完全に失われている。
+  _dr_provider: gemini
+  _round: R2
+  _category_normalized: 退職前後・早期リタイア男性
+- id: R3-A-001
+  category: 依存症末期
+  profile:
+    age_range: 50代
+    occupation: 公務員
+    family: 親・長男と断絶寸前
+    debt_yen: 15000000
+    addiction_severity: 末期（7社借入、任意整理後も継続）
+    gambling_history: 34年、年300日超、仕事後も閉店まで
+    visit_motive: 返済不能の焦りを麻痺させる／取り返し
+    psychiatric_comorbidity: 強い抑うつ的消耗
+  trigger:
+    event: 借入先が尽きても閉店まで打ち切ろうとする局面
+    machine_type: パチスロ
+    time_of_day: 仕事終わり〜閉店
+  inner_monologue_ja: 今日やめても返済は消えない。なら、当たるまで座っていたほうがまだマシだ。
+  emotional_state:
+    arousal_0_100: 84
+    despair_0_100: 97
+    dominant_emotion: 切迫 × 麻痺
+  action: 借金不能が見えても翌日の軍資金を探す
+  post_play_state: 親への資金依頼、家族断裂の進行
+  source:
+    type: 公的当事者手記
+    url_or_ref: NCASA document81 No.1
+    confidence: 高
+  notes: interruptibility 0.02 / dissociation_tendency 0.78。『死にたい』が感情表出であると同時に資金調達言語にもなっており、despair が高くても停止行動に結びついていない。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-A-002
+  category: 依存症末期
+  profile:
+    age_range: 40代
+    occupation: 会社員
+    family: 不詳
+    debt_yen: 6000000
+    addiction_severity: 末期手前〜末期
+    gambling_history: 学生期開始、平日毎日閉店まで・土日も開店から閉店まで
+    visit_motive: 仕事ストレス遮断／自己破壊的な続行
+    psychiatric_comorbidity: うつ病
+  trigger:
+    event: 平日夜、負債と抑うつを抱えたまま閉店まで回し続ける瞬間
+    machine_type: パチンコ・パチスロ
+    time_of_day: 平日夜
+  inner_monologue_ja: 帰っても眠れない。ここで座っている間だけ、地獄に名前が付かない。
+  emotional_state:
+    arousal_0_100: 88
+    despair_0_100: 95
+    dominant_emotion: 希死念慮を伴う切迫
+  action: 自死・犯罪を考えながらも席を立てない
+  post_play_state: 借金と抑うつが翌日にそのまま持ち越される
+  source:
+    type: 公的当事者手記
+    url_or_ref: NCASA document65 No.4
+    confidence: 高
+  notes: interruptibility 0.03 / dissociation_tendency 0.74。A群で最も典型的な『despair 90+ でも arousal が落ちない』型。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-A-003
+  category: 依存症末期
+  profile:
+    age_range: 40代
+    occupation: 会社員
+    family: 妻子あり
+    debt_yen: 10800000
+    addiction_severity: 末期（15社借入、3回破綻）
+    gambling_history: 20代からパチスロ、長期反復
+    visit_motive: 督促と自己嫌悪を一時停止する／取り返し
+    psychiatric_comorbidity: 不詳
+  trigger:
+    event: 督促と返済不能が頭に浮かんでも追い銭を続ける局面
+    machine_type: パチスロ
+    time_of_day: 不詳
+  inner_monologue_ja: ここでやめたら借金だけが本物になる。もう少しだけ伸びろ。
+  emotional_state:
+    arousal_0_100: 82
+    despair_0_100: 96
+    dominant_emotion: 破綻認識 × 続行強迫
+  action: 多重債務化してもプレイ反復
+  post_play_state: 家族危機、返済不能、破綻の反復
+  source:
+    type: 自己記述系漫画・周辺紹介
+    url_or_ref: 借金1080万・40代サラリーマン妻子あり
+    confidence: 中
+  notes: interruptibility 0.05 / dissociation_tendency 0.76。ホール内モノローグの再構成幅はやや大きいが、極端債務の上限値サンプルとして有用。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-A-004
+  category: 依存症末期
+  profile:
+    age_range: 20代後半
+    occupation: 不安定就労
+    family: 単身、住居不安定
+    debt_yen: 6000000
+    addiction_severity: 末期（支払予算を軍資金化）
+    gambling_history: 若年期から反復
+    visit_motive: 支払い穴埋めの一発化
+    psychiatric_comorbidity: 不詳
+  trigger:
+    event: 家賃とガス代の支払予算を、そのままスロットの軍資金に回す決断
+    machine_type: スロット
+    time_of_day: 支払期限直前
+  inner_monologue_ja: 払って終わるくらいなら、賭けたほうがまだ逆転の目がある。
+  emotional_state:
+    arousal_0_100: 79
+    despair_0_100: 92
+    dominant_emotion: 追い詰められた賭け
+  action: 生活維持費の一部だけ払い、残りを勝負金に変える
+  post_play_state: 負ければ即タイミー・即地獄という自己追い込み
+  source:
+    type: 当事者ブログ
+    url_or_ref: 元ホームレススロッターの備忘録
+    confidence: 中
+  notes: interruptibility 0.08 / dissociation_tendency 0.70。A群のなかでも『現実の支払い』を『プレイ燃料』へ変換する危険な反転例。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-A-005
+  category: 依存症末期
+  profile:
+    age_range: 30代後半〜40代前半
+    occupation: 会社員
+    family: 独身期の記述
+    debt_yen: null
+    addiction_severity: 末期手前（生活費破壊→借入）
+    gambling_history: 給料と生活費を恒常的に流用
+    visit_motive: 生活費を増やすはずが、借入後も再プレイ衝動へ転化
+    psychiatric_comorbidity: 不詳
+  trigger:
+    event: 無人契約機で現金を受け取った直後、『生活費補填』ではなく『まだ打てる』へ傾く瞬間
+    machine_type: パチンコ
+    time_of_day: 資金枯渇後
+  inner_monologue_ja: これで戻せる。いや、もしかしたら、ここから増やせる。
+  emotional_state:
+    arousal_0_100: 76
+    despair_0_100: 90
+    dominant_emotion: 安堵と背徳の同時到来
+  action: 借入金を生活再建より再プレイ可能性として知覚する
+  post_play_state: 借入→再借入の雪だるま化
+  source:
+    type: 当事者 note
+    url_or_ref: 生活費に手をつけた日
+    confidence: 中
+  notes: interruptibility 0.10 / dissociation_tendency 0.68。A群で必要な『残金0→借入決断』カードとして有効。ホール内そのものではないが、R3定義上の重要遷移点。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-B-001
+  category: 不労所得・富裕層補強
+  profile:
+    age_range: 40代後半〜60代
+    occupation: 会社経営者・役員
+    family: 不詳
+    monthly_income_yen: null
+    addiction_severity: 低〜中（観察ベース）
+    gambling_history: ホール常連
+    visit_motive: 暇つぶし・会話・遊技そのもの
+    psychiatric_comorbidity: 不詳
+  trigger:
+    event: 負けが込んでも『遊べたらいい』で終える局面
+    machine_type: パチスロ
+    time_of_day: 不詳
+  inner_monologue_ja: 勝てんでも、遊べたらええしな。
+  emotional_state:
+    arousal_0_100: 16
+    despair_0_100: 8
+    dominant_emotion: 低刺激の余裕
+  action: 勝敗より会話や滞在経験を優先する
+  post_play_state: 大きな自己嫌悪を残さず離席
+  source:
+    type: 常連観察＋会話
+    url_or_ref: 社長・お金持ち常連との会話記録
+    confidence: 中
+  notes: arousal_range [8,22] / despair_range [0,12] / interruptibility 0.94。B群の基準カード。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-B-002
+  category: 不労所得・富裕層補強
+  profile:
+    age_range: 40代後半〜70代
+    occupation: 自営業の社長・株主
+    family: 不詳
+    monthly_income_yen: null
+    addiction_severity: 低〜中（観察ベース）
+    gambling_history: 20年級の常連
+    visit_motive: 店との長期関係を楽しむ／押し引き
+    psychiatric_comorbidity: 不詳
+  trigger:
+    event: 『今日は甘くない』と見切って深追いしない局面
+    machine_type: パチスロ・4円パチンコ
+    time_of_day: 平日中心
+  inner_monologue_ja: 今日はここまででええ。無理に取りにいかんでも、また来ればいい。
+  emotional_state:
+    arousal_0_100: 22
+    despair_0_100: 10
+    dominant_emotion: 淡々とした観察
+  action: 店の利益日・還元日を見ながら無理打ちを避ける
+  post_play_state: 継続来店前提で軽く引く
+  source:
+    type: 観察 note
+    url_or_ref: 地域富裕層常連の特徴
+    confidence: 中
+  notes: interruptibility 0.88 / time_cost_efficiency 0.74。A群の『止まれなさ』と真逆で、資金圧ではなく長期関係と暇の埋め方が主軸。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-B-003
+  category: 不労所得・富裕層補強
+  profile:
+    age_range: 50代〜70代
+    occupation: 自営業・店経営者の常連
+    family: 不詳
+    monthly_income_yen: null
+    addiction_severity: 低（観察ベース）
+    gambling_history: 店員と顔なじみの長期常連
+    visit_motive: 遊技＋接客関係の維持
+    psychiatric_comorbidity: 不詳
+  trigger:
+    event: 勝敗よりも、店員とのやり取りや差し入れで滞在感が満たされる場面
+    machine_type: パチンコ・スロット不問
+    time_of_day: 日中
+  inner_monologue_ja: 今日はコーヒー渡して、少し遊んで、頃合いで帰ればいい。
+  emotional_state:
+    arousal_0_100: 18
+    despair_0_100: 6
+    dominant_emotion: 社交的な低反応
+  action: 店員に差し入れし、常連関係を確認しながら遊ぶ
+  post_play_state: 負けても関係性コストが主で、感情コストは小さい
+  source:
+    type: 店員観察ブログ
+    url_or_ref: 仲良くなると得する常連客
+    confidence: 中
+  notes: interruptibility 0.90 / stigma_barrier 0.12。『VIP感の確認』がプレイ自体より価値を持つB群カード。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-B-004
+  category: 不労所得・富裕層補強
+  profile:
+    age_range: 40歳前後
+    occupation: 地主家系の息子
+    family: 地主家系
+    monthly_income_yen: null
+    addiction_severity: 不詳
+    gambling_history: 毎日級の常連と観察される
+    visit_motive: 時間消費・習慣
+    psychiatric_comorbidity: 不詳
+  trigger:
+    event: 大当たり・ヘソ落ち・損失局面でも表情が動かない瞬間
+    machine_type: ガロ系パチンコ
+    time_of_day: 日常的
+  inner_monologue_ja: 数万なら揺れない。続けるか、移るか、その程度だ。
+  emotional_state:
+    arousal_0_100: 12
+    despair_0_100: 5
+    dominant_emotion: 無反応に近い平滑
+  action: 眉ひとつ動かさず座り続ける
+  post_play_state: 金銭損失が感情波形に変換されにくい
+  source:
+    type: 掲示板観察ログ
+    url_or_ref: 大地主の息子らしい常連の描写
+    confidence: 低〜中
+  notes: arousal_range [5,18] / interruptibility 0.97。B群の極端な低反応サンプルとして有用。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-B-005
+  category: 不労所得・富裕層補強
+  profile:
+    age_range: 40代
+    occupation: FIRE後の個人投資家・元事業主
+    family: 独身
+    monthly_income_yen: null
+    addiction_severity: 低
+    gambling_history: 20年以上前に一時ハマった経験あり
+    visit_motive: 企業理解・見学
+    psychiatric_comorbidity: 既往の不調記述あり
+  trigger:
+    event: 台の前まで行っても『理解不能』『カモになる』と判断し、そのまま帰る瞬間
+    machine_type: entity["company","SANKYO","jp gaming company"]機種（ヴァルヴレイヴ2）
+    time_of_day: 日中
+  inner_monologue_ja: 打てなくはない。でも、知らないまま座るほどの理由がない。今日は見るだけでいい。
+  emotional_state:
+    arousal_0_100: 20
+    despair_0_100: 10
+    dominant_emotion: 分析的な距離感
+  action: ホールに入るが、打たずに撤収する
+  post_play_state: 後悔よりも検討材料の持ち帰り
+  source:
+    type: FIRE当事者 note
+    url_or_ref: 株主としてホール見学のみ
+    confidence: 中
+  notes: interruptibility 0.99 / time_cost_efficiency 0.91。B群の『いつでも帰れる』をもっとも素直に表すカード。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-C-001
+  category: 中年現役男性
+  profile:
+    age_range: 40代
+    occupation: サラリーマン
+    family: 妻子あり
+    debt_yen: 3000000
+    addiction_severity: 中〜高
+    gambling_history: 仕事帰りの定着化、ギャンブル二刀流
+    visit_motive: 帰宅前の緩衝帯／疲労遮断
+    psychiatric_comorbidity: 不詳
+  trigger:
+    event: 仕事帰りにホールへ寄り、台を打ちながら別ギャンブルも回してしまう局面
+    machine_type: パチンコ
+    time_of_day: 仕事終わり
+  inner_monologue_ja: 家に帰る前に、頭をいったん空にしたい。ここなら時間も埋まるし、まだ勝負もできる。
+  emotional_state:
+    arousal_0_100: 70
+    despair_0_100: 62
+    dominant_emotion: 疲労麻酔 × 逃避
+  action: パチンコを打ちながら競輪まで並行する
+  post_play_state: 半年で負債300万、家族時間の空洞化
+  source:
+    type: 当事者ブログ
+    url_or_ref: 40代サラリーマン・妻子あり・負債300万
+    confidence: 中
+  notes: interruptibility 0.25 / payday_sensitivity 0.43。C群に多い『帰宅前にワンクッション置く』型。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-002
+  category: 中年現役男性
+  profile:
+    age_range: 40代
+    occupation: サラリーマン
+    family: 不詳
+    debt_yen: null
+    addiction_severity: 高
+    gambling_history: 長期、依存からの離脱過程
+    visit_motive: 仕事・生活ストレスの爆発先
+    psychiatric_comorbidity: うつ誘発的な消耗の自己言及あり
+  trigger:
+    event: 319分の1をやっと引いたのに50%確変を何度も外し、総投資12万円に達した瞬間
+    machine_type: パチンコ
+    time_of_day: 不詳
+  inner_monologue_ja: ここでやめたら12万がただ消えるだけだ。次こそ入る、次こそ。
+  emotional_state:
+    arousal_0_100: 86
+    despair_0_100: 74
+    dominant_emotion: 怒り × 追い込み
+  action: 遠隔・顔認証といった認知へ寄り、さらに感情を煽る
+  post_play_state: 疲弊と業界憎悪だけが残る
+  source:
+    type: 当事者ブログ
+    url_or_ref: 中年サラリーマン・依存脱出ブログ
+    confidence: 中
+  notes: interruptibility 0.12 / sensory_gating_factor 0.86。C群では arousal が高く、怒りで離席がむしろ遅れるタイプ。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-003
+  category: 中年現役男性
+  profile:
+    age_range: 50代
+    occupation: 会社員
+    family: 妻・子あり
+    debt_yen: null
+    addiction_severity: 高
+    gambling_history: 学生期開始、結婚後も隠匿・再燃
+    visit_motive: 職場の誘いからの再燃／取り返し
+    psychiatric_comorbidity: 不詳
+  trigger:
+    event: 『もう二度とやらない』後、職場でパチンコに誘われ再入店する瞬間
+    machine_type: パチンコ
+    time_of_day: 仕事絡み
+  inner_monologue_ja: 一回だけなら戻らない。前みたいにはならない。
+  emotional_state:
+    arousal_0_100: 72
+    despair_0_100: 68
+    dominant_emotion: 自己正当化 × 予兆不安
+  action: 再入店を軽く扱い、そのまま再債務化
+  post_play_state: 妻子への再告白、離婚手続きへ
+  source:
+    type: 公的当事者手記
+    url_or_ref: NCASA document81 No.3
+    confidence: 高
+  notes: payday_sensitivity 0.54 / interruptibility 0.20。C群に典型的な『仕事ネットワーク起点の再燃』カード。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-004
+  category: 中年現役男性
+  profile:
+    age_range: 40歳
+    occupation: 会社員
+    family: 2児の父
+    debt_yen: null
+    addiction_severity: 低〜中
+    gambling_history: 隙間時間稼働で年間プラス志向
+    visit_motive: 副収入補強／期待値取得
+    psychiatric_comorbidity: 不詳
+  trigger:
+    event: 送迎や本業の隙間に、期待値だけ拾って帰る判断
+    machine_type: パチンコ・パチスロ
+    time_of_day: 隙間時間
+  inner_monologue_ja: 今日は取れる台だけ。子どもの迎えまでに終わる分しか触らない。
+  emotional_state:
+    arousal_0_100: 44
+    despair_0_100: 18
+    dominant_emotion: 実務的な集中
+  action: 時間制約を先に決め、台選びを絞る
+  post_play_state: 副収入化の感覚で帰宅
+  source:
+    type: 当事者プロフィール note
+    url_or_ref: 40歳会社員・2児の父・年間+300万
+    confidence: 中
+  notes: time_cost_efficiency 0.86 / interruptibility 0.72。C群の比較ベースラインとして有用。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-005
+  category: 中年現役男性
+  profile:
+    age_range: 40代
+    occupation: 年収250〜300万台のサラリーマン
+    family: 妻子あり
+    debt_yen: null
+    addiction_severity: 中
+    gambling_history: 家計補助ではなく小遣い・玩具代狙い
+    visit_motive: 小遣い稼ぎ／自分の居場所
+    psychiatric_comorbidity: 不詳
+  trigger:
+    event: 低賃金への補償として、限られた日時でスロットに向かう瞬間
+    machine_type: スロット
+    time_of_day: 空き時間
+  inner_monologue_ja: これで子どもの玩具と自分の小遣いを少しだけ作れればいい。
+  emotional_state:
+    arousal_0_100: 55
+    despair_0_100: 45
+    dominant_emotion: 不足感 × 期待
+  action: 家計の主戦力ではないが、心理的には補填役として座る
+  post_play_state: 勝敗が家の空気より自尊心に響く
+  source:
+    type: 当事者プロフィール blog
+    url_or_ref: 安月給子持ちスロッター
+    confidence: 中
+  notes: payday_sensitivity 0.62 / stigma_barrier 0.39。C群の『中産ではないが現役・既婚・父』サンプル。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-006
+  category: 中年現役男性
+  profile:
+    age_range: 40代
+    occupation: サラリーマン
+    family: 不詳
+    debt_yen: null
+    addiction_severity: 中
+    gambling_history: 夕方からの短時間稼働
+    visit_motive: 仕事帰りのストレス発散
+    psychiatric_comorbidity: 不詳
+  trigger:
+    event: 仕事終わり30分だけのつもりが、1〜2万円を飛ばしてしまう夕方
+    machine_type: パチンコ・パチスロ
+    time_of_day: 18時以降
+  inner_monologue_ja: 30分だけなら大丈夫。今日は当たりだけ見て帰る。
+  emotional_state:
+    arousal_0_100: 64
+    despair_0_100: 52
+    dominant_emotion: 自己説得 × 焦り
+  action: 短時間だからこそ押し引きが雑になり、ずるずる延びる
+  post_play_state: 短時間のはずが『何も残らない負け』として残る
+  source:
+    type: 当事者系 note
+    url_or_ref: 夕方から打つサラリーマン像
+    confidence: 中
+  notes: time_cost_efficiency 0.34 / interruptibility 0.38。C群の『短時間だから安全』という自己欺瞞カード。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-007
+  category: 中年現役男性
+  profile:
+    age_range: 40代前後
+    occupation: 残業のある会社員
+    family: 不詳
+    debt_yen: null
+    addiction_severity: 中
+    gambling_history: 仕事終わりの反復
+    visit_motive: 認知疲労の麻酔／『3000円だけ』
+    psychiatric_comorbidity: 不詳
+  trigger:
+    event: 残業終わり、ネオンを見て『3000円だけ』と入店する瞬間
+    machine_type: パチスロ
+    time_of_day: 残業後
+  inner_monologue_ja: 頭が死んでる日こそ、ペカらせて帰れば整う。
+  emotional_state:
+    arousal_0_100: 60
+    despair_0_100: 49
+    dominant_emotion: 疲労性の衝動
+  action: 判断力が落ちたままゾーン狙いがダラ打ちに変わる
+  post_play_state: 場合によってはATMまで走る
+  source:
+    type: 啓発寄り note の自傷的シナリオ描写
+    url_or_ref: 仕事帰りのパチンコは募金
+    confidence: 低〜中
+  notes: interruptibility 0.34 / payday_sensitivity 0.58。一次資料としては弱いが、『会社帰り疲労→押し引き崩壊』の描写はC群の挙動仮説と一致。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-008
+  category: 中年現役男性
+  profile:
+    age_range: 51歳
+    occupation: サラリーマン
+    family: 独身
+    debt_yen: null
+    addiction_severity: 高（累計損失2000万超）
+    gambling_history: 17年、4号機〜5号機、退職金・失業保険も投入
+    visit_motive: 仕事帰りの高揚／習慣化した報酬
+    psychiatric_comorbidity: 不詳
+  trigger:
+    event: 夜勤明けで朝一から15時まで打ち、そのまま仮眠して再出勤する局面
+    machine_type: パチスロ
+    time_of_day: 朝一〜午後
+  inner_monologue_ja: 寝る前に一勝ちだけ。今の疲れならむしろ何も考えず打てる。
+  emotional_state:
+    arousal_0_100: 71
+    despair_0_100: 57
+    dominant_emotion: 消耗した高揚
+  action: 勤務サイクルそのものをホール中心に組み替える
+  post_play_state: 退職金・失業保険・日雇いへと生活が後退
+  source:
+    type: 当事者 note
+    url_or_ref: 51歳サラリーマン・元依存症記
+    confidence: 中
+  notes: interruptibility 0.28 / payday_sensitivity 0.51。C群のなかでも『労働シフトとプレイ時間が一体化』した強い例。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-D-001
+  category: 精神疾患併発
+  profile:
+    age_range: 20代後半〜30代前半
+    occupation: 過重労働の会社員
+    family: 彼女との関係喪失
+    debt_yen: null
+    addiction_severity: 高
+    gambling_history: 仕事の合間・早帰り日に単独通い
+    visit_motive: 注意資源の固定／仕事忘却
+    psychiatric_comorbidity: ADHD
+  trigger:
+    event: 玉の流れを見ているときだけ頭が静かになり、記憶も曖昧になるプレイ
+    machine_type: パチンコ
+    time_of_day: 仕事の合間・休日夕方
+  inner_monologue_ja: 玉だけ見ていればいい。この時間だけ、頭の中が散らからない。
+  emotional_state:
+    arousal_0_100: 73
+    despair_0_100: 67
+    dominant_emotion: 鎮静を求める没入
+  action: 生活費以外をほぼ投入、行けない日は競馬・競輪へスライド
+  post_play_state: 記憶の抜け、遅刻、仕事崩壊
+  source:
+    type: 当事者 note
+    url_or_ref: ADHD診断後の振り返り
+    confidence: 中
+  notes: mood_lability 0.71 / impulse_control 0.24 / sensory_gating_factor 0.52。『刺激追求』だけでなく『刺激でしか静まらない注意系』として実装価値が高い。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 精神疾患併発
+- id: R3-D-002
+  category: 精神疾患併発
+  profile:
+    age_range: 40代半ば
+    occupation: 就労継続中
+    family: 妹・母に金銭管理を依頼
+    debt_yen: 370000
+    addiction_severity: 中〜高
+    gambling_history: 43歳頃から時間さえあれば通う
+    visit_motive: 落ち着かなさの解消／躁偏位時の行動化
+    psychiatric_comorbidity: 双極性障害
+  trigger:
+    event: 開店時間の10時になるまで落ち着かず、一万円札を見るだけで身体が前のめりになる朝
+    machine_type: パチンコ
+    time_of_day: 開店前〜開店直後
+  inner_monologue_ja: 10時になれば行ける。打てば落ち着く。今のそわそわを止めたい。
+  emotional_state:
+    arousal_0_100: 78
+    despair_0_100: 70
+    dominant_emotion: 焦燥 × 衝動
+  action: 生活費を流用し、足りないと借入へ直結
+  post_play_state: 妹へ打ち明け、現金管理を全面移管
+  source:
+    type: 当事者ブログ
+    url_or_ref: 双極性障害とパチンコ依存症
+    confidence: 中
+  notes: mood_lability 0.89 / impulse_control 0.22。D群のなかでも『開始前ソワソワ』が強く、プレイ開始が鎮静化行動になっている。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 精神疾患併発
+- id: R3-D-003
+  category: 精神疾患併発
+  profile:
+    age_range: 20代
+    occupation: 建築現場労働者
+    family: 家族・友人・仕事仲間へ嘘が常態化
+    debt_yen: null
+    addiction_severity: 高
+    gambling_history: 給料が財布に着地する前にホールへ直行
+    visit_motive: 躁っぽい加速と強い機械刺激
+    psychiatric_comorbidity: 双極性障害（本人は関連を示唆）
+  trigger:
+    event: 給料日、現金を持った瞬間にそのままパチ屋へ直行する
+    machine_type: パチンコ・パチスロ
+    time_of_day: 給料日
+  inner_monologue_ja: 今すぐ行ける。今日の一発で全部ひっくり返る。
+  emotional_state:
+    arousal_0_100: 81
+    despair_0_100: 58
+    dominant_emotion: 全能感混じりの衝動
+  action: 壁を蹴るほどの感情爆発、しかし翌日にはまた座る
+  post_play_state: 家賃遅延、ライフライン停止、生活秩序の崩壊
+  source:
+    type: 当事者ブログ
+    url_or_ref: 双極性障害とギャンブル依存症
+    confidence: 中
+  notes: mood_lability 0.78 / impulse_control 0.30。C群の給料日高揚より、D群ではブレーキ系がさらに弱い。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 精神疾患併発
+- id: R3-D-004
+  category: 精神疾患併発
+  profile:
+    age_range: 20代後半〜30代
+    occupation: 会社員〜退職期
+    family: 妻子あり
+    debt_yen: 12000000
+    addiction_severity: 高
+    gambling_history: うつ期に『打ちたいものを打つ』へ変質
+    visit_motive: 誰からも否定されない空間への逃避
+    psychiatric_comorbidity: PTSD + うつ
+  trigger:
+    event: 不安になるとパチ屋へ逃げ込み、最大音量でもうずくまりながら打ち続ける局面
+    machine_type: パチスロ
+    time_of_day: 不安増大時
+  inner_monologue_ja: ここなら誰も干渉しない。痛くても、うるさくても、ここから出るよりはマシだ。
+  emotional_state:
+    arousal_0_100: 69
+    despair_0_100: 89
+    dominant_emotion: 解離的逃避 × 自己否定
+  action: 現金が尽きるまで換金ギャップを自分から払い続け、足りなければキャッシング
+  post_play_state: 1日20万負けでも感情が動かず、あとから自己嫌悪だけが来る
+  source:
+    type: 当事者 note
+    url_or_ref: PTSD持ち・うつ・借金1200万の記録
+    confidence: 中
+  notes: mood_lability 0.76 / impulse_control 0.21 / dissociation_tendency 0.80 / sensory_gating_factor 0.25。D群で最も実装価値が高い『苦痛刺激が停止信号にならない』例。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 精神疾患併発
+- id: R3-D-005
+  category: 精神疾患併発
+  profile:
+    age_range: 30代
+    occupation: 就労中
+    family: 不詳
+    debt_yen: null
+    addiction_severity: 中〜高
+    gambling_history: 借金をして打つ時期あり
+    visit_motive: 惰性で座り続ける／終日プレイ後の頭の霧
+    psychiatric_comorbidity: うつ病
+  trigger:
+    event: ほぼ1日打ったあと、負けすぎて放心し、頭がぼーっとしたまま台の怖さを反芻する夜
+    machine_type: スマスロ
+    time_of_day: 終日稼働後の夜
+  inner_monologue_ja: もうやめたほうがいい。でも明日になればまた、座れば何か変わる気がする。
+  emotional_state:
+    arousal_0_100: 46
+    despair_0_100: 72
+    dominant_emotion: 鈍麻 × 反芻
+  action: 大負けしたのに『切り替える』と書いて離脱を先送りする
+  post_play_state: 放心、誤字だらけ、頭の霞み
+  source:
+    type: 当事者ブログ
+    url_or_ref: 30代うつ病パチンカスの日記
+    confidence: 中
+  notes: mood_lability 0.55 / impulse_control 0.32 / dissociation_tendency 0.58。D群の抑うつ相は arousal が低めでも interruptibility が高くならない。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 精神疾患併発
+- id: R3-D-006
+  category: 精神疾患併発
+  profile:
+    age_range: 30代前半
+    occupation: 元会社員・現在フリーランス
+    family: 母から金銭支援あり
+    debt_yen: null
+    addiction_severity: 中〜高
+    gambling_history: 2回目の大当たり確変を境に単独通いが定着
+    visit_motive: 快感の再演／精神的不調による生活中心化
+    psychiatric_comorbidity: 精神疾患（詳細非開示）
+  trigger:
+    event: 2回目の確変快感を再現しようとして一人でホールへ向かう瞬間
+    machine_type: パチンコ
+    time_of_day: 不詳
+  inner_monologue_ja: もう一回あの感覚が来れば、今日は何とかなる。
+  emotional_state:
+    arousal_0_100: 64
+    despair_0_100: 61
+    dominant_emotion: 快感追跡 × 生活比重の逆転
+  action: 手を出してはいけない金に手を出し、収入が切れても母に借りて通う
+  post_play_state: 会社退職、家計の重心がパチンコへ移る
+  source:
+    type: 当事者 note
+    url_or_ref: 精神疾患×ギャンブル依存
+    confidence: 中
+  notes: mood_lability 0.67 / impulse_control 0.40。病名が明示されないため診断的な使い方は不可だが、『精神的不調→ホールが生活中心』の遷移例としては有効。
+  _dr_provider: chatgpt
+  _round: R3
+  _category_normalized: 精神疾患併発
+- id: R3-A-001
+  category: 依存症末期
+  profile:
+    age_range: 30代
+    occupation: 無職（元営業職）
+    family: 単身（家族から絶縁状態）
+    debt_yen: 30000000
+    addiction_severity: 末期（窃盗・万引き常習、親の退職金全損）
+    gambling_history: 15年以上
+    visit_motive: 飢えと寒さからの現実逃避／生存本能の完全な麻痺
+    psychiatric_comorbidity: 重度の抑うつ・解離性障害
+  trigger:
+    event: 生活保護費（あるいは盗品売却金）の最後の一枚をサンドに入れた瞬間
+    machine_type: 1円パチンコ
+    time_of_day: 平日午前
+  inner_monologue_ja: 今思うと本当に狂っていた。今日食べるものもないのに、本屋で盗んだ本を売ってパチンコを打っている。もうどうにもならない。自分が崩壊していく。
+  emotional_state:
+    arousal_0_100: 90
+    despair_0_100: 100
+    dominant_emotion: 完全な絶望 × 強迫的狂気
+  action: 無表情のまま、ただ惰性で右打ちを続ける。玉が減るのを見つめる。
+  post_play_state: 一文無しになり、スーパーで食料を万引きして帰る。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: Interruptibility = 0。Dissociation tendency = 1.0。生存のための資金すら投じる極限状態であり、Despairが100に達していてもArousalが落ちない。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-A-002
+  category: 依存症末期
+  profile:
+    age_range: 50代
+    occupation: 元会社員（失職）
+    family: 離婚（妻・娘と離別）
+    debt_yen: 100000000
+    addiction_severity: 極限（総損失1億円超、富士の樹海を彷徨う）
+    gambling_history: 36年間
+    visit_motive: 過去の栄光の追体験／死の直前の麻酔
+    psychiatric_comorbidity: 希死念慮
+  trigger:
+    event: 借金返済の目処が完全に絶たれ、天井付近で単発を引いた瞬間
+    machine_type: AT機（パチスロ）
+    time_of_day: 休日夜
+  inner_monologue_ja: こんなクズ人間は生きていてもしょうがない。死んだほうが世のためだ。でも、あともう1回だけ。これで出なかったら樹海に行こう。
+  emotional_state:
+    arousal_0_100: 95
+    despair_0_100: 95
+    dominant_emotion: 希死念慮 × 焦燥感
+  action: 手元の小銭をかき集め、震える手で最後のメダルを投入する。
+  post_play_state: 退店後、車で富士の樹海へ向かい2日間彷徨う。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: Interruptibility = 0。ギャンブルによる損失額が1億円を突破しており、資金枯渇と同時に物理的な死を意識している。Sensory_gating_factor = 0.1（外部の音が聞こえない）。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-A-003
+  category: 依存症末期
+  profile:
+    age_range: 40代
+    occupation: 元会社員
+    family: 親と同居（絶縁寸前）
+    debt_yen: 7000000
+    addiction_severity: 末期（自己破産免責直後）
+    gambling_history: 20年
+    visit_motive: 借金免責の解放感からの油断
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 自己破産の免責が下りた当日の給料日、駅に着いた瞬間
+    machine_type: パチスロ
+    time_of_day: 平日夕方
+  inner_monologue_ja: 自己破産の手続きが終わった。やっと気が楽になった。そういえば今日給料日だ。借金もないし、ちょっとなら打ってもいいだろう。
+  emotional_state:
+    arousal_0_100: 85
+    despair_0_100: 80
+    dominant_emotion: 無意識の自動操縦 × 安堵の歪み
+  action: 気がつくと銀行で生活費を下ろし、パチンコ屋の席に座ってレバーを叩いている。
+  post_play_state: 免責直後にも関わらず再び借金生活に転落。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: Interruptibility = 0.1。自己破産という究極のペナルティを経ても行動を制御できない。Despairは底を打った直後にArousalの誘惑に負けるメカニズム。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-A-004
+  category: 依存症末期
+  profile:
+    age_range: 30代
+    occupation: 会社員
+    family: 妻・子（家庭内別居中）
+    debt_yen: 8000000
+    addiction_severity: 末期（消費者金融カード8枚）
+    gambling_history: 10年
+    visit_motive: 負けを取り返すという強迫観念
+    psychiatric_comorbidity: 強迫性障害の傾向
+  trigger:
+    event: 財布の現金が底をつき、ATMへ向かうか迷う瞬間
+    machine_type: パチスロ
+    time_of_day: 休日午後
+  inner_monologue_ja: これ以上つぎ込んだら生活費どうするんだ。でも、パチンコの負けはパチンコで勝って返すしかないんだ。取り返さなきゃ終われない。
+  emotional_state:
+    arousal_0_100: 100
+    despair_0_100: 90
+    dominant_emotion: 極度の強迫観念 × 悪魔の声への服従
+  action: 心の底からの警告を無視し、店舗内のATMで新たなカードからキャッシングを引き出す。
+  post_play_state: 現金全損。駐車場で車の中で何時間も動けず、虚無感に苛まれる。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: Interruptibility = 0。負け分をギャンブルで取り返すという認知の歪みが固定化されている。Arousalが100のまま暴走する。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-A-005
+  category: 依存症末期
+  profile:
+    age_range: 30代
+    occupation: 会社員（横領発覚寸前）
+    family: 独身
+    debt_yen: 5000000
+    addiction_severity: 末期（ヤミ金・会社資金横領）
+    gambling_history: 12年
+    visit_motive: 横領金補填のための一発逆転
+    psychiatric_comorbidity: パニック発作
+  trigger:
+    event: ヤミ金からの着信がスマホ画面に表示された瞬間
+    machine_type: パチスロ（ハイエナ狙い）
+    time_of_day: 平日昼間
+  inner_monologue_ja: 電話に出られない。会社のお金にも手をつけてしまった。ここでフリーズを引かないと警察に行かれる。頼む、頼む、頼む。
+  emotional_state:
+    arousal_0_100: 100
+    despair_0_100: 100
+    dominant_emotion: 極限の恐怖 × 祈り
+  action: 画面の着信を無視し、震える手でMAXBETボタンを連打する。周囲の音は一切聞こえない。
+  post_play_state: 敗北。ヤミ金に拉致され、5時間の監禁を受ける。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: Arousal 100 × Despair 100の極限値。Stigma_barrier = 1.0（社会的信用の完全喪失の恐怖）。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-A-006
+  category: 依存症末期
+  profile:
+    age_range: 50代
+    occupation: 公務員（高位・安定収入）
+    family: 妻・子
+    debt_yen: 15000000
+    addiction_severity: 末期（カード枠を貯金と勘違いする金銭麻痺）
+    gambling_history: 34年
+    visit_motive: 特権意識の裏返し／無限の資金があるという錯覚
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 投資が10万円を超え、追加でクレジットカードでキャッシングする瞬間
+    machine_type: パチスロ
+    time_of_day: 休日昼
+  inner_monologue_ja: 自分は公務員で収入は安定している。カードの限度額は自分の貯金みたいなものだ。いくらでも借りられるし、いくらでも打てる。
+  emotional_state:
+    arousal_0_100: 80
+    despair_0_100: 10
+    dominant_emotion: 全能感 × 認知の歪み
+  action: 焦る様子もなく、ATMで限度額いっぱいまで引き出し、当然のように台に戻る。
+  post_play_state: 長期的には借金1500万に至るが、プレイ中はその恐怖を感じていない。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: 安定収入がもたらす致命的な認知の歪み。プレイ中のDespairが極端に低く、事後的に一気に100へ跳ね上がる遅延型モデル。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-A-007
+  category: 依存症末期
+  profile:
+    age_range: 20代
+    occupation: フリーター
+    family: 実家暮らし（家庭内窃盗常習）
+    debt_yen: 3500000
+    addiction_severity: 末期（サラ金＋友人からの借金）
+    gambling_history: 5年
+    visit_motive: 才能があるという妄想の証明
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 友人の財布から盗んだ金で大当たりを引いた瞬間
+    machine_type: パチスロ
+    time_of_day: 平日夜
+  inner_monologue_ja: よし、当たった。これで盗んだ分をこっそり返せる。自分にはギャンブルの才能があるんだ。いつか大勝して全部なんとかなる。
+  emotional_state:
+    arousal_0_100: 95
+    despair_0_100: 40
+    dominant_emotion: 歪んだ安堵感 × 誇大妄想
+  action: 罪悪感を完全に忘れ、ドヤ顔でメダルを箱に詰める。
+  post_play_state: 結局全額使い果たし、友人に窃盗がバレて地獄を見る。
+  source:
+    type: 大石クリニック症例報告
+    url_or_ref: ohishi-clinic.or.jp
+    confidence: 高
+  notes: Dissociation tendency = 0.8。他者の金を盗んでいるという犯罪の事実がプレイ中のArousalによって完全に麻痺している。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-A-008
+  category: 依存症末期
+  profile:
+    age_range: 40代
+    occupation: 無職（元会社員）
+    family: 妻と同居（離婚協議中）
+    debt_yen: 12000000
+    addiction_severity: 末期（親の退職金全損）
+    gambling_history: 20年
+    visit_motive: 何も考えたくないための作業
+    psychiatric_comorbidity: 重度の抑うつ
+  trigger:
+    event: 財布の中の最後の1000円札を見つめている瞬間
+    machine_type: パチンコ
+    time_of_day: 休日夕方
+  inner_monologue_ja: これを入れれば本当に何もなくなる。でも、もうどうでもいい。家に帰って妻の顔を見るくらいなら、ここで液晶を見つめていたい。
+  emotional_state:
+    arousal_0_100: 20
+    despair_0_100: 100
+    dominant_emotion: 無気力 × 虚無感
+  action: ゆっくりと1000円札を入れ、玉が打ち出されるのをただ眺める。
+  post_play_state: 車に戻り、数時間シートを倒して天井を見つめる。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: Interruptibility = 0。Arousalが低いままDespairが100に張り付く「アパシー持続型」。 Sensory_gating_factor = 0.1。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-A-009
+  category: 依存症末期
+  profile:
+    age_range: 30代
+    occupation: 元営業職
+    family: 独身
+    debt_yen: 5000000
+    addiction_severity: 極限（公園・コインランドリー寝泊まり）
+    gambling_history: 15年
+    visit_motive: ゴミ箱を漁る現実からの完全な逃避
+    psychiatric_comorbidity: 解離性障害
+  trigger:
+    event: 実家に一時帰宅し、家の中のお金を探し出してホールへ来た瞬間
+    machine_type: AT機
+    time_of_day: 平日午後
+  inner_monologue_ja: ダメだ。もう、ギャンブルを止められない。親の金だ。でもレバーを叩いている間だけは、自分がホームレス同然だということを忘れられる。
+  emotional_state:
+    arousal_0_100: 70
+    despair_0_100: 95
+    dominant_emotion: 自己嫌悪 × トランス状態
+  action: 涙目になりながらも、高速でリールを止め続ける。
+  post_play_state: 再び失踪し、コインランドリーへ戻る。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: Dissociation_tendency = 1.0。生存機能が完全に崩壊しており、衣食住よりもプレイへのArousalが優先される。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-A-010
+  category: 依存症末期
+  profile:
+    age_range: 50代
+    occupation: 専業主婦
+    family: 夫・子供（育児放棄状態）
+    debt_yen: 8000000
+    addiction_severity: 末期（ヤミ金借入・消費者金融多数）
+    gambling_history: 30年
+    visit_motive: 家庭内の居場所のなさからの逃避
+    psychiatric_comorbidity: パニック障害
+  trigger:
+    event: 夫の帰宅時間が迫っているのに確変が止まらない瞬間
+    machine_type: パチンコ
+    time_of_day: 平日夕方
+  inner_monologue_ja: 子供のご飯を作らなきゃ。夫が帰ってくる。でも確変が終わらない。捨てて帰れない。バレたら殺されるかもしれないのに。
+  emotional_state:
+    arousal_0_100: 100
+    despair_0_100: 80
+    dominant_emotion: パニック × 射幸心の呪縛
+  action: 冷や汗をかき、時計を何度も見ながら、震える手でハンドルを固定する。
+  post_play_state: 取り繕うための嘘を考えながら急いで帰宅し、パニック発作を起こす。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: Interruptibility = 0。Stigma_barrier（夫への恐怖）が極大化しているが、サンクコストとArousalがそれを上回る現象。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-A-011
+  category: 依存症末期
+  profile:
+    age_range: 20代
+    occupation: 大学生（留年・中退寸前）
+    family: 実家暮らし
+    debt_yen: 3000000
+    addiction_severity: 末期（学生ローン・友人からの多重借金）
+    gambling_history: 3年
+    visit_motive: 奨学金を取り戻すための絶望的投資
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 母親に管理されていたキャッシュカードを盗み出し、全額引き出して負けた瞬間
+    machine_type: パチスロ
+    time_of_day: 平日夜
+  inner_monologue_ja: 奨学金を全部溶かした。もう大学にも行けない。親にも合わせる顔がない。死ぬしかない。誰でもいいから殺してほしい。
+  emotional_state:
+    arousal_0_100: 10
+    despair_0_100: 100
+    dominant_emotion: 完全な絶望 × 希死念慮
+  action: 台の前でうなだれ、動けなくなる。店員に声をかけられるまでフリーズする。
+  post_play_state: 失踪し、友人宅やネットカフェを転々とする。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: Despair_rangeが100に到達し、Arousalが完全に消失する「燃え尽き型」。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-A-012
+  category: 依存症末期
+  profile:
+    age_range: 30代
+    occupation: 元営業職
+    family: 単身
+    debt_yen: 15000000
+    addiction_severity: 末期（総損失3000万超）
+    gambling_history: 15年
+    visit_motive: 「ちょっとだけなら」という悪魔の囁き
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 親に借金を肩代わりしてもらい完済した翌週、再びホールに入った瞬間
+    machine_type: パチスロ
+    time_of_day: 休日昼
+  inner_monologue_ja: 借金はゼロになった。だからちょっとぐらいならやっても大丈夫だろう。最初の1回だけ。すぐ帰るから。
+  emotional_state:
+    arousal_0_100: 70
+    despair_0_100: 10
+    dominant_emotion: 自己欺瞞 × 軽い高揚感
+  action: 安心しきった顔でサンドに万札を入れ、リラックスして打ち始める。
+  post_play_state: 2週間で再び300万円の借金を作り、完全な自己嫌悪に陥る。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: Interruptibility = 0.5 (初期) -> 0 (プレイ中)。リセット直後のDespairの低さが、結果的に最大の悲劇を生むメカニズム。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 依存症末期
+- id: R3-B-001
+  category: 不労所得・地主層
+  profile:
+    age_range: 60代
+    occupation: 元経営者（引退）
+    family: 妻と同居（子独立済）
+    monthly_income_yen: 2000000
+    addiction_severity: 習慣的（毎日来店するが生活破綻なし）
+    gambling_history: 40年
+    visit_motive: 暇つぶし／VIP待遇による承認欲求
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 10万円を投資しても全く見せ場がなく、常連の店員に声をかけられた瞬間
+    machine_type: Aタイプ（パチスロ）
+    time_of_day: 平日午後
+  inner_monologue_ja: （店員に対して）今日は全然ダメだね。まあいいや、また明日来るよ。夕飯の時間だからそろそろ帰るか。
+  emotional_state:
+    arousal_0_100: 20
+    despair_0_100: 10
+    dominant_emotion: 退屈 × 軽い落胆
+  action: 残りのメダルをさっさと流し、店員と談笑しながら余裕の表情で席を立つ。
+  post_play_state: 高級車で帰宅し、何事もなかったかのように夕食をとる。
+  source:
+    type: 観察・類推（メタ推論）
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: Interruptibility = 1.0（いつでも中断可）。Arousal_rangeが極めて低い。投資額に対する痛みが麻痺しているベースライン群。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-B-002
+  category: 不労所得・地主層
+  profile:
+    age_range: 50代
+    occupation: 不動産大家
+    family: 独身
+    monthly_income_yen: 1500000
+    addiction_severity: 中等度（金額的ダメージはないが時間は浪費）
+    gambling_history: 20年
+    visit_motive: 刺激の希求／日常の空白を埋めるため
+    psychiatric_comorbidity: 軽度の抑うつ（退屈起因）
+  trigger:
+    event: プレミア演出が発生し、周囲の客が振り返った瞬間
+    machine_type: AT機
+    time_of_day: 平日午前
+  inner_monologue_ja: お、引いたか。これで夕方までは時間が潰せるな。（スマホで株価や不動産市況を見ながら片手で消化）
+  emotional_state:
+    arousal_0_100: 40
+    despair_0_100: 0
+    dominant_emotion: 平坦な満足感
+  action: 表情を変えず、スマホを操作しながら片手で淡々とレバーを叩き続ける。
+  post_play_state: 適当なところでヤメて、勝った金で高級寿司を食べて帰る。
+  source:
+    type: 観察・類推（メタ推論）
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: Sensory_gating_factor = 0.8。外部からの刺激に対しても感情が動かない。作業的プレイ。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-B-003
+  category: 不労所得・地主層
+  profile:
+    age_range: 70代
+    occupation: 資産家（遺産相続）
+    family: 妻と死別
+    monthly_income_yen: 3000000
+    addiction_severity: 習慣的（毎日のルーティン）
+    gambling_history: 30年
+    visit_motive: 孤独感の緩和／ホールの音と光の安心感
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 隣の若者が大負けして台パンして帰っていった瞬間
+    machine_type: 海物語（パチンコ）
+    time_of_day: 平日昼間
+  inner_monologue_ja: 若いのは金がなくて余裕がないな。パチンコなんてのは出る時もあれば出ない時もある。ただ座って時間が過ぎればそれでいいんだ。
+  emotional_state:
+    arousal_0_100: 10
+    despair_0_100: 0
+    dominant_emotion: 無関心 × 達観
+  action: 隣をチラリと見ただけで、再び自分の台の液晶に視線を戻し、コーヒーをすする。
+  post_play_state: 夕方のニュースの時間に合わせて静かに退店する。
+  source:
+    type: 観察・類推（メタ推論）
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: Interruptibility = 1.0。他者のDespairに対して完全に無関心。ホールを「安全なノイズ空間」として利用している。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-B-004
+  category: 不労所得・地主層
+  profile:
+    age_range: 40代
+    occupation: デイトレーダー
+    family: 独身
+    monthly_income_yen: 5000000
+    addiction_severity: 中等度（金額感覚の完全な麻痺）
+    gambling_history: 10年
+    visit_motive: 相場が閉まっている時間の刺激
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 5万円投資して天井に到達し、ショボ連で終わった瞬間
+    machine_type: スマスロ
+    time_of_day: 平日午後（15時以降）
+  inner_monologue_ja: 相場で動く金に比べたら5万なんて誤差みたいなもんだな。まあ、今日はヒキが弱かった。次行くか。
+  emotional_state:
+    arousal_0_100: 30
+    despair_0_100: 5
+    dominant_emotion: 微かな退屈 × 割り切り
+  action: 一切の未練もなくICカードを抜き、即座に立ち上がる。
+  post_play_state: タクシーで繁華街へ向かい、飲みに行く。
+  source:
+    type: 観察・類推（メタ推論）
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: 投資額に対するDespairの発火閾値が異常に高い。Arousalもギャンブル自体では跳ね上がらない。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-B-005
+  category: 不労所得・地主層
+  profile:
+    age_range: 60代
+    occupation: 地主
+    family: 妻・同居の息子
+    monthly_income_yen: 1200000
+    addiction_severity: 軽度（完全な趣味）
+    gambling_history: 45年
+    visit_motive: 家にいても小言を言われるため
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 大当り中に妻から「お米買ってきて」とLINEが来た瞬間
+    machine_type: Aタイプ（ジャグラー）
+    time_of_day: 休日夕方
+  inner_monologue_ja: お、連チャン中だが仕方ない。ペカってるけど、隣の兄ちゃんにこの台譲って帰るか。お米買わないと怒られるしな。
+  emotional_state:
+    arousal_0_100: 40
+    despair_0_100: 0
+    dominant_emotion: 余裕 × 家族優先
+  action: 隣の客に「これ打つ？」と声をかけ、残りのメダルを持って交換所へ向かう。
+  post_play_state: スーパーでお米を買い、機嫌良く帰宅する。
+  source:
+    type: 観察・類推（メタ推論）
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: Interruptibility = 1.0の極致。確変・連チャン中であっても、些細な外部要因で未練なくプレイを中断できる特異なベースライン。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-B-006
+  category: 不労所得・地主層
+  profile:
+    age_range: 50代
+    occupation: 会社経営者
+    family: 妻
+    monthly_income_yen: 4000000
+    addiction_severity: 中等度
+    gambling_history: 20年
+    visit_motive: 経営の重圧からの解放（何も考えない時間）
+    psychiatric_comorbidity: 軽度の慢性疲労
+  trigger:
+    event: 店長がわざわざ挨拶に来て、コーヒーを差し入れた瞬間
+    machine_type: パチスロ
+    time_of_day: 平日夜
+  inner_monologue_ja: 店長も大変だな。まあ、俺がここで月に何十万も落としてるからな。誰からも決断を迫られないこの空間が一番落ち着く。
+  emotional_state:
+    arousal_0_100: 20
+    despair_0_100: 0
+    dominant_emotion: 優越感 × リラックス
+  action: 軽く会釈してコーヒーを受け取り、ゆったりとした動作でレバーを叩く。
+  post_play_state: 適当な時間で切り上げ、運転手付きの車で帰る。
+  source:
+    type: 観察・類推（メタ推論）
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: ホールを「接待される安全地帯」として消費している。Despairが発生する余地がない。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-B-007
+  category: 不労所得・地主層
+  profile:
+    age_range: 60代
+    occupation: 自由業（作家・ライター）
+    family: 独身
+    monthly_income_yen: 1000000
+    addiction_severity: 軽度
+    gambling_history: 30年
+    visit_motive: インプットの遮断と単純作業
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 激熱演出が外れて、周囲がざわついた瞬間
+    machine_type: パチンコ
+    time_of_day: 平日午後
+  inner_monologue_ja: いまの演出バランスはおかしいな。まあ、ネタにはなるか。しかし今日は回らないな、店を変えるか。
+  emotional_state:
+    arousal_0_100: 30
+    despair_0_100: 10
+    dominant_emotion: 分析的思考 × 呆れ
+  action: 怒ることもなく、冷静に玉の挙動を数分観察した後、席を立つ。
+  post_play_state: 別の店舗へ移動するか、カフェで仕事のメモをまとめる。
+  source:
+    type: 観察・類推（メタ推論）
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: ギャンブルをメタ認知的に捉えており、没入（Dissociation）が発生しない。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-B-008
+  category: 不労所得・地主層
+  profile:
+    age_range: 70代
+    occupation: 資産家（元地主）
+    family: 妻と同居
+    monthly_income_yen: 1500000
+    addiction_severity: 習慣的（毎朝並ぶ）
+    gambling_history: 50年
+    visit_motive: 常連仲間とのコミュニケーション
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 朝イチ、いつもの席が別の客に取られていた瞬間
+    machine_type: 海物語（パチンコ）
+    time_of_day: 朝イチ
+  inner_monologue_ja: おや、あそこは今日は若いのが座ってるな。仕方ない、隣の台にするか。出玉なんて時の運だ。
+  emotional_state:
+    arousal_0_100: 15
+    despair_0_100: 5
+    dominant_emotion: 穏やかな受容
+  action: 執着することなく、すぐ隣の台に座り、常連仲間と笑顔で挨拶を交わす。
+  post_play_state: 勝敗に関わらず、昼過ぎには常連仲間と昼食へ行く。
+  source:
+    type: 観察・類推（メタ推論）
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: 縄張り意識はあるが、それによるストレス（Despair）の発生が極めて低い。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-B-009
+  category: 不労所得・地主層
+  profile:
+    age_range: 50代
+    occupation: 不労所得（マンション経営）
+    family: 独身
+    monthly_income_yen: 2500000
+    addiction_severity: 中等度
+    gambling_history: 25年
+    visit_motive: 純粋なギャンブルの波を楽しむ
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 1日で20万円負けた直後、閉店のアナウンスを聞いた瞬間
+    machine_type: スマスロ
+    time_of_day: 夜22:45
+  inner_monologue_ja: おお、もうこんな時間か。今日はやられたな。まあ、明日またリベンジすればいい。家賃収入が入るし痛くはない。
+  emotional_state:
+    arousal_0_100: 40
+    despair_0_100: 10
+    dominant_emotion: ゲームとしての敗北感 × 経済的余裕
+  action: 伸びをして、店員に愛想よく手を挙げて退店する。
+  post_play_state: 負けたこと自体をエンターテインメントとして消費している。
+  source:
+    type: 観察・類推（メタ推論）
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: 20万円という大敗であっても、Monthly_incomeが緩衝材となりDespairが発火しない。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-B-010
+  category: 不労所得・地主層
+  profile:
+    age_range: 40代
+    occupation: 投資家
+    family: 既婚
+    monthly_income_yen: 6000000
+    addiction_severity: 軽度
+    gambling_history: 5年
+    visit_motive: 確率と期待値の遊び
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 期待値の高い台（ハイエナ台）を見つけた瞬間
+    machine_type: AT機
+    time_of_day: 平日夕方
+  inner_monologue_ja: これは期待値3000円くらいあるな。打っておくか。結果はどうあれ試行回数を稼ぐだけだ。
+  emotional_state:
+    arousal_0_100: 30
+    despair_0_100: 0
+    dominant_emotion: 機械的な作業意識
+  action: 淡々と千円札を投入し、スマホで期待値計算ツールを見ながら無表情で打つ。
+  post_play_state: 期待値通りに出なくても全く気にせず帰る。
+  source:
+    type: 観察・類推（メタ推論）
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: ギャンブルを完全に「投資・作業」としてメタ化しており、感情の波（Arousal/Despair）が意図的に切り離されている。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-B-011
+  category: 不労所得・地主層
+  profile:
+    age_range: 60代
+    occupation: 資産家夫人
+    family: 夫と同居
+    monthly_income_yen: 1000000
+    addiction_severity: 習慣的
+    gambling_history: 15年
+    visit_motive: 買い物のついで、派手な演出を見たい
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 大当りしてドル箱が積み上がった瞬間
+    machine_type: パチンコ
+    time_of_day: 休日昼
+  inner_monologue_ja: あら、出たわ。でも箱を積まれると足元が狭くて嫌ね。店員さん、早く流してくれないかしら。
+  emotional_state:
+    arousal_0_100: 20
+    despair_0_100: 0
+    dominant_emotion: 物理的な煩わしさ
+  action: 出玉の喜びよりも、パーソナルシステム（各台計数機）でないことへの不満を顔に出し、店員を呼ぶ。
+  post_play_state: 景品を日用品に換えて、デパートへ買い物に向かう。
+  source:
+    type: 観察・類推（メタ推論）
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: 出玉によるArousalの上昇がなく、むしろ物理的な快適性を重視する極端な例。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-B-012
+  category: 不労所得・地主層
+  profile:
+    age_range: 50代
+    occupation: 元プロスポーツ選手
+    family: 離婚
+    monthly_income_yen: 1500000
+    addiction_severity: 中等度
+    gambling_history: 10年
+    visit_motive: 過去のヒリヒリした勝負の代替
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 設定6（最高設定）を確信した瞬間
+    machine_type: パチスロ
+    time_of_day: 平日昼間
+  inner_monologue_ja: 間違いなく上（高設定）だ。でも、昔の試合みたいなヒリつく感覚はないな。金は増えるが、なんか物足りない。
+  emotional_state:
+    arousal_0_100: 50
+    despair_0_100: 0
+    dominant_emotion: 勝利への確信 × 慢性的な渇望感
+  action: ブン回す（高速で打つ）ことはせず、あくびをしながら適当なペースで打ち続ける。
+  post_play_state: 5000枚出しても「こんなもんか」と冷めた表情で退店する。
+  source:
+    type: 観察・類推（メタ推論）
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: 勝利が確定していてもArousalが上がりきらない。ギャンブルの刺激が過去の体験（競技）の代替になり得ていない。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 不労所得・地主層
+- id: R3-C-001
+  category: 中年現役男性
+  profile:
+    age_range: 40代
+    occupation: サラリーマン（管理職）
+    family: 妻と小学生の子2人
+    debt_yen: 1500000
+    addiction_severity: 中等度（小遣いの範疇を超えキャッシング常態化）
+    gambling_history: 15年
+    visit_motive: 仕事のストレス発散／家庭に帰りたくない
+    psychiatric_comorbidity: 慢性的な疲労・ストレス
+  trigger:
+    event: 仕事帰りの21時、妻から「何時に帰る？」とLINEが来た瞬間
+    machine_type: Aタイプ（ジャグラー等）
+    time_of_day: 平日夜21:30
+  inner_monologue_ja: 『仕事が立て込んでて遅くなる』と。帰っても小言を言われるだけだ。ボーナス引くまで帰れない。
+  emotional_state:
+    arousal_0_100: 60
+    despair_0_100: 50
+    dominant_emotion: 煩わしさ × 逃避
+  action: LINEの通知をスワイプして消し、メダルを追加投資する。
+  post_play_state: 閉店まで打ち切り、罪悪感を抱えながら深夜に帰宅。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: Interruptibility = 0.3。Stigma_barrierが高く、家族への嘘が常態化している。Time_cost_efficiencyを意識しつつも止められない。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-002
+  category: 中年現役男性
+  profile:
+    age_range: 50代
+    occupation: 自営業
+    family: 妻（夫婦関係冷え切り）
+    debt_yen: 3000000
+    addiction_severity: 重度（仕事資金の流用）
+    gambling_history: 25年
+    visit_motive: 「借金があるからギャンブルをやらないといけない」という倒錯
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 大負けして帰り際、妻からの問い詰めを思い出した瞬間
+    machine_type: AT機
+    time_of_day: 休日夕方
+  inner_monologue_ja: 違うよ、借金があるからギャンブルをやらないといけないんだよ！普通に働いてたって返せる額じゃないんだから。
+  emotional_state:
+    arousal_0_100: 70
+    despair_0_100: 60
+    dominant_emotion: 正当化 × 苛立ち
+  action: 負けた怒りを正当化し、タバコを強く吸い込みながらイライラと退店する。
+  post_play_state: 帰宅後、妻に問い詰められ逆ギレする。
+  source:
+    type: 依存症対策センター当事者手記（家族手記）
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: 認知の歪みの典型例。Despairを抑え込むために『投資の正当性』を脳内で構築している。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-003
+  category: 中年現役男性
+  profile:
+    age_range: 40代
+    occupation: 営業職
+    family: 妻・子
+    debt_yen: 0
+    addiction_severity: 軽〜中等度（小遣いの範囲だが時間は浪費）
+    gambling_history: 20年
+    visit_motive: 給料日のルーティン／ささやかな贅沢
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 給料日当日、財布に10万円入っている状態でのプレイ開始時
+    machine_type: パチスロ
+    time_of_day: 給料日（25日）夜
+  inner_monologue_ja: 今日は給料日だ。財布には余裕がある。5万までは突っ込めるぞ。ここで出せば今月は小遣いが倍になる。
+  emotional_state:
+    arousal_0_100: 80
+    despair_0_100: 10
+    dominant_emotion: 期待感 × 万能感
+  action: 普段は座らない荒い波の機種に座り、強気で投資を開始する。
+  post_play_state: 5万円負けて激しい後悔に襲われる。
+  source:
+    type: 観察・類推（給料日の行動パターン）
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: Payday_sensitivity = 1.0。資金的余裕が一時的にArousalを引き上げ、リスク許容度を狂わせる。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-004
+  category: 中年現役男性
+  profile:
+    age_range: 30代後半
+    occupation: 会社員（夜勤あり）
+    family: 結婚目前の彼女
+    debt_yen: 2000000
+    addiction_severity: 重度（クレジットカードのキャッシング依存）
+    gambling_history: 10年
+    visit_motive: 過去の10万円勝ちの幻影を追う
+    psychiatric_comorbidity: 虚無感・焦燥感
+  trigger:
+    event: 天井ストッパーで単発終了し、手持ちが尽きた瞬間
+    machine_type: パチスロ
+    time_of_day: 平日夜
+  inner_monologue_ja: またやってしまった。結婚資金に手をつけてしまった。彼女にバレたら終わりだ。でも取り返すしかない。
+  emotional_state:
+    arousal_0_100: 85
+    despair_0_100: 85
+    dominant_emotion: 焦燥感 × 自己嫌悪
+  action: 頭を抱え、台のデータランプを睨みつけながら次の借り入れを計算する。
+  post_play_state: 自転車操業が加速し、数ヶ月後に破綻する。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: Stigma_barrierが極端に高い（結婚破棄の恐怖）。ArousalとDespairが拮抗している状態。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-005
+  category: 中年現役男性
+  profile:
+    age_range: 40代
+    occupation: 公務員
+    family: 妻・子2人
+    debt_yen: 1000000
+    addiction_severity: 中等度
+    gambling_history: 18年
+    visit_motive: 職場の人間関係のストレス
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 同じ職場の同僚らしき人物がホールに入ってきたのを見た瞬間
+    machine_type: パチンコ
+    time_of_day: 平日夕方
+  inner_monologue_ja: やばい、〇〇課長じゃないか？こんなところで会ったら何を言われるか分からない。顔を隠さなきゃ。
+  emotional_state:
+    arousal_0_100: 90
+    despair_0_100: 40
+    dominant_emotion: 焦燥感 × 隠蔽衝動
+  action: 慌ててマスクを深く被り、下を向いて打ち出しを止める。気配が消えるまで動かない。
+  post_play_state: 見つからずに済んだが、集中が切れ、早々に退店する。
+  source:
+    type: 観察・類推（Stigmaの顕在化）
+    url_or_ref: メタ推論
+    confidence: 高
+  notes: Stigma_barrier = 1.0。社会的地位の喪失リスクがプレイのInterruptibilityを強制的に1.0に引き上げる。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-006
+  category: 中年現役男性
+  profile:
+    age_range: 50代
+    occupation: 会社員（窓際族）
+    family: 妻
+    debt_yen: 500000
+    addiction_severity: 中等度
+    gambling_history: 20年
+    visit_motive: 有休消化の暇つぶし、家庭内の居場所のなさ
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 平日昼間、ふと周囲が専業（プロ）と老人ばかりだと気づいた瞬間
+    machine_type: パチスロ（Aタイプ）
+    time_of_day: 平日昼間
+  inner_monologue_ja: 周りを見るとジジババか、スロプロみたいな若いやつばっかりだな。俺、平日の真っ昼間にスーツ着て何やってるんだろうな。
+  emotional_state:
+    arousal_0_100: 30
+    despair_0_100: 60
+    dominant_emotion: 虚無感 × 自己嫌悪
+  action: ため息をつき、スマホで会社のメールを無意味にチェックする。
+  post_play_state: 定時まで時間を潰し、仕事帰りを装って帰宅する。
+  source:
+    type: 観察・類推
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: 中年特有の「社会からの疎外感」がDespairを緩やかに上昇させる。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-007
+  category: 中年現役男性
+  profile:
+    age_range: 40代
+    occupation: 運送業
+    family: 独身
+    debt_yen: 4000000
+    addiction_severity: 重度
+    gambling_history: 20年
+    visit_motive: ギャンブルで一発当てて仕事を辞めたい
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 投資5万でようやくATに入ったが、上乗せなしで駆け抜けた瞬間
+    machine_type: AT機
+    time_of_day: 休日夜
+  inner_monologue_ja: ふざけんなよ！遠隔だろこれ。せっかくの休みがこれで終わりかよ。明日からまたあのクソみたいな仕事かよ！
+  emotional_state:
+    arousal_0_100: 100
+    despair_0_100: 80
+    dominant_emotion: 激怒 × 被害妄想
+  action: 台のボタンを強く叩き（台パン）、舌打ちをしながらメダルを叩きつけるように下皿に落とす。
+  post_play_state: 怒りが収まらず、帰りにコンビニで酒を大量に買ってやけ酒。
+  source:
+    type: 観察・類推
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: 労働の苦痛（Time_cost_efficiencyの低さ）への代償が満たされなかったことによる怒りの爆発。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-008
+  category: 中年現役男性
+  profile:
+    age_range: 40代
+    occupation: ITエンジニア
+    family: 妻・子（小遣い制）
+    debt_yen: 0
+    addiction_severity: 軽度
+    gambling_history: 15年
+    visit_motive: 小遣い稼ぎ、趣味
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 1万円の投資で3万円の回収が確定し、キリが良い時間になった瞬間
+    machine_type: パチスロ
+    time_of_day: 平日夜20:00
+  inner_monologue_ja: よし、プラス2万だ。これ以上追うと確率が収束して飲まれる。ここでヤメて、帰りにちょっといいビールでも買って帰ろう。
+  emotional_state:
+    arousal_0_100: 60
+    despair_0_100: 0
+    dominant_emotion: 達成感 × 冷静な計算
+  action: 即座にICカードを抜き、周囲の台を少しだけ確認して交換所へ向かう。
+  post_play_state: 小遣いが増えた喜びで、家族にも優しく接する。
+  source:
+    type: 観察・類推
+    url_or_ref: メタ推論
+    confidence: 高
+  notes: Interruptibility = 1.0。中等度以下のサラリーマンの理想的な成功体験モデル。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-009
+  category: 中年現役男性
+  profile:
+    age_range: 50代
+    occupation: 工場勤務
+    family: 妻・大学生の子
+    debt_yen: 2000000
+    addiction_severity: 重度
+    gambling_history: 30年
+    visit_motive: 子供の学費のプレッシャーからの逃避
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 財布の残金がなくなり、キャッシュカードで銀行アプリの残高を見た瞬間
+    machine_type: パチンコ
+    time_of_day: 休日昼
+  inner_monologue_ja: 今月は子供の学費の引き落としがあるのに。どうしよう、足りない。でも、もう一万円だけ打てば確変に入る気がする。給料日までなんとか誤魔化せるか。
+  emotional_state:
+    arousal_0_100: 80
+    despair_0_100: 70
+    dominant_emotion: 焦り × ギャンブル的思考
+  action: アプリを閉じ、ため息をつきながらコンビニATMへ向かう。
+  post_play_state: 学費に手をつけてしまい、妻に嘘をつき続けることになる。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: 家族のイベント（学費等）に対する罪悪感がDespairを高めるが、認知の歪みにより「勝って返す」というArousalへ変換される。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-010
+  category: 中年現役男性
+  profile:
+    age_range: 40代
+    occupation: 自営業
+    family: 妻・子
+    debt_yen: 5000000
+    addiction_severity: 末期一歩手前
+    gambling_history: 20年
+    visit_motive: 仕事の資金繰りの現実逃避
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 取引先からの電話が鳴ったが、大当たりが始まった瞬間
+    machine_type: AT機
+    time_of_day: 平日午後
+  inner_monologue_ja: 取引先からの電話だ。出ないと仕事が飛ぶ。でもいま上乗せ特化ゾーン中だ。手を止めたくない。あとで折り返せばいい。
+  emotional_state:
+    arousal_0_100: 95
+    despair_0_100: 40
+    dominant_emotion: 興奮 × 優先順位の崩壊
+  action: 着信音を消し、スマホを裏返してレバーを叩き続ける。
+  post_play_state: 大勝したが、取引先からの信用を失い、長期的には負債が増える。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: Interruptibility = 0。Arousalが社会的責任（Stigma_barrier）を突破した瞬間。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-011
+  category: 中年現役男性
+  profile:
+    age_range: 30代後半
+    occupation: サラリーマン
+    family: 妻（妊娠中）
+    debt_yen: 1000000
+    addiction_severity: 中等度
+    gambling_history: 10年
+    visit_motive: もうすぐ自由がなくなることへの焦り
+    psychiatric_comorbidity: マタニティブルー（夫側）
+  trigger:
+    event: 妻から「体調が悪いから早く帰ってきて」と連絡が来た瞬間
+    machine_type: パチスロ
+    time_of_day: 平日夜
+  inner_monologue_ja: 帰らなきゃいけないのは分かってる。でも、子供が生まれたらもうパチンコなんて一生できないんだ。今出てるこのメダルを取り切るまでは。
+  emotional_state:
+    arousal_0_100: 70
+    despair_0_100: 60
+    dominant_emotion: 葛藤 × 未練
+  action: 「今向かってる」と嘘のLINEを返し、高速で消化を続ける。
+  post_play_state: 帰宅後、妻に冷たくされ自己嫌悪に陥る。
+  source:
+    type: 観察・類推
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: ライフステージの変化に対する焦りが、逆にギャンブルへの執着を強める現象。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-012
+  category: 中年現役男性
+  profile:
+    age_range: 50代
+    occupation: 管理職
+    family: 妻・子独立
+    debt_yen: 0
+    addiction_severity: 軽度
+    gambling_history: 30年
+    visit_motive: 仕事帰りの習慣
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 隣の若い客が、台の知識をひけらかしながら大声で話しているのを聞いた瞬間
+    machine_type: パチスロ
+    time_of_day: 平日夜
+  inner_monologue_ja: うるさい若造だな。こっちは仕事で疲れて静かに打ちたいんだ。スマホで調べた知識だけで勝てるなら苦労しないよ。
+  emotional_state:
+    arousal_0_100: 30
+    despair_0_100: 10
+    dominant_emotion: 苛立ち × 世代的優越感
+  action: 舌打ちをして、イヤホンのノイズキャンセリングを強める。
+  post_play_state: ストレスが溜まり、早めに切り上げる。
+  source:
+    type: 観察・類推
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: Sensory_gating_factorが他者のノイズによって破られ、不快感がプレイ続行の意欲（Arousal）を下げる。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-013
+  category: 中年現役男性
+  profile:
+    age_range: 40代
+    occupation: 会社員
+    family: 既婚
+    debt_yen: 300000
+    addiction_severity: 中等度
+    gambling_history: 20年
+    visit_motive: 過去の成功体験の追体験
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 昔のパチスロ4号機時代によく似た演出が出現した瞬間
+    machine_type: スマスロ
+    time_of_day: 休日午後
+  inner_monologue_ja: おお、この演出！懐かしいな。あの頃は毎日のように勝ってたな。よし、今日はあの時みたいに万枚出してやる。
+  emotional_state:
+    arousal_0_100: 85
+    despair_0_100: 0
+    dominant_emotion: ノスタルジー × 興奮
+  action: 顔をほころばせ、リールを止める手に力が入る。
+  post_play_state: 結局出玉は伸びず、昔とは違うという現実に直面する。
+  source:
+    type: 観察・類推
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: ノスタルジーが強力なArousalのトリガーとして機能する中年特有のモデル。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-C-014
+  category: 中年現役男性
+  profile:
+    age_range: 40代
+    occupation: 自営業
+    family: 独身
+    debt_yen: 2000000
+    addiction_severity: 重度
+    gambling_history: 15年
+    visit_motive: 借金返済のプレッシャー
+    psychiatric_comorbidity: なし
+  trigger:
+    event: 天井到達直前で、最も恩恵の少ないボーナスに当選してしまった瞬間
+    machine_type: パチスロ
+    time_of_day: 平日夜
+  inner_monologue_ja: うわ、まじかよ。ここでレギュラーかよ。天井まであと少しだったのに。これじゃ今日使った3万円がパーだ。
+  emotional_state:
+    arousal_0_100: 90
+    despair_0_100: 80
+    dominant_emotion: 激しい落胆 × 怒り
+  action: 天を仰ぎ、下皿のメダルを乱暴に箱に移す。貧乏ゆすりが止まらない。
+  post_play_state: 取り返すために別の台に移動し、さらに傷口を広げる。
+  source:
+    type: 観察・類推
+    url_or_ref: メタ推論
+    confidence: 高
+  notes: サンクコスト効果が最も強く働く瞬間。Despairの急上昇が、撤退（Interruptibility）ではなく更なるArousal（怒りによる続行）を引き起こす。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 中年現役男性
+- id: R3-D-001
+  category: 精神疾患併発
+  profile:
+    age_range: 30代
+    occupation: 休職中（元営業職）
+    family: 親と同居
+    debt_yen: 500000
+    addiction_severity: 中等度（現実逃避型依存）
+    gambling_history: 2年
+    visit_motive: 家に居たくない／社会からの逃避
+    psychiatric_comorbidity: うつ病（抑うつ状態）
+  trigger:
+    event: パチンコの激しい光と音の中で、ふと我に返る瞬間
+    machine_type: パチンコ
+    time_of_day: 平日昼間
+  inner_monologue_ja: 仕事も行けず、こんな平日昼間に何をしているんだろう。でも、ここにいる間だけは嫌なことを全部忘れられる。何も考えたくない。
+  emotional_state:
+    arousal_0_100: 30
+    despair_0_100: 80
+    dominant_emotion: 無気力 × 感覚の麻痺
+  action: 虚ろな目で盤面の光を見つめ、ハンドルを握り続ける。
+  post_play_state: 退店時、現実に戻った瞬間に強烈な自己嫌悪と抑うつに襲われる。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: Mood_lability = 低いが、ベースラインのDespairが高い。Sensory_gating_factor = 0.2（パチンコ台の刺激だけが心地よい麻酔となっている）。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 精神疾患併発
+- id: R3-D-002
+  category: 精神疾患併発
+  profile:
+    age_range: 40代
+    occupation: 自営業
+    family: 妻・子
+    debt_yen: 4000000
+    addiction_severity: 重度
+    gambling_history: 15年
+    visit_motive: 全能感と散財衝動
+    psychiatric_comorbidity: 双極性障害（躁状態）
+  trigger:
+    event: 大当りが連続し、出玉が急速に増え始めた瞬間
+    machine_type: パチスロ（AT機）
+    time_of_day: 休日午後
+  inner_monologue_ja: 俺は天才だ！この台の波が完全に読める。店中のメダルを全部出してやる。誰も俺を止められない！
+  emotional_state:
+    arousal_0_100: 100
+    despair_0_100: 0
+    dominant_emotion: 過剰な全能感 × 異常な高揚
+  action: 周囲の客に見せつけるように、乱暴かつ高速でレバーを叩き、ボタンを強打する。店員に横柄な態度をとる。
+  post_play_state: 勝った金で後先考えず高額な買い物（散財）をする。
+  source:
+    type: クリニック症例・ブログ類推
+    url_or_ref: ohishi-clinic.or.jp
+    confidence: 高
+  notes: Mood_lability = 1.0。躁状態における異常なArousalの跳ね上がりと、Impulse_control = 0（衝動の完全な解放）。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 精神疾患併発
+- id: R3-D-003
+  category: 精神疾患併発
+  profile:
+    age_range: 20代
+    occupation: フリーター
+    family: 一人暮らし
+    debt_yen: 1000000
+    addiction_severity: 中等度
+    gambling_history: 5年
+    visit_motive: 衝動制御の困難／刺激への渇望
+    psychiatric_comorbidity: ADHD（注意欠如・多動症）
+  trigger:
+    event: 天井まで残り200ゲームのところで、突然手持ちの現金が尽きた瞬間
+    machine_type: パチスロ
+    time_of_day: 平日夜
+  inner_monologue_ja: ああああ！もう待てない！あと少しなのに！金、金、金！早く金をおろさないと誰かに取られる！
+  emotional_state:
+    arousal_0_100: 95
+    despair_0_100: 30
+    dominant_emotion: 極度の焦燥感 × 衝動性
+  action: 台にスマホやタバコを乱雑に投げ置き、ATMへ全速力で走る。周囲の迷惑は目に入らない。
+  post_play_state: 落ち着いた後、自分がなぜあそこまで焦っていたのか理解できず自己嫌悪に陥る。
+  source:
+    type: 当事者ブログ
+    url_or_ref: 個人ブログ類推
+    confidence: 中
+  notes: Impulse_control = 0.1。一時的に芽生えた欲望を全く制御できず、直情的な行動に出る特性。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 精神疾患併発
+- id: R3-D-004
+  category: 精神疾患併発
+  profile:
+    age_range: 50代
+    occupation: 主婦（パート）
+    family: 夫・子（育児放棄傾向）
+    debt_yen: 3000000
+    addiction_severity: 重度（離婚危機）
+    gambling_history: 10年
+    visit_motive: 過去のトラウマと現在の苦痛からの逃避
+    psychiatric_comorbidity: パニック発作・解離傾向
+  trigger:
+    event: 激しい演出が外れ、借金総額が頭をよぎった瞬間
+    machine_type: パチンコ
+    time_of_day: 平日夕方
+  inner_monologue_ja: また外れた。どうしよう、夫が帰ってくる前に夕飯を作らなきゃ。心臓がバクバクする。息が苦しい。でも席から立てない。体が動かない。
+  emotional_state:
+    arousal_0_100: 90
+    despair_0_100: 90
+    dominant_emotion: パニック × 身体的硬直
+  action: 冷や汗をかきながら、震える手でお札をサンドに押し込み続ける。視線は定まらない。
+  post_play_state: 心と行動がバラバラになり、自分が自分でないような解離感覚を抱えたまま駐車場へ向かう。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: Dissociation_tendency = 0.9。心（やめたい・帰らなきゃ）と行動（打ち続ける）が完全に乖離している状態。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 精神疾患併発
+- id: R3-D-005
+  category: 精神疾患併発
+  profile:
+    age_range: 30代
+    occupation: 無職
+    family: 実家暮らし
+    debt_yen: 1500000
+    addiction_severity: 中等度
+    gambling_history: 8年
+    visit_motive: 躁状態と鬱状態の波の合間の刺激
+    psychiatric_comorbidity: 双極性障害（鬱状態への移行期）
+  trigger:
+    event: 昨日までの万能感が嘘のように消え、投資が止まらない瞬間
+    machine_type: パチスロ
+    time_of_day: 平日午後
+  inner_monologue_ja: 昨日はあんなに勝てる気がしたのに。今日は全然ダメだ。体が重い。でも昨日出たあの光と音が忘れられない。またあの感覚を味わいたい。
+  emotional_state:
+    arousal_0_100: 40
+    despair_0_100: 70
+    dominant_emotion: 気分の急転直下 × 執着
+  action: ため息をつきながら、機械的にメダルを入れ続ける。
+  post_play_state: 完全な抑うつ状態に陥り、数日間寝込む。
+  source:
+    type: 観察・類推
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: Mood_labilityによるArousalの急激な低下。しかし依存行動自体は止まらない。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 精神疾患併発
+- id: R3-D-006
+  category: 精神疾患併発
+  profile:
+    age_range: 20代
+    occupation: 派遣社員
+    family: 独身
+    debt_yen: 500000
+    addiction_severity: 中等度
+    gambling_history: 3年
+    visit_motive: 衝動性と過集中の対象
+    psychiatric_comorbidity: ADHD（過集中傾向）
+  trigger:
+    event: 朝イチから打ち始め、気づけば夕方になっていた瞬間
+    machine_type: パチスロ
+    time_of_day: 休日夕方
+  inner_monologue_ja: えっ、もう17時？朝から水も飲んでない。トイレにも行ってない。でもこのモードが終わるまでは立てない。
+  emotional_state:
+    arousal_0_100: 90
+    despair_0_100: 10
+    dominant_emotion: 過集中 × 時間感覚の喪失
+  action: 猛烈なスピードでリールを回し続け、周囲の出来事に一切反応しない。
+  post_play_state: 退店後、急激な疲労感と空腹に襲われる。
+  source:
+    type: 当事者ブログ・類推
+    url_or_ref: 個人ブログ類推
+    confidence: 中
+  notes: ADHD特有のハイパーフォーカス（過集中）。Interruptibility = 0。生理的欲求すらブロックされる。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 精神疾患併発
+- id: R3-D-007
+  category: 精神疾患併発
+  profile:
+    age_range: 40代
+    occupation: 無職（障害年金受給）
+    family: 単身
+    debt_yen: 0
+    addiction_severity: 軽度（少額だが毎日の日課）
+    gambling_history: 10年
+    visit_motive: トラウマからの自己防衛
+    psychiatric_comorbidity: PTSD
+  trigger:
+    event: ホール内の大音量とフラッシュに包まれている瞬間
+    machine_type: 1円パチンコ
+    time_of_day: 平日昼間
+  inner_monologue_ja: この音がいい。爆音で耳を塞いでくれる。光が視界を埋め尽くしてくれる。過去の嫌な記憶が入り込む隙間がない。
+  emotional_state:
+    arousal_0_100: 20
+    despair_0_100: 40
+    dominant_emotion: 安心感 × 感覚遮断
+  action: 耳栓もつけず、目を細めながら盤面の強烈なフラッシュを浴び続ける。
+  post_play_state: 閉店まで少額で粘り、静かなアパートに帰るのを嫌がる。
+  source:
+    type: 観察・類推
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: Sensory_gating_factor = 0。外部刺激が苦痛ではなく「防音壁」として機能している。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 精神疾患併発
+- id: R3-D-008
+  category: 精神疾患併発
+  profile:
+    age_range: 30代
+    occupation: フリーランス
+    family: 独身
+    debt_yen: 2000000
+    addiction_severity: 重度
+    gambling_history: 7年
+    visit_motive: 衝動性と怒りのコントロール不全
+    psychiatric_comorbidity: ADHD・二次的な怒り
+  trigger:
+    event: 隣の客が自分の台を覗き込んできた瞬間
+    machine_type: パチスロ
+    time_of_day: 休日午後
+  inner_monologue_ja: なんだこいつ、ジロジロ見やがって！俺がハマってるのを笑ってるのか！？ふざけんな！
+  emotional_state:
+    arousal_0_100: 100
+    despair_0_100: 20
+    dominant_emotion: 激しい怒り × 衝動性
+  action: 隣の客をものすごい剣幕で睨みつけ、台を強く叩いて威嚇する。
+  post_play_state: 店員に注意され、トラブルになり退店させられる。
+  source:
+    type: 当事者ブログ・類推
+    url_or_ref: 個人ブログ類推
+    confidence: 中
+  notes: Impulse_control = 0。些細な外部刺激に対する過剰防衛と衝動的行動。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 精神疾患併発
+- id: R3-D-009
+  category: 精神疾患併発
+  profile:
+    age_range: 50代
+    occupation: 休職中
+    family: 妻と別居中
+    debt_yen: 6000000
+    addiction_severity: 末期
+    gambling_history: 20年
+    visit_motive: 死を望むための口実作り
+    psychiatric_comorbidity: 重度のうつ病・希死念慮
+  trigger:
+    event: 大負けが確定し、残金がゼロになった瞬間
+    machine_type: パチンコ
+    time_of_day: 平日夜
+  inner_monologue_ja: これで全部なくなった。もう言い訳できない。これでやっと、死ぬ理由ができた。
+  emotional_state:
+    arousal_0_100: 10
+    despair_0_100: 100
+    dominant_emotion: 不気味な安堵感 × 希死念慮
+  action: 暴れることもなく、静かに深く息を吐き、ゆっくりと立ち上がる。
+  post_play_state: 帰路、線路や高いビルを探しながら歩く。
+  source:
+    type: 依存症対策センター当事者手記
+    url_or_ref: ncasa-japan.jp
+    confidence: 高
+  notes: Despairが100に達した瞬間に、Arousalがゼロになり「死への安心感」に反転する特異なフェーズ。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 精神疾患併発
+- id: R3-D-010
+  category: 精神疾患併発
+  profile:
+    age_range: 20代
+    occupation: 水商売
+    family: 独身
+    debt_yen: 1500000
+    addiction_severity: 中等度
+    gambling_history: 4年
+    visit_motive: 気分の波のコントロール不全
+    psychiatric_comorbidity: 双極性障害（混合状態）
+  trigger:
+    event: 大当たりが確定し、派手なファンファーレが鳴った瞬間
+    machine_type: パチスロ
+    time_of_day: 深夜
+  inner_monologue_ja: やった、当たった！…でも、これで借金が返せるわけじゃない。なんで私こんなことしてるんだろう。悲しい。でも嬉しい。
+  emotional_state:
+    arousal_0_100: 90
+    despair_0_100: 80
+    dominant_emotion: 歓喜と号泣の混在
+  action: 大当たりを消化しながら、ポロポロと涙を流して泣きながら打つ。
+  post_play_state: 勝ったのにも関わらず、ひどく落ち込んだ状態で帰宅する。
+  source:
+    type: 観察・臨床的推論
+    url_or_ref: メタ推論
+    confidence: 中
+  notes: Mood_lability = 1.0。ArousalとDespairが同時に高ぶる「混合状態」の典型的なプレイスタイル。
+  _dr_provider: gemini
+  _round: R3
+  _category_normalized: 精神疾患併発
