@@ -1272,7 +1272,184 @@ stress 係数 OFF モデル 1 本を別途回す:
 | 動画構成 | Phase 0.1-4-C（v4.2 spike） | Phase 1-6（観察 + 答え合わせ） |
 | 主指標 | upset_recognition | joy_score / misery_score / pre_event_stress × Δ脳汁 |
 
+## v4.5 仕様（6 機種完全校正 + 48 セル格子、2026-05-02〜）
+
+> v4.5 は v4.4 の上に **6 機種完全校正 + 5 つの新規概念 + 8 属性 × 6 機種 = 48 セル格子** を重ねる差分仕様。
+> v4.4 セクション（L1120-L1273）は観察型構造の核心、本セクションは機種仕様詳細と機種選択ロジック。
+> 詳細擬似コードは [docs/chatgpt-response-v4-4.md](docs/chatgpt-response-v4-4.md) 参照。
+
+### v4.5 の核心転換
+
+- 4 機種 (v4.3 schema) → **6 機種完全校正**（PURE_A / MIDDLE_45 / BAKURETSU_AT / ART_2010 / CHAIN_OKI / GOD_2000）
+- 機種選択を **8 属性 × 6 機種 = 48 セル格子** で観察（属性差と機種差を分離）
+- 5 つの新規概念実装名: `streak_bonus / chain_anxiety / disappointment_stress / miren_uchi_policy / afterglow`
+- GOD_2000 の桁違い興奮を **bonus_excitement_multiplier = 4.40 + big_gain_log** で表現
+- raw 200 超え許容、表示は **「脳汁 100+」**（4 値ログ: raw / brain_after_raw / brain_after_clipped / brain_overcap）
+
+### 設計の根本: 物理連チャン / 体感連チャン / 期待の意味づけ の 3 分離
+
+PURE_A は `chain_mode: none` のまま、「ジャグ連」「謎の 10 連」は `streak_bonus` で表現。
+`continue_prob > 0` にすると別の機械になる（ChatGPT Pro v4.5 レビューの最重要指摘）。
+
+### 6 機種完全仕様（YAML 形式 SSoT）
+
+| 機種 | p_initial_hit | continue_prob | payout_mean | payout_std | payout_cap | bonus_excite | chain_start_impact | streak_onset | streak_bonus_mult | chain_anxiety_profile |
+|------|--------------:|--------------:|------------:|-----------:|-----------:|-------------:|-------------------:|-------------:|------------------:|----------------------|
+| PURE_A | 0.215 | 0.00 | 4,700 | 2,200 | 18,000 | 0.85 | 0.18 | 4 | 1.35 | none_or_low |
+| MIDDLE_45 | 0.055 | 0.60 | 8,200 | 7,000 | 80,000 | 1.35 | 0.45 | 5 | 1.15 | milestone_pressure |
+| BAKURETSU_AT | 0.018 | 0.72 | 16,500 | 27,000 | 200,000 | 2.25 | 0.82 | 4 | 0.85 | entry_rare_betrayal_high |
+| ART_2010 | 0.030 | 0.83 | 6,700 | 6,500 | 100,000 | 1.70 | 0.55 | 7 | 0.75 | accident_entrance |
+| CHAIN_OKI | 0.035 | 0.82 | 6,200 | 7,500 | 120,000 | 1.65 | 0.65 | 5 | 1.25 | no_guarantee_high |
+| **GOD_2000** | 0.006 | 0.52 | **80,000** | 90,000 | **220,000** | **4.40** | **0.95** | 3 | 0.45 | god_afterglow |
+
+詳細 event_probs / event_impacts は [docs/chatgpt-response-v4-4.md](docs/chatgpt-response-v4-4.md) §2 参照。
+
+代表機（観客向け説明用、コードには含めない）:
+- PURE_A: ジャグラー、ハナハナ
+- MIDDLE_45: 北斗の拳、吉宗、銭形
+- BAKURETSU_AT: アラジン、獣王、サラリーマン金太郎
+- ART_2010: 凱旋、ハーデス、秘宝伝、神々の系譜
+- CHAIN_OKI: 沖ドキ！、ヴァルヴレイヴ
+- GOD_2000: ミリオンゴッド
+
+### 興奮量計算式（v4.5 最終形）
+
+```text
+raw_brain_delta = hit_body                                    # 22 × bonus_multiplier (chain_start)
+                + 8 × tanh(net_gain / 7000)                   # 通常取得感（早めに飽和）
+                + 10 × big_gain_log × bonus_multiplier        # 大量取得項（v4.5 追加）
+                + 35 × event_impact × (0.5 + 1.5 × pre_stress) × dopamine_sensitivity
+                + streak_bonus(N, mt)                         # 異常連チャン（α）
+                − 0.05 × (brain_arousal − base_arousal)
+
+big_gain_log = max(0, log10(max(payout, 5000) / 5000))
+```
+
+### 5 つの新規概念
+
+実装名 5 本: `streak_bonus / chain_anxiety / disappointment_stress / miren_uchi_policy / afterglow`
+
+詳細式は [docs/chatgpt-response-v4-4.md](docs/chatgpt-response-v4-4.md) §3-9 参照。要点:
+
+- **streak_bonus**: 階段(18×sigmoid) + 線形(4x)、PURE_A は近接当たり（streak_gap_steps=2）で判定
+- **chain_anxiety**: 機種別係数表（CHAIN_OKI 最強、`stress_target` への重み 0.16）
+- **disappointment_stress**: betrayal（chain 終了時）+ scrap（heavy event 後 N step 評価）を統合
+- **miren_uchi_policy**: stress + cash_low + loss で発火、C 追い上げ強い（strength 0.85、max PURE_A 確率 0.70）
+- **afterglow**: GOD 神演出後 5 step、認知 + 行動 boost（**物理確率は変えない**、γ=0.35、decay τ=2.5）
+
+### 機種選択ロジック（48 セル格子、2026-05-02 確定）
+
+横塚提案: 「シミュレーションにならないから機種固定」「8 属性 × 6 機種 = 48 セルで観察」
+
+**人数配分**:
+- 各属性 125 人を 6 機種に: **21 + 21 + 21 + 21 + 21 + 20 = 125**
+- 全体: 125 × 8 = **1000 人維持**
+- seed 固定で配分再現可能
+
+**通常時**:
+- `assigned_machine` を 50 step 打ち続ける（spike_v43 の `maybe_switch` は **削除**）
+- chain_active 中も担当機種を維持
+
+**未練打ち例外**:
+- `compute_miren_signal` 発動時、PURE_A に一時 override（C 追い上げのみ強い）
+- chain_active 中は発動しない（chain_block=0）
+
+**観察できるもの**:
+- 同属性 × 異機種: 機種が興奮を作るか（C × GOD vs C × PURE_A）
+- 異属性 × 同機種: 属性が興奮を作るか（C × GOD vs E × GOD）
+- 同セル内 20-21 人: 個体差
+
+### 動画構成 v4.5（Phase 4 拡大）
+
+| Phase | 内容 | 秒数 |
+|-------|------|------|
+| 1 | 環境説明 + 私の仮説提示 | 15 |
+| 2 | 8 属性 + 6 機種 + 48 セル格子説明 | 18 |
+| 3 | シミュ実行（ホール俯瞰、1000 人早回し） | 12 |
+| 4 | **最高幸福ランキング** + **48 セル ヒートマップ 5 秒** | **30** |
+| 5 | 最不幸ランキング | 25 |
+| 6 | 仮説答え合わせ（C × 6 機種で機種別分解） | 15 |
+
+合計 **115 秒（1 分 55 秒）**、提出仕様 1〜2 分内に収まる。
+
+### 「神光った」桁違い興奮の表現
+
+ログには 4 値:
+- `raw_brain_delta`（例 +214）
+- `brain_after_raw`（例 236）
+- `brain_after_clipped`（100）
+- `brain_overcap`（max(0, brain_after_raw - 100)）
+
+ランキング: `raw_brain_delta`、画面メーター: `brain_after_clipped`、表示: 「**脳汁 100+**」「raw Δ脳汁 +214」。
+
+### 仮説の言い直し（v4.5 で精緻化）
+
+- 元（v4.4）: 「C 追い上げ型が最も興奮を感じるのは、最もストレスを感じている時に爆発の兆しがあった時」
+- v4.5: **「C 追い上げ型では、ストレスが高いほど、爆発の兆し・異常連チャン・大逆転可能性への脳汁反応が増幅される」**
+
+理由: scrap stress や chain_anxiety を入れたせいで、ストレス最大点が「気持ちいい瞬間」ではなく「終わった直後」に来る可能性。Phase 6 では `pre_event_stress` × Δ脳汁 で見る（`post_stress` 最大ではない）。
+
+### v4.4/v4.5 仕様の関係
+
+| 項目 | v4.4 | v4.5 |
+|------|------|------|
+| 機種数 | 4（v4.3 schema） | **6 完全校正** |
+| 機種選択 | 未確定 | **48 セル格子 + 未練打ち** |
+| 興奮量 | bonus_multiplier のみ | **+ big_gain_log + streak_bonus** |
+| ストレス | tanh + 慣性 | **+ chain_anxiety 機種別 + disappointment_stress** |
+| 動画 | Phase 1-6 (110 秒) | **+ ヒートマップ 5 秒、Phase 4 拡大 (115 秒)** |
+| 自己仮説 | 「最もストレス × 兆し」 | **「ストレスが高いほど反応増幅」**（精緻化） |
+| 表示 | 脳汁・ストレス | **+ 脳汁 100+ 表記**（GOD 別格） |
+
+### 締めの言葉 v4.5 版（動画ラスト）
+
+> 脳汁を生むのは、当たりそのものだけではなかった。
+> 負け、未練、続く不安、そして「ここから戻せる」という予感。
+> その全部が重なった時、C 追い上げ型の反応は跳ね上がった。
+
 ## 進捗ログ
+
+### 2026-05-02 — v4.5 仕様（6 機種完全校正 + 48 セル格子）+ ChatGPT Pro レビュー受領
+
+**やったこと**:
+
+1. **spike_v44_personas.py 作成** — 8 属性 × 1000 人サンプリング動作確認 OK
+   - 潜在変数 z による相関つきサンプリング（C_CHASE z 高 → sens 高 + stress 高 + threshold 低）
+   - 各属性 125 人 × 8 = 1000 人、属性別平均パラメータが想定通り
+2. **ChatGPT Pro 相談プロンプト v4.4 作成** — `docs/相談プロンプト-v4-4.md`
+   - 横塚の実機証言（6 機種別 + ストレス 3 パターン）を生のまま添付
+   - 5 つの新規概念の式を依頼
+3. **ChatGPT Pro v4.5 レビュー受領** — `docs/chatgpt-response-v4-4.md`
+   - 6 機種完全 YAML 推奨（GOD_2000 bonus 4.40、payout_mean 80,000）
+   - 興奮量: `big_gain_log` + bonus_multiplier 機種別
+   - 5 つの新規概念実装: streak_bonus / chain_anxiety / disappointment_stress / miren_uchi / afterglow
+   - 仮説の言い直し: 「C 追い上げ型では、ストレスが高いほど反応が増幅される」
+   - 罠 10 個 + 締めの言葉
+4. **横塚の機種選択ロジック判断**: 8 属性 × 6 機種 = 48 セル格子で観察、各属性 125 人 ÷ 6 機種 = 21+21+21+21+21+20
+5. **CLAUDE.md に v4.5 仕様セクション追記**（差分追加方式、v4.4 セクション L1120-L1273 は無傷）
+
+**学び**:
+
+- **物理連チャン / 体感連チャン / 期待の意味づけ** を 3 分離するのが正しい設計
+- PURE_A は `chain_mode: none` のまま、`streak_bonus` でジャグ連を表現（`continue_prob > 0` にすると別の機械）
+- GOD_2000 の `bonus_multiplier` は **4.40 が本命帯**（3.80 だと普通、5.00 だと統計破壊）
+- 機種選択を均等分配することで「属性のせいか機種のせいか」が分離できる（横塚の鋭い設計判断）
+- v4.5 仮説は v4.4 から精緻化: 「最もストレス × 兆し」→「ストレスが高いほど反応増幅」（chain_anxiety / scrap で stress 最大点がズレるため）
+
+**致命リスク（残）**:
+
+- 🟡 解説文章で「配布コード拡張」位置づけ未記述（30 分作業、5/6 で OK）
+- 🟢 GitHub push 完了
+
+**次セッションの開始点**:
+
+spike_v44.py 着手（v4.5 仕様の実装フェーズ）:
+- **5/3**: 物理エンジン（6 機種版、play 関数 + 中間イベント抽選）
+- **5/3 PM**: 5 つの新規概念実装（streak_bonus / chain_anxiety / disappointment_stress / miren_uchi / afterglow）
+- **5/4**: 1000 人 × 50 step run + 動画 Phase 4-5 + ヒートマップ
+- **5/5**: Phase 6 答え合わせ + ablation
+- **5/6**: LLM voice 統合 + 動画組み立て + PDF 解説
+- **5/7**: 提出（17:00 締切）
 
 ### 2026-05-01 (PM) — v4.4 方向転換 + ChatGPT Pro レビュー受領 + 仕様化
 
