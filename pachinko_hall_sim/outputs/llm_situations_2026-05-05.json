@@ -1,0 +1,980 @@
+{
+  "date": "2026-05-05",
+  "model": "qwen3.5:35b-a3b-nothink",
+  "scenes": [
+    {
+      "id": "S1_losing_big",
+      "label": "大負けの場面",
+      "title": "大きく負けている — もう余裕がない",
+      "description": "初期資金から大きく目減りし、手元の現金がわずかになった。追い詰められた状態で、続けるか撤退するか。",
+      "hall_mood": "ホール全体は静か、自分のところだけ運がない",
+      "subjective_state": "強く追い詰められている、余裕がない",
+      "situations": [
+        {
+          "attr_code": "A_NEWBIE",
+          "name": "初心者",
+          "age": 25,
+          "gender": "女",
+          "machine": "ノーマル・ボーナス型",
+          "style": "始めたばかり、演出もルールもまだ覚えきれていない",
+          "initial_cash": 20000,
+          "cash": 3000,
+          "cash_state": "大きく負け（手元 3,000 円、-17,000 円）",
+          "recent_10": "××××××××××",
+          "recent_text": "直近 10 回連続して外れ、まだ一度も当たっていない",
+          "subjective_state": "強く追い詰められている、余裕がない"
+        },
+        {
+          "attr_code": "B_REGULAR",
+          "name": "ライトユーザー",
+          "age": 32,
+          "gender": "男",
+          "machine": "5号機・自力契機型",
+          "style": "月数回、軽い気晴らしで打つ",
+          "initial_cash": 30000,
+          "cash": 4500,
+          "cash_state": "大きく負け（手元 4,500 円、-25,500 円）",
+          "recent_10": "××××××××××",
+          "recent_text": "直近 10 回連続して外れ、まだ一度も当たっていない",
+          "subjective_state": "強く追い詰められている、余裕がない"
+        },
+        {
+          "attr_code": "C_CHASE",
+          "name": "中毒者",
+          "age": 45,
+          "gender": "男",
+          "machine": "初代GOD・別格型",
+          "style": "借金しながらでも打ちに来る、生活に支障が出ている",
+          "initial_cash": 15000,
+          "cash": 2250,
+          "cash_state": "大きく負け（手元 2,250 円、-12,750 円）",
+          "recent_10": "××××××××××",
+          "recent_text": "直近 10 回連続して外れ、まだ一度も当たっていない",
+          "subjective_state": "強く追い詰められている、余裕がない"
+        },
+        {
+          "attr_code": "D_AFTER5",
+          "name": "アフター5層",
+          "age": 38,
+          "gender": "男",
+          "machine": "5号機・連チャン高継続型",
+          "style": "仕事帰りに 1-2 時間打って帰る",
+          "initial_cash": 25000,
+          "cash": 3750,
+          "cash_state": "大きく負け（手元 3,750 円、-21,250 円）",
+          "recent_10": "××××××××××",
+          "recent_text": "直近 10 回連続して外れ、まだ一度も当たっていない",
+          "subjective_state": "強く追い詰められている、余裕がない"
+        },
+        {
+          "attr_code": "E_LEISURE",
+          "name": "悠々自適",
+          "age": 55,
+          "gender": "男",
+          "machine": "4号機・爆裂AT型",
+          "style": "不動産持ち、暇つぶしで金額を気にしない",
+          "initial_cash": 100000,
+          "cash": 15000,
+          "cash_state": "大きく負け（手元 15,000 円、-85,000 円）",
+          "recent_10": "××××××××××",
+          "recent_text": "直近 10 回連続して外れ、まだ一度も当たっていない",
+          "subjective_state": "強く追い詰められている、余裕がない"
+        },
+        {
+          "attr_code": "F_SENIOR",
+          "name": "シニア",
+          "age": 68,
+          "gender": "男",
+          "machine": "ノーマル・ボーナス型",
+          "style": "退職後の日課、年金生活",
+          "initial_cash": 50000,
+          "cash": 7500,
+          "cash_state": "大きく負け（手元 7,500 円、-42,500 円）",
+          "recent_10": "××××××××××",
+          "recent_text": "直近 10 回連続して外れ、まだ一度も当たっていない",
+          "subjective_state": "強く追い詰められている、余裕がない"
+        },
+        {
+          "attr_code": "G_BREATHER",
+          "name": "主婦",
+          "age": 38,
+          "gender": "女",
+          "machine": "5号機・連チャン高継続型",
+          "style": "家事の合間に息抜き",
+          "initial_cash": 12000,
+          "cash": 1800,
+          "cash_state": "大きく負け（手元 1,800 円、-10,200 円）",
+          "recent_10": "××××××××××",
+          "recent_text": "直近 10 回連続して外れ、まだ一度も当たっていない",
+          "subjective_state": "強く追い詰められている、余裕がない"
+        },
+        {
+          "attr_code": "H_PRO",
+          "name": "パチプロ",
+          "age": 30,
+          "gender": "男",
+          "machine": "4号機後期・大量獲得型",
+          "style": "期待値計算で打つ、これで生活している",
+          "initial_cash": 80000,
+          "cash": 12000,
+          "cash_state": "大きく負け（手元 12,000 円、-68,000 円）",
+          "recent_10": "××××××××××",
+          "recent_text": "直近 10 回連続して外れ、まだ一度も当たっていない",
+          "subjective_state": "強く追い詰められている、余裕がない"
+        }
+      ],
+      "decisions": [
+        {
+          "attr_code": "A_NEWBIE",
+          "action": "quit",
+          "voice": "もう無理、帰る",
+          "belief": "自分は運がないと思ってる",
+          "reason": "仕組みがわからず資金も尽きるため撤退"
+        },
+        {
+          "attr_code": "A_LIGHT",
+          "action": "quit",
+          "voice": "気晴らしどころか負けた",
+          "belief": "運のなさから逃れられない",
+          "reason": "本来の目的が達成できず撤退が自然"
+        },
+        {
+          "attr_code": "A_ADDICT",
+          "action": "chase",
+          "voice": "これ以上負けるわけに",
+          "belief": "次で必ず回収できる",
+          "reason": "依存により理性が機能せず取り返しへ"
+        },
+        {
+          "attr_code": "A_AFTER5",
+          "action": "quit",
+          "voice": "仕事あるから帰る",
+          "belief": "今日は運が悪すぎる",
+          "reason": "時間制限と資金不足で撤退が妥当"
+        },
+        {
+          "attr_code": "A_EASY",
+          "action": "continue",
+          "voice": "金はあるから続ける",
+          "belief": "いつか大爆発する",
+          "reason": "金銭的余裕があり、運の波を待つ"
+        },
+        {
+          "attr_code": "A_SENIOR",
+          "action": "quit",
+          "voice": "もうやめておこう",
+          "belief": "運が尽きた気がする",
+          "reason": "年金生活のため資金保全を優先"
+        },
+        {
+          "attr_code": "A_HOUSEWIFE",
+          "action": "quit",
+          "voice": "家事があるからやめる",
+          "belief": "もう無理だと悟った",
+          "reason": "手元資金が限界に近づき撤退"
+        },
+        {
+          "attr_code": "A_PRO",
+          "action": "quit",
+          "voice": "今日分は終了",
+          "belief": "確率は偏るが逆転しない",
+          "reason": "期待値計算により撤退が最適解"
+        }
+      ]
+    },
+    {
+      "id": "S2_winning_big",
+      "label": "大勝ちの場面",
+      "title": "大きく勝った直後 — 続けるか手を止めるか",
+      "description": "大量払出を取り、現金が初期から大きくプラスになった。利益確定すべきか、流れに乗って続けるか。",
+      "hall_mood": "ホール全体も盛り上がり、自分も流れに乗っている",
+      "subjective_state": "余裕、興奮の余韻が残っている",
+      "situations": [
+        {
+          "attr_code": "A_NEWBIE",
+          "name": "初心者",
+          "age": 25,
+          "gender": "女",
+          "machine": "ノーマル・ボーナス型",
+          "style": "始めたばかり、演出もルールもまだ覚えきれていない",
+          "initial_cash": 20000,
+          "cash": 44000,
+          "cash_state": "大きく勝ち越し（手元 44,000 円、+24,000 円）",
+          "recent_10": "○○○○○×○○×○",
+          "recent_text": "直近 10 回中、当たり 8 回・外れ 2 回",
+          "subjective_state": "余裕、興奮の余韻が残っている"
+        },
+        {
+          "attr_code": "B_REGULAR",
+          "name": "ライトユーザー",
+          "age": 32,
+          "gender": "男",
+          "machine": "5号機・自力契機型",
+          "style": "月数回、軽い気晴らしで打つ",
+          "initial_cash": 30000,
+          "cash": 66000,
+          "cash_state": "大きく勝ち越し（手元 66,000 円、+36,000 円）",
+          "recent_10": "○○○○○×○○×○",
+          "recent_text": "直近 10 回中、当たり 8 回・外れ 2 回",
+          "subjective_state": "余裕、興奮の余韻が残っている"
+        },
+        {
+          "attr_code": "C_CHASE",
+          "name": "中毒者",
+          "age": 45,
+          "gender": "男",
+          "machine": "初代GOD・別格型",
+          "style": "借金しながらでも打ちに来る、生活に支障が出ている",
+          "initial_cash": 15000,
+          "cash": 33000,
+          "cash_state": "大きく勝ち越し（手元 33,000 円、+18,000 円）",
+          "recent_10": "○○○○○×○○×○",
+          "recent_text": "直近 10 回中、当たり 8 回・外れ 2 回",
+          "subjective_state": "余裕、興奮の余韻が残っている"
+        },
+        {
+          "attr_code": "D_AFTER5",
+          "name": "アフター5層",
+          "age": 38,
+          "gender": "男",
+          "machine": "5号機・連チャン高継続型",
+          "style": "仕事帰りに 1-2 時間打って帰る",
+          "initial_cash": 25000,
+          "cash": 55000,
+          "cash_state": "大きく勝ち越し（手元 55,000 円、+30,000 円）",
+          "recent_10": "○○○○○×○○×○",
+          "recent_text": "直近 10 回中、当たり 8 回・外れ 2 回",
+          "subjective_state": "余裕、興奮の余韻が残っている"
+        },
+        {
+          "attr_code": "E_LEISURE",
+          "name": "悠々自適",
+          "age": 55,
+          "gender": "男",
+          "machine": "4号機・爆裂AT型",
+          "style": "不動産持ち、暇つぶしで金額を気にしない",
+          "initial_cash": 100000,
+          "cash": 220000,
+          "cash_state": "大きく勝ち越し（手元 220,000 円、+120,000 円）",
+          "recent_10": "○○○○○×○○×○",
+          "recent_text": "直近 10 回中、当たり 8 回・外れ 2 回",
+          "subjective_state": "余裕、興奮の余韻が残っている"
+        },
+        {
+          "attr_code": "F_SENIOR",
+          "name": "シニア",
+          "age": 68,
+          "gender": "男",
+          "machine": "ノーマル・ボーナス型",
+          "style": "退職後の日課、年金生活",
+          "initial_cash": 50000,
+          "cash": 110000,
+          "cash_state": "大きく勝ち越し（手元 110,000 円、+60,000 円）",
+          "recent_10": "○○○○○×○○×○",
+          "recent_text": "直近 10 回中、当たり 8 回・外れ 2 回",
+          "subjective_state": "余裕、興奮の余韻が残っている"
+        },
+        {
+          "attr_code": "G_BREATHER",
+          "name": "主婦",
+          "age": 38,
+          "gender": "女",
+          "machine": "5号機・連チャン高継続型",
+          "style": "家事の合間に息抜き",
+          "initial_cash": 12000,
+          "cash": 26400,
+          "cash_state": "大きく勝ち越し（手元 26,400 円、+14,400 円）",
+          "recent_10": "○○○○○×○○×○",
+          "recent_text": "直近 10 回中、当たり 8 回・外れ 2 回",
+          "subjective_state": "余裕、興奮の余韻が残っている"
+        },
+        {
+          "attr_code": "H_PRO",
+          "name": "パチプロ",
+          "age": 30,
+          "gender": "男",
+          "machine": "4号機後期・大量獲得型",
+          "style": "期待値計算で打つ、これで生活している",
+          "initial_cash": 80000,
+          "cash": 176000,
+          "cash_state": "大きく勝ち越し（手元 176,000 円、+96,000 円）",
+          "recent_10": "○○○○○×○○×○",
+          "recent_text": "直近 10 回中、当たり 8 回・外れ 2 回",
+          "subjective_state": "余裕、興奮の余韻が残っている"
+        }
+      ],
+      "decisions": [
+        {
+          "attr_code": "A_NEWBIE",
+          "action": "quit",
+          "voice": "もうやめとく、勝ったから",
+          "belief": "運に任せて打てなくなる",
+          "reason": "経験不足で流れの波に負ける恐怖があるため"
+        },
+        {
+          "attr_code": "A_LIGHT",
+          "action": "quit",
+          "voice": "今日はもう充分、家へ帰ろう",
+          "belief": "目標達成で満足",
+          "reason": "気晴らし目的であり、これ以上リスクを取る必要がないため"
+        },
+        {
+          "attr_code": "A_ADDICT",
+          "action": "chase",
+          "voice": "もっと稼ぐ！今がチャンス！",
+          "belief": "この流れを逃さない",
+          "reason": "依存傾向により利益確定の感覚が麻痺し、さらに稼ぎたい衝動があるため"
+        },
+        {
+          "attr_code": "A_AFTER5",
+          "action": "quit",
+          "voice": "仕事があるからここで切り上げ",
+          "belief": "時間厳守で終わる",
+          "reason": "生活リズムを重視し、定時の退店を優先するため"
+        },
+        {
+          "attr_code": "A_LEISURE",
+          "action": "quit",
+          "voice": "大金稼いだから今日は終了",
+          "belief": "金額の多さに満足",
+          "reason": "金銭感覚が緩く、十分な利益を得たため安堵して帰るため"
+        },
+        {
+          "attr_code": "A_SENIOR",
+          "action": "quit",
+          "voice": "今日はこれで縁起良く帰る",
+          "belief": "良い流れで終わりたい",
+          "reason": "健康と生活リズムを最優先し、過度なリスクを避けるため"
+        },
+        {
+          "attr_code": "A_HOUSEWIFE",
+          "action": "quit",
+          "voice": "家事があるのでそろそろ帰る",
+          "belief": "用事があるので切り上げ",
+          "reason": "家庭の用事があり、息抜き程度で満足しているため"
+        },
+        {
+          "attr_code": "A_PRO",
+          "action": "continue",
+          "voice": "期待値計算上、まだ打てる",
+          "belief": "統計的優位性を維持中",
+          "reason": "生活の糧とするため、確率論的に有利なうちに利益を最大化するため"
+        }
+      ]
+    },
+    {
+      "id": "S3_even",
+      "label": "収支トントンの場面",
+      "title": "勝ちも負けもなく — 判断材料が乏しい",
+      "description": "現金は初期とほぼ同じ、勝ちも負けも目立たない。流れがどちらに振れるか分からないニュートラルな状態。",
+      "hall_mood": "ホール全体は静か、目立った動きはない",
+      "subjective_state": "落ち着いている、判断材料が少ない",
+      "situations": [
+        {
+          "attr_code": "A_NEWBIE",
+          "name": "初心者",
+          "age": 25,
+          "gender": "女",
+          "machine": "ノーマル・ボーナス型",
+          "style": "始めたばかり、演出もルールもまだ覚えきれていない",
+          "initial_cash": 20000,
+          "cash": 21000,
+          "cash_state": "ほぼトントン（手元 21,000 円、+1,000 円）",
+          "recent_10": "○×○×○×○×○×",
+          "recent_text": "直近 10 回中、当たり 5 回・外れ 5 回",
+          "subjective_state": "落ち着いている、判断材料が少ない"
+        },
+        {
+          "attr_code": "B_REGULAR",
+          "name": "ライトユーザー",
+          "age": 32,
+          "gender": "男",
+          "machine": "5号機・自力契機型",
+          "style": "月数回、軽い気晴らしで打つ",
+          "initial_cash": 30000,
+          "cash": 31500,
+          "cash_state": "ほぼトントン（手元 31,500 円、+1,500 円）",
+          "recent_10": "○×○×○×○×○×",
+          "recent_text": "直近 10 回中、当たり 5 回・外れ 5 回",
+          "subjective_state": "落ち着いている、判断材料が少ない"
+        },
+        {
+          "attr_code": "C_CHASE",
+          "name": "中毒者",
+          "age": 45,
+          "gender": "男",
+          "machine": "初代GOD・別格型",
+          "style": "借金しながらでも打ちに来る、生活に支障が出ている",
+          "initial_cash": 15000,
+          "cash": 15750,
+          "cash_state": "ほぼトントン（手元 15,750 円、+750 円）",
+          "recent_10": "○×○×○×○×○×",
+          "recent_text": "直近 10 回中、当たり 5 回・外れ 5 回",
+          "subjective_state": "落ち着いている、判断材料が少ない"
+        },
+        {
+          "attr_code": "D_AFTER5",
+          "name": "アフター5層",
+          "age": 38,
+          "gender": "男",
+          "machine": "5号機・連チャン高継続型",
+          "style": "仕事帰りに 1-2 時間打って帰る",
+          "initial_cash": 25000,
+          "cash": 26250,
+          "cash_state": "ほぼトントン（手元 26,250 円、+1,250 円）",
+          "recent_10": "○×○×○×○×○×",
+          "recent_text": "直近 10 回中、当たり 5 回・外れ 5 回",
+          "subjective_state": "落ち着いている、判断材料が少ない"
+        },
+        {
+          "attr_code": "E_LEISURE",
+          "name": "悠々自適",
+          "age": 55,
+          "gender": "男",
+          "machine": "4号機・爆裂AT型",
+          "style": "不動産持ち、暇つぶしで金額を気にしない",
+          "initial_cash": 100000,
+          "cash": 105000,
+          "cash_state": "ほぼトントン（手元 105,000 円、+5,000 円）",
+          "recent_10": "○×○×○×○×○×",
+          "recent_text": "直近 10 回中、当たり 5 回・外れ 5 回",
+          "subjective_state": "落ち着いている、判断材料が少ない"
+        },
+        {
+          "attr_code": "F_SENIOR",
+          "name": "シニア",
+          "age": 68,
+          "gender": "男",
+          "machine": "ノーマル・ボーナス型",
+          "style": "退職後の日課、年金生活",
+          "initial_cash": 50000,
+          "cash": 52500,
+          "cash_state": "ほぼトントン（手元 52,500 円、+2,500 円）",
+          "recent_10": "○×○×○×○×○×",
+          "recent_text": "直近 10 回中、当たり 5 回・外れ 5 回",
+          "subjective_state": "落ち着いている、判断材料が少ない"
+        },
+        {
+          "attr_code": "G_BREATHER",
+          "name": "主婦",
+          "age": 38,
+          "gender": "女",
+          "machine": "5号機・連チャン高継続型",
+          "style": "家事の合間に息抜き",
+          "initial_cash": 12000,
+          "cash": 12600,
+          "cash_state": "ほぼトントン（手元 12,600 円、+600 円）",
+          "recent_10": "○×○×○×○×○×",
+          "recent_text": "直近 10 回中、当たり 5 回・外れ 5 回",
+          "subjective_state": "落ち着いている、判断材料が少ない"
+        },
+        {
+          "attr_code": "H_PRO",
+          "name": "パチプロ",
+          "age": 30,
+          "gender": "男",
+          "machine": "4号機後期・大量獲得型",
+          "style": "期待値計算で打つ、これで生活している",
+          "initial_cash": 80000,
+          "cash": 84000,
+          "cash_state": "ほぼトントン（手元 84,000 円、+4,000 円）",
+          "recent_10": "○×○×○×○×○×",
+          "recent_text": "直近 10 回中、当たり 5 回・外れ 5 回",
+          "subjective_state": "落ち着いている、判断材料が少ない"
+        }
+      ],
+      "decisions": [
+        {
+          "attr_code": "A_NEWBIE",
+          "action": "continue",
+          "voice": "まだルール覚えたいから打っとく",
+          "belief": "勝敗つかないから続けてみる",
+          "reason": "初心者で判断材料不足のため様子見"
+        },
+        {
+          "attr_code": "A_LIGHT",
+          "action": "continue",
+          "voice": "気晴らしついでに継続する",
+          "belief": "トントンなら続行が自然",
+          "reason": "軽い気晴らし目的で流れを待つ"
+        },
+        {
+          "attr_code": "A_ADDICT",
+          "action": "chase",
+          "voice": "借金返すためにも続ける",
+          "belief": "今がチャンスと勘違いしやすい",
+          "reason": "生活困窮者特有の取り返そうとする心理"
+        },
+        {
+          "attr_code": "A_AFTER5",
+          "action": "continue",
+          "voice": "仕事帰りの範囲内で打つ",
+          "belief": "定時まで残りの時間を使う",
+          "reason": "時間制限があるため無理せず継続"
+        },
+        {
+          "attr_code": "A_EASY",
+          "action": "continue",
+          "voice": "暇つぶしだからゆっくり",
+          "belief": "金銭的余裕があるので焦らない",
+          "reason": "金額を気にせず余裕を持って打つ"
+        },
+        {
+          "attr_code": "A_SENIOR",
+          "action": "rest",
+          "voice": "ちょっと腰休めてから",
+          "belief": "体調や疲れを優先する",
+          "reason": "シニア特有の体力管理のため休憩"
+        },
+        {
+          "attr_code": "A_HOUSEWIFE",
+          "action": "continue",
+          "voice": "家事の合間に続ける",
+          "belief": "息抜きなので長く打つ",
+          "reason": "家事の合間の休憩目的で継続"
+        },
+        {
+          "attr_code": "A_PRO",
+          "action": "switch",
+          "voice": "期待値の低い台を離れる",
+          "belief": "中立状態は投資機会ではない",
+          "reason": "プロは期待値が低い時は台移動する"
+        }
+      ]
+    },
+    {
+      "id": "S4_losing_streak",
+      "label": "連敗が続く場面",
+      "title": "外れが続いて流れが悪い — 続けるか引くか",
+      "description": "直近 10 回中、ほぼ全外れ。手元も少しずつ削れ、ホール全体に重い空気が漂う。",
+      "hall_mood": "ホール全体に外れの空気が広がる、誰も大きく当たっていない",
+      "subjective_state": "焦り、苛立ちが見え始める",
+      "situations": [
+        {
+          "attr_code": "A_NEWBIE",
+          "name": "初心者",
+          "age": 25,
+          "gender": "女",
+          "machine": "ノーマル・ボーナス型",
+          "style": "始めたばかり、演出もルールもまだ覚えきれていない",
+          "initial_cash": 20000,
+          "cash": 12000,
+          "cash_state": "中程度の負け（手元 12,000 円、-8,000 円）",
+          "recent_10": "×××××○××××",
+          "recent_text": "直近 10 回中、当たり 1 回・外れ 9 回（直近 4 連続外れ中）",
+          "subjective_state": "焦り、苛立ちが見え始める"
+        },
+        {
+          "attr_code": "B_REGULAR",
+          "name": "ライトユーザー",
+          "age": 32,
+          "gender": "男",
+          "machine": "5号機・自力契機型",
+          "style": "月数回、軽い気晴らしで打つ",
+          "initial_cash": 30000,
+          "cash": 18000,
+          "cash_state": "中程度の負け（手元 18,000 円、-12,000 円）",
+          "recent_10": "×××××○××××",
+          "recent_text": "直近 10 回中、当たり 1 回・外れ 9 回（直近 4 連続外れ中）",
+          "subjective_state": "焦り、苛立ちが見え始める"
+        },
+        {
+          "attr_code": "C_CHASE",
+          "name": "中毒者",
+          "age": 45,
+          "gender": "男",
+          "machine": "初代GOD・別格型",
+          "style": "借金しながらでも打ちに来る、生活に支障が出ている",
+          "initial_cash": 15000,
+          "cash": 9000,
+          "cash_state": "中程度の負け（手元 9,000 円、-6,000 円）",
+          "recent_10": "×××××○××××",
+          "recent_text": "直近 10 回中、当たり 1 回・外れ 9 回（直近 4 連続外れ中）",
+          "subjective_state": "焦り、苛立ちが見え始める"
+        },
+        {
+          "attr_code": "D_AFTER5",
+          "name": "アフター5層",
+          "age": 38,
+          "gender": "男",
+          "machine": "5号機・連チャン高継続型",
+          "style": "仕事帰りに 1-2 時間打って帰る",
+          "initial_cash": 25000,
+          "cash": 15000,
+          "cash_state": "中程度の負け（手元 15,000 円、-10,000 円）",
+          "recent_10": "×××××○××××",
+          "recent_text": "直近 10 回中、当たり 1 回・外れ 9 回（直近 4 連続外れ中）",
+          "subjective_state": "焦り、苛立ちが見え始める"
+        },
+        {
+          "attr_code": "E_LEISURE",
+          "name": "悠々自適",
+          "age": 55,
+          "gender": "男",
+          "machine": "4号機・爆裂AT型",
+          "style": "不動産持ち、暇つぶしで金額を気にしない",
+          "initial_cash": 100000,
+          "cash": 60000,
+          "cash_state": "中程度の負け（手元 60,000 円、-40,000 円）",
+          "recent_10": "×××××○××××",
+          "recent_text": "直近 10 回中、当たり 1 回・外れ 9 回（直近 4 連続外れ中）",
+          "subjective_state": "焦り、苛立ちが見え始める"
+        },
+        {
+          "attr_code": "F_SENIOR",
+          "name": "シニア",
+          "age": 68,
+          "gender": "男",
+          "machine": "ノーマル・ボーナス型",
+          "style": "退職後の日課、年金生活",
+          "initial_cash": 50000,
+          "cash": 30000,
+          "cash_state": "中程度の負け（手元 30,000 円、-20,000 円）",
+          "recent_10": "×××××○××××",
+          "recent_text": "直近 10 回中、当たり 1 回・外れ 9 回（直近 4 連続外れ中）",
+          "subjective_state": "焦り、苛立ちが見え始める"
+        },
+        {
+          "attr_code": "G_BREATHER",
+          "name": "主婦",
+          "age": 38,
+          "gender": "女",
+          "machine": "5号機・連チャン高継続型",
+          "style": "家事の合間に息抜き",
+          "initial_cash": 12000,
+          "cash": 7200,
+          "cash_state": "中程度の負け（手元 7,200 円、-4,800 円）",
+          "recent_10": "×××××○××××",
+          "recent_text": "直近 10 回中、当たり 1 回・外れ 9 回（直近 4 連続外れ中）",
+          "subjective_state": "焦り、苛立ちが見え始める"
+        },
+        {
+          "attr_code": "H_PRO",
+          "name": "パチプロ",
+          "age": 30,
+          "gender": "男",
+          "machine": "4号機後期・大量獲得型",
+          "style": "期待値計算で打つ、これで生活している",
+          "initial_cash": 80000,
+          "cash": 48000,
+          "cash_state": "中程度の負け（手元 48,000 円、-32,000 円）",
+          "recent_10": "×××××○××××",
+          "recent_text": "直近 10 回中、当たり 1 回・外れ 9 回（直近 4 連続外れ中）",
+          "subjective_state": "焦り、苛立ちが見え始める"
+        }
+      ],
+      "decisions": [
+        {
+          "attr_code": "A_NEWBIE",
+          "action": "quit",
+          "voice": "やめとこう、意味わからない",
+          "belief": "自分のミスか、この台は悪い",
+          "reason": "理解できないまま損失が膨らみ、焦りで判断が鈍っているため"
+        },
+        {
+          "attr_code": "A_LIGHT",
+          "action": "quit",
+          "voice": "今日はもうやめとく",
+          "belief": "この調子じゃ終われない",
+          "reason": "気晴らし目的のため、悪化する前にリタイアするのが自然"
+        },
+        {
+          "attr_code": "A_ADDICT",
+          "action": "chase",
+          "voice": "ここから逆転する",
+          "belief": "当たりの予感がある、止まれない",
+          "reason": "依存傾向と焦りから、損失を取り戻すべくさらに打ち込む"
+        },
+        {
+          "attr_code": "A_AFTERSHIFT",
+          "action": "quit",
+          "voice": "仕事あるから帰る",
+          "belief": "時間がなくなる前にやめる",
+          "reason": "時間制限があるため、収支に関わらず定時に撤退する"
+        },
+        {
+          "attr_code": "A_EASYGOING",
+          "action": "switch",
+          "voice": "別の台で様子を見るか",
+          "belief": "この台の運が尽きた",
+          "reason": "経済的余裕があるため、調子の悪い台を避けて移る"
+        },
+        {
+          "attr_code": "A_SENIOR",
+          "action": "rest",
+          "voice": "一息ついてから考える",
+          "belief": "冷静になる必要がある",
+          "reason": "年金生活のため慎重になり、一旦離席して気分を切り替える"
+        },
+        {
+          "attr_code": "A_HOUSEWIFE",
+          "action": "quit",
+          "voice": "家事が忙しいからやめる",
+          "belief": "この調子じゃ損するだけ",
+          "reason": "限られた時間と小銭のため、損切りして帰宅するのが妥当"
+        },
+        {
+          "attr_code": "A_PRO",
+          "action": "switch",
+          "voice": "期待値のある台を探す",
+          "belief": "これは立ち位置から外れている",
+          "reason": "統計的にこの台は不向きと判断し、有利な台へ移動する"
+        }
+      ]
+    },
+    {
+      "id": "S5_chain_ended",
+      "label": "連チャン終了直後の場面",
+      "title": "熱い流れが切れた — 続けるか手仕舞うか",
+      "description": "好調な連チャンが終わって、その後数回続けて外れている。利益はまだ残っているが、流れが切れた瞬間の判断。",
+      "hall_mood": "周囲も冷えてきた、皆が判断に迷っている",
+      "subjective_state": "名残惜しさ、判断の分岐点",
+      "situations": [
+        {
+          "attr_code": "A_NEWBIE",
+          "name": "初心者",
+          "age": 25,
+          "gender": "女",
+          "machine": "ノーマル・ボーナス型",
+          "style": "始めたばかり、演出もルールもまだ覚えきれていない",
+          "initial_cash": 20000,
+          "cash": 29000,
+          "cash_state": "勝ち越し（手元 29,000 円、+9,000 円）",
+          "recent_10": "○○○○○○×××?",
+          "recent_text": "直近 9 回中、当たり 6 回・外れ 3 回（最後の 3 回は外れ）",
+          "subjective_state": "名残惜しさ、判断の分岐点"
+        },
+        {
+          "attr_code": "B_REGULAR",
+          "name": "ライトユーザー",
+          "age": 32,
+          "gender": "男",
+          "machine": "5号機・自力契機型",
+          "style": "月数回、軽い気晴らしで打つ",
+          "initial_cash": 30000,
+          "cash": 43500,
+          "cash_state": "勝ち越し（手元 43,500 円、+13,500 円）",
+          "recent_10": "○○○○○○×××?",
+          "recent_text": "直近 9 回中、当たり 6 回・外れ 3 回（最後の 3 回は外れ）",
+          "subjective_state": "名残惜しさ、判断の分岐点"
+        },
+        {
+          "attr_code": "C_CHASE",
+          "name": "中毒者",
+          "age": 45,
+          "gender": "男",
+          "machine": "初代GOD・別格型",
+          "style": "借金しながらでも打ちに来る、生活に支障が出ている",
+          "initial_cash": 15000,
+          "cash": 21750,
+          "cash_state": "勝ち越し（手元 21,750 円、+6,750 円）",
+          "recent_10": "○○○○○○×××?",
+          "recent_text": "直近 9 回中、当たり 6 回・外れ 3 回（最後の 3 回は外れ）",
+          "subjective_state": "名残惜しさ、判断の分岐点"
+        },
+        {
+          "attr_code": "D_AFTER5",
+          "name": "アフター5層",
+          "age": 38,
+          "gender": "男",
+          "machine": "5号機・連チャン高継続型",
+          "style": "仕事帰りに 1-2 時間打って帰る",
+          "initial_cash": 25000,
+          "cash": 36250,
+          "cash_state": "勝ち越し（手元 36,250 円、+11,250 円）",
+          "recent_10": "○○○○○○×××?",
+          "recent_text": "直近 9 回中、当たり 6 回・外れ 3 回（最後の 3 回は外れ）",
+          "subjective_state": "名残惜しさ、判断の分岐点"
+        },
+        {
+          "attr_code": "E_LEISURE",
+          "name": "悠々自適",
+          "age": 55,
+          "gender": "男",
+          "machine": "4号機・爆裂AT型",
+          "style": "不動産持ち、暇つぶしで金額を気にしない",
+          "initial_cash": 100000,
+          "cash": 145000,
+          "cash_state": "勝ち越し（手元 145,000 円、+45,000 円）",
+          "recent_10": "○○○○○○×××?",
+          "recent_text": "直近 9 回中、当たり 6 回・外れ 3 回（最後の 3 回は外れ）",
+          "subjective_state": "名残惜しさ、判断の分岐点"
+        },
+        {
+          "attr_code": "F_SENIOR",
+          "name": "シニア",
+          "age": 68,
+          "gender": "男",
+          "machine": "ノーマル・ボーナス型",
+          "style": "退職後の日課、年金生活",
+          "initial_cash": 50000,
+          "cash": 72500,
+          "cash_state": "勝ち越し（手元 72,500 円、+22,500 円）",
+          "recent_10": "○○○○○○×××?",
+          "recent_text": "直近 9 回中、当たり 6 回・外れ 3 回（最後の 3 回は外れ）",
+          "subjective_state": "名残惜しさ、判断の分岐点"
+        },
+        {
+          "attr_code": "G_BREATHER",
+          "name": "主婦",
+          "age": 38,
+          "gender": "女",
+          "machine": "5号機・連チャン高継続型",
+          "style": "家事の合間に息抜き",
+          "initial_cash": 12000,
+          "cash": 17400,
+          "cash_state": "勝ち越し（手元 17,400 円、+5,400 円）",
+          "recent_10": "○○○○○○×××?",
+          "recent_text": "直近 9 回中、当たり 6 回・外れ 3 回（最後の 3 回は外れ）",
+          "subjective_state": "名残惜しさ、判断の分岐点"
+        },
+        {
+          "attr_code": "H_PRO",
+          "name": "パチプロ",
+          "age": 30,
+          "gender": "男",
+          "machine": "4号機後期・大量獲得型",
+          "style": "期待値計算で打つ、これで生活している",
+          "initial_cash": 80000,
+          "cash": 116000,
+          "cash_state": "勝ち越し（手元 116,000 円、+36,000 円）",
+          "recent_10": "○○○○○○×××?",
+          "recent_text": "直近 9 回中、当たり 6 回・外れ 3 回（最後の 3 回は外れ）",
+          "subjective_state": "名残惜しさ、判断の分岐点"
+        }
+      ],
+      "decisions": [
+        {
+          "attr_code": "A_NEWBIE",
+          "action": "quit",
+          "voice": "そろそろ帰ろか",
+          "belief": "流れが切れたから負けそう",
+          "reason": "ルールがわからず、外れが続くと怖くなるため"
+        },
+        {
+          "attr_code": "A_LIGHT",
+          "action": "quit",
+          "voice": "この辺でやめよう",
+          "belief": "流れが冷えたので撤退",
+          "reason": "軽い気晴らしで、利益確保を優先するため"
+        },
+        {
+          "attr_code": "A_ADDICT",
+          "action": "chase",
+          "voice": "まだ出るはずだ",
+          "belief": "チャンスはすぐ来る",
+          "reason": "依存傾向により、利益を失う恐怖を無視して回復を目指す"
+        },
+        {
+          "attr_code": "A_AFTER5",
+          "action": "quit",
+          "voice": "仕事帰りでこれだけあれば",
+          "belief": "適当な時間になった",
+          "reason": "決まった時間内での利確を優先し、深夜まで打たないため"
+        },
+        {
+          "attr_code": "A_CAREFREE",
+          "action": "continue",
+          "voice": "暇だからまだ打つ",
+          "belief": "いつかまた爆発する",
+          "reason": "金銭的余裕があり、暇つぶしとして流れの逆転を待つため"
+        },
+        {
+          "attr_code": "A_SENIOR",
+          "action": "quit",
+          "voice": "これで日課は終わり",
+          "belief": "流れが切れたら終了",
+          "reason": "年金生活でリスクを避け、利益を残して帰るため"
+        },
+        {
+          "attr_code": "A_HOUSEWIFE",
+          "action": "quit",
+          "voice": "家事に戻りましょう",
+          "belief": "息抜きはこれで十分",
+          "reason": "家事の合間という制約があり、利益が出たら即切り上げるため"
+        },
+        {
+          "attr_code": "A_PRO",
+          "action": "quit",
+          "voice": "期待値がなくなった",
+          "belief": "流れが切れたら撤退",
+          "reason": "統計的に有利な状況ではないと判断し、利益確定で撤退するため"
+        }
+      ]
+    }
+  ],
+  "personas": [
+    {
+      "attr_code": "A_NEWBIE",
+      "name": "初心者",
+      "age": 25,
+      "gender": "女",
+      "machine": "ノーマル・ボーナス型",
+      "initial_cash": 20000,
+      "style": "始めたばかり、演出もルールもまだ覚えきれていない"
+    },
+    {
+      "attr_code": "B_REGULAR",
+      "name": "ライトユーザー",
+      "age": 32,
+      "gender": "男",
+      "machine": "5号機・自力契機型",
+      "initial_cash": 30000,
+      "style": "月数回、軽い気晴らしで打つ"
+    },
+    {
+      "attr_code": "C_CHASE",
+      "name": "中毒者",
+      "age": 45,
+      "gender": "男",
+      "machine": "初代GOD・別格型",
+      "initial_cash": 15000,
+      "style": "借金しながらでも打ちに来る、生活に支障が出ている"
+    },
+    {
+      "attr_code": "D_AFTER5",
+      "name": "アフター5層",
+      "age": 38,
+      "gender": "男",
+      "machine": "5号機・連チャン高継続型",
+      "initial_cash": 25000,
+      "style": "仕事帰りに 1-2 時間打って帰る"
+    },
+    {
+      "attr_code": "E_LEISURE",
+      "name": "悠々自適",
+      "age": 55,
+      "gender": "男",
+      "machine": "4号機・爆裂AT型",
+      "initial_cash": 100000,
+      "style": "不動産持ち、暇つぶしで金額を気にしない"
+    },
+    {
+      "attr_code": "F_SENIOR",
+      "name": "シニア",
+      "age": 68,
+      "gender": "男",
+      "machine": "ノーマル・ボーナス型",
+      "initial_cash": 50000,
+      "style": "退職後の日課、年金生活"
+    },
+    {
+      "attr_code": "G_BREATHER",
+      "name": "主婦",
+      "age": 38,
+      "gender": "女",
+      "machine": "5号機・連チャン高継続型",
+      "initial_cash": 12000,
+      "style": "家事の合間に息抜き"
+    },
+    {
+      "attr_code": "H_PRO",
+      "name": "パチプロ",
+      "age": 30,
+      "gender": "男",
+      "machine": "4号機後期・大量獲得型",
+      "initial_cash": 80000,
+      "style": "期待値計算で打つ、これで生活している"
+    }
+  ]
+}

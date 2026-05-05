@@ -26,3 +26,9 @@ pachinko_hall_sim/outputs/spike_*.gif
 # IDE
 .vscode/
 .idea/
+
+# PDF ビルドの中間生成物
+submission/.build.html
+submission/draft.pdf
+submission/singulabo-explainer-draft.md
+submission/singulabo-explainer.html

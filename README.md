@@ -18,10 +18,10 @@
 | 種類 | ファイル |
 |------|------|
 | ソースコード | このリポジトリ全体（`pachinko_hall_sim/` がメイン実装） |
-| 可視化動画（120 秒） | [`submission/鶴子パチスロ実践！脳汁が出る瞬間のシミュレーションデモ動画.mp4`](submission/) |
+| 可視化動画（185 秒） | [`submission/鶴子パチスロ実践！脳汁が出る瞬間のシミュレーションデモ動画.mp4`](submission/) |
 | 解説資料（PDF） | `submission/鶴子パチスロ実践！脳汁が出る瞬間のシミュレーション説明資料.pdf`（後日追加） |
 
-## 動画の見方（120 秒構成）
+## 動画の見方（185 秒構成）
 
 | 秒 | フェーズ | 内容 |
 |----|---------|------|
@@ -35,6 +35,9 @@
 | 96–104 | Phase 6 | 脳汁が出やすかった「機種の特徴」（2 要素抽出） |
 | 104–112 | Phase 7 | 仮説の答え合わせ（人の心理 vs 機種の力） |
 | 112–120 | Phase 8 | 結論 — 「人」と「機種」の合作 |
+| 120–152 | Phase 9 | AI が生んだ 8 つの感情（Persona Reaction Probe、各属性 1 ページ × 8 ページ） |
+| 152–160 | Phase 10 序 | 「これから観察するもの」— 5 つの状況の予告 |
+| 160–185 | Phase 10 | 同じ状況、違う判断 — 8 人はどう動くか（5 状況シーン × 8 代表の判断観察） |
 
 ## 配布コード拡張の位置づけ
 
@@ -75,10 +78,11 @@ ollama pull qwen3.5:35b-a3b-nothink
 ```bash
 cd pachinko_hall_sim/spike
 python spike_v44_demo.py
-# → ../outputs/spike_v44_demo.mp4 (120 秒) が生成される
+# → ../outputs/spike_v44_demo.mp4 (185 秒) が生成される
 ```
 
-実行時間: 約 50 秒（LLM 18 件生成 + 1,200 frame レンダリング）。
+実行時間: 約 80 秒（LLM 18 件生成 + 1,850 frame レンダリング）。
+別途 `spike_persona_probe.py`（5 場面 × 8 ペルソナ = 40 件、約 80 秒）と `spike_llm_situations.py`（5 状況シーン × 8 代表 = 40 判断、約 75 秒）を事前実行すると、Phase 9 と Phase 10 のデータが `outputs/persona_probe_*.json` / `outputs/llm_situations_*.json` に生成される。
 
 ## ディレクトリ構成
 

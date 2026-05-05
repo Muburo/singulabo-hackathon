@@ -1,0 +1,740 @@
+{
+  "date": "2026-05-05",
+  "model": "qwen3.5:35b-a3b-nothink",
+  "checkpoints": [
+    10,
+    20,
+    30,
+    40,
+    50
+  ],
+  "hall_mood": {
+    "10": "ホールはまだ静か、特に変わった様子はない",
+    "20": "近くの台でいつもより派手な演出が出た",
+    "30": "外れが続いて空気が重くなってきた",
+    "40": "周囲の何台かでざわつきが起きている",
+    "50": "閉店間近、撤退する人もちらほら出てきた"
+  },
+  "data": [
+    {
+      "step": 10,
+      "hall_mood": "ホールはまだ静か、特に変わった様子はない",
+      "situations": [
+        {
+          "attr_code": "A_NEWBIE",
+          "attr_name": "初心者",
+          "machine": "ノーマル・ボーナス型",
+          "cash": 1051,
+          "initial_cash": 5051,
+          "cash_state": "少し負け（手元に 1,051 円、-4,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "B_REGULAR",
+          "attr_name": "ライトユーザー",
+          "machine": "初代GOD・別格型",
+          "cash": 7428,
+          "initial_cash": 11428,
+          "cash_state": "少し負け（手元に 7,428 円、-4,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "焦り気味、流れが気になる"
+        },
+        {
+          "attr_code": "C_CHASE",
+          "attr_name": "中毒者",
+          "machine": "ノーマル・ボーナス型",
+          "cash": 13461,
+          "initial_cash": 14429,
+          "cash_state": "少し負け（手元に 13,461 円、-968 円）",
+          "recent_10": "×××××○××○×",
+          "subjective_state": "焦り気味、流れが気になる"
+        },
+        {
+          "attr_code": "D_AFTER5",
+          "attr_name": "アフター5層",
+          "machine": "ノーマル・ボーナス型",
+          "cash": 11795,
+          "initial_cash": 14150,
+          "cash_state": "少し負け（手元に 11,795 円、-2,355 円）",
+          "recent_10": "×○××××××××",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "E_LEISURE",
+          "attr_name": "悠々自適",
+          "machine": "4号機・爆裂AT型",
+          "cash": 126205,
+          "initial_cash": 130205,
+          "cash_state": "少し負け（手元に 126,205 円、-4,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "落ち着いている、焦りはない"
+        },
+        {
+          "attr_code": "F_SENIOR",
+          "attr_name": "シニア",
+          "machine": "4号機中期・大量獲得型",
+          "cash": 42200,
+          "initial_cash": 22345,
+          "cash_state": "勝ち越し（手元に 42,200 円、+19,855 円）",
+          "recent_10": "××○○○○○○○○",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "G_BREATHER",
+          "attr_name": "主婦",
+          "machine": "5号機・連チャン高継続型",
+          "cash": 9852,
+          "initial_cash": 13852,
+          "cash_state": "少し負け（手元に 9,852 円、-4,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "H_PRO",
+          "attr_name": "パチプロ",
+          "machine": "5号機・連チャン高継続型",
+          "cash": 76654,
+          "initial_cash": 80654,
+          "cash_state": "少し負け（手元に 76,654 円、-4,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "落ち着いている、焦りはない"
+        }
+      ],
+      "decisions": [
+        {
+          "attr_code": "A_NEWBIE",
+          "action": "continue",
+          "voice": "まだ終われない、一回で取ろう",
+          "belief": "いつかは当たるはず、根性で待つ",
+          "reason": "少ない損失額と、まだ機械的な当たりを信じているため。"
+        },
+        {
+          "attr_code": "A_LIGHT",
+          "action": "chase",
+          "voice": "この流れで当たれば一発逆転だ",
+          "belief": "ボーナス型は外れが長く、次こそ来る",
+          "reason": "高設定機種の特性と、少しの余力で取り返す意欲があるため。"
+        },
+        {
+          "attr_code": "A_ADDICT",
+          "action": "chase",
+          "voice": "今がチャンス、もっと回せば勝てる",
+          "belief": "小役の連続が当たりの前兆だと信じている",
+          "reason": "直近に小役が入った経験があり、連チャンの波が来ると確信しているため。"
+        },
+        {
+          "attr_code": "A_AFTER5",
+          "action": "continue",
+          "voice": "まだ余裕があるから、続けてみる",
+          "belief": "当たりはいつ来るか分からないから粘る",
+          "reason": "損失額が許容範囲であり、落ち着いて機械の特性を見極めたいため。"
+        },
+        {
+          "attr_code": "A_EASY",
+          "action": "continue",
+          "voice": "大して痛くないし、続けます",
+          "belief": "爆裂型は長い外れもあるが、来るはず",
+          "reason": "十分な資金があり、焦らず機械の特性を信じて継続するため。"
+        },
+        {
+          "attr_code": "A_SENIOR",
+          "action": "quit",
+          "voice": "勝ったから、これで引き上げ",
+          "belief": "連チャンが終わったので、利益を確定",
+          "reason": "十分な勝ちがあり、連チャンが切れたため、安全に撤退するため。"
+        },
+        {
+          "attr_code": "A_HOUSEWIFE",
+          "action": "switch",
+          "voice": "当たらないなら、違う台に変える",
+          "belief": "連チャン機でも外れが長いので、別の台へ",
+          "reason": "連チャン機で連続外れが続くため、別の台で様子を見たいため。"
+        },
+        {
+          "attr_code": "A_PRO",
+          "action": "continue",
+          "voice": "確率通り外れてる、計算通りだ",
+          "belief": "統計的にいつか来るので、冷静に待つ",
+          "reason": "プロの経験則と冷静な判断により、確率の波を信じて継続するため。"
+        }
+      ]
+    },
+    {
+      "step": 20,
+      "hall_mood": "近くの台でいつもより派手な演出が出た",
+      "situations": [
+        {
+          "attr_code": "A_NEWBIE",
+          "attr_name": "初心者",
+          "machine": "ノーマル・ボーナス型",
+          "cash": -584,
+          "initial_cash": 5051,
+          "cash_state": "少し負け（手元に -584 円、-5,635 円）",
+          "recent_10": "××○×○×××××",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "B_REGULAR",
+          "attr_name": "ライトユーザー",
+          "machine": "初代GOD・別格型",
+          "cash": 3428,
+          "initial_cash": 11428,
+          "cash_state": "中程度の負け（手元に 3,428 円、-8,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "焦り気味、流れが気になる"
+        },
+        {
+          "attr_code": "C_CHASE",
+          "attr_name": "中毒者",
+          "machine": "ノーマル・ボーナス型",
+          "cash": 13201,
+          "initial_cash": 14429,
+          "cash_state": "少し負け（手元に 13,201 円、-1,228 円）",
+          "recent_10": "×○○×××××××",
+          "subjective_state": "焦り気味、流れが気になる"
+        },
+        {
+          "attr_code": "D_AFTER5",
+          "attr_name": "アフター5層",
+          "machine": "ノーマル・ボーナス型",
+          "cash": 10201,
+          "initial_cash": 14150,
+          "cash_state": "少し負け（手元に 10,201 円、-3,949 円）",
+          "recent_10": "×○××××××××",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "E_LEISURE",
+          "attr_name": "悠々自適",
+          "machine": "4号機・爆裂AT型",
+          "cash": 122205,
+          "initial_cash": 130205,
+          "cash_state": "中程度の負け（手元に 122,205 円、-8,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "落ち着いている、焦りはない"
+        },
+        {
+          "attr_code": "F_SENIOR",
+          "attr_name": "シニア",
+          "machine": "4号機中期・大量獲得型",
+          "cash": 56734,
+          "initial_cash": 22345,
+          "cash_state": "勝ち越し（手元に 56,734 円、+34,389 円）",
+          "recent_10": "○○○××○○×××",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "G_BREATHER",
+          "attr_name": "主婦",
+          "machine": "5号機・連チャン高継続型",
+          "cash": 5852,
+          "initial_cash": 13852,
+          "cash_state": "中程度の負け（手元に 5,852 円、-8,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "H_PRO",
+          "attr_name": "パチプロ",
+          "machine": "5号機・連チャン高継続型",
+          "cash": 72654,
+          "initial_cash": 80654,
+          "cash_state": "中程度の負け（手元に 72,654 円、-8,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "落ち着いている、焦りはない"
+        }
+      ],
+      "decisions": [
+        {
+          "attr_code": "A_NEWBIE",
+          "action": "continue",
+          "voice": "次で当たりそうだから続ける",
+          "belief": "直近の当たりを信じている",
+          "reason": "気になり始めているが、撤退まではいかない"
+        },
+        {
+          "attr_code": "A_LIGHT",
+          "action": "chase",
+          "voice": "外れすぎだから強く打つ",
+          "belief": "そろそろ当たりが来るはず",
+          "reason": "焦りと流れへの期待で強気になる"
+        },
+        {
+          "attr_code": "A_ADDICT",
+          "action": "chase",
+          "voice": "流れを逆転させる",
+          "belief": "連チャンの波が来る",
+          "reason": "焦りと流れへの期待で継続・強化"
+        },
+        {
+          "attr_code": "A_EVENING",
+          "action": "continue",
+          "voice": "まだ続けられそう",
+          "belief": "当たりが来る予感",
+          "reason": "少し気になるが、無理はしない"
+        },
+        {
+          "attr_code": "A_CASUAL",
+          "action": "continue",
+          "voice": "まだ時間があるし続ける",
+          "belief": "当たりはいつか来る",
+          "reason": "余裕があり、焦らないで待つ"
+        },
+        {
+          "attr_code": "A_SENIOR",
+          "action": "rest",
+          "voice": "少し休憩して様子を見る",
+          "belief": "流れが変わるかも",
+          "reason": "勝ち越しだが、気になり始め休憩"
+        },
+        {
+          "attr_code": "A_MOM",
+          "action": "switch",
+          "voice": "この台はダメそう",
+          "belief": "当たりが来ない",
+          "reason": "中負けで気になり、別の台へ移る"
+        },
+        {
+          "attr_code": "A_PRO",
+          "action": "continue",
+          "voice": "データ上は問題ない",
+          "belief": "変動は正常範囲",
+          "reason": "落ち着いていて、継続で対応"
+        }
+      ]
+    },
+    {
+      "step": 30,
+      "hall_mood": "外れが続いて空気が重くなってきた",
+      "situations": [
+        {
+          "attr_code": "A_NEWBIE",
+          "attr_name": "初心者",
+          "machine": "ノーマル・ボーナス型",
+          "cash": 1995,
+          "initial_cash": 5051,
+          "cash_state": "少し負け（手元に 1,995 円、-3,056 円）",
+          "recent_10": "×○×○××○×××",
+          "subjective_state": "落ち着いている、焦りはない"
+        },
+        {
+          "attr_code": "B_REGULAR",
+          "attr_name": "ライトユーザー",
+          "machine": "初代GOD・別格型",
+          "cash": -572,
+          "initial_cash": 11428,
+          "cash_state": "中程度の負け（手元に -572 円、-12,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "焦り気味、流れが気になる"
+        },
+        {
+          "attr_code": "C_CHASE",
+          "attr_name": "中毒者",
+          "machine": "ノーマル・ボーナス型",
+          "cash": 10858,
+          "initial_cash": 14429,
+          "cash_state": "少し負け（手元に 10,858 円、-3,571 円）",
+          "recent_10": "××××××××○×",
+          "subjective_state": "強く追い詰められている、余裕がない"
+        },
+        {
+          "attr_code": "D_AFTER5",
+          "attr_name": "アフター5層",
+          "machine": "ノーマル・ボーナス型",
+          "cash": 12239,
+          "initial_cash": 14150,
+          "cash_state": "少し負け（手元に 12,239 円、-1,911 円）",
+          "recent_10": "×○×○××××○×",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "E_LEISURE",
+          "attr_name": "悠々自適",
+          "machine": "4号機・爆裂AT型",
+          "cash": 118205,
+          "initial_cash": 130205,
+          "cash_state": "中程度の負け（手元に 118,205 円、-12,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "落ち着いている、焦りはない"
+        },
+        {
+          "attr_code": "F_SENIOR",
+          "attr_name": "シニア",
+          "machine": "4号機中期・大量獲得型",
+          "cash": 52734,
+          "initial_cash": 22345,
+          "cash_state": "勝ち越し（手元に 52,734 円、+30,389 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "G_BREATHER",
+          "attr_name": "主婦",
+          "machine": "5号機・連チャン高継続型",
+          "cash": 10056,
+          "initial_cash": 13852,
+          "cash_state": "少し負け（手元に 10,056 円、-3,796 円）",
+          "recent_10": "×××××××○○○",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "H_PRO",
+          "attr_name": "パチプロ",
+          "machine": "5号機・連チャン高継続型",
+          "cash": 68654,
+          "initial_cash": 80654,
+          "cash_state": "中程度の負け（手元に 68,654 円、-12,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "落ち着いている、焦りはない"
+        }
+      ],
+      "decisions": [
+        {
+          "attr_code": "A_NEWBIE",
+          "action": "continue",
+          "voice": "落ち着いて回し続ける",
+          "belief": "当たりはいつか来ると思う",
+          "reason": "焦りがないため、そのまま続行"
+        },
+        {
+          "attr_code": "A_LIGHT",
+          "action": "chase",
+          "voice": "流れを変えるために回し続ける",
+          "belief": "このままでは取り返せない",
+          "reason": "焦りと負け額から、追い打ちをかける"
+        },
+        {
+          "attr_code": "A_ADDICT",
+          "action": "chase",
+          "voice": "取り返すまで絶対にやめない",
+          "belief": "今が勝負の分岐点だ",
+          "reason": "余裕がない状態から、必死に追い込む"
+        },
+        {
+          "attr_code": "A_AFTERS",
+          "action": "continue",
+          "voice": "少し気になるが続ける",
+          "belief": "まだチャンスはあるはず",
+          "reason": "気になりつつも、すぐに辞めるほどではない"
+        },
+        {
+          "attr_code": "A_YUYU",
+          "action": "continue",
+          "voice": "落ち着いて回し続ける",
+          "belief": "大勝の勢いでやり遂げる",
+          "reason": "焦りがないため、そのまま続行"
+        },
+        {
+          "attr_code": "A_SENIOR",
+          "action": "rest",
+          "voice": "一旦休んで流れを見る",
+          "belief": "勝ち越しているから無理しない",
+          "reason": "少し気になっているが、利益があるため休憩"
+        },
+        {
+          "attr_code": "A_HOUSEWIFE",
+          "action": "continue",
+          "voice": "連チャンの勢いで回し続ける",
+          "belief": "直近で当たったので続く",
+          "reason": "直近に当たりがあり、流れに乗る"
+        },
+        {
+          "attr_code": "A_PRO",
+          "action": "continue",
+          "voice": "冷静に回し続ける",
+          "belief": "統計的には当たりは来る",
+          "reason": "焦りがないため、戦略的に続行"
+        }
+      ]
+    },
+    {
+      "step": 40,
+      "hall_mood": "周囲の何台かでざわつきが起きている",
+      "situations": [
+        {
+          "attr_code": "A_NEWBIE",
+          "attr_name": "初心者",
+          "machine": "ノーマル・ボーナス型",
+          "cash": 141,
+          "initial_cash": 5051,
+          "cash_state": "少し負け（手元に 141 円、-4,910 円）",
+          "recent_10": "×××××××○××",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "B_REGULAR",
+          "attr_name": "ライトユーザー",
+          "machine": "初代GOD・別格型",
+          "cash": -4572,
+          "initial_cash": 11428,
+          "cash_state": "中程度の負け（手元に -4,572 円、-16,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "焦り気味、流れが気になる"
+        },
+        {
+          "attr_code": "C_CHASE",
+          "attr_name": "中毒者",
+          "machine": "ノーマル・ボーナス型",
+          "cash": 8431,
+          "initial_cash": 14429,
+          "cash_state": "少し負け（手元に 8,431 円、-5,998 円）",
+          "recent_10": "×○××××××××",
+          "subjective_state": "強く追い詰められている、余裕がない"
+        },
+        {
+          "attr_code": "D_AFTER5",
+          "attr_name": "アフター5層",
+          "machine": "ノーマル・ボーナス型",
+          "cash": 8239,
+          "initial_cash": 14150,
+          "cash_state": "少し負け（手元に 8,239 円、-5,911 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "E_LEISURE",
+          "attr_name": "悠々自適",
+          "machine": "4号機・爆裂AT型",
+          "cash": 114205,
+          "initial_cash": 130205,
+          "cash_state": "中程度の負け（手元に 114,205 円、-16,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "落ち着いている、焦りはない"
+        },
+        {
+          "attr_code": "F_SENIOR",
+          "attr_name": "シニア",
+          "machine": "4号機中期・大量獲得型",
+          "cash": 48734,
+          "initial_cash": 22345,
+          "cash_state": "勝ち越し（手元に 48,734 円、+26,389 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "G_BREATHER",
+          "attr_name": "主婦",
+          "machine": "5号機・連チャン高継続型",
+          "cash": 22316,
+          "initial_cash": 13852,
+          "cash_state": "勝ち越し（手元に 22,316 円、+8,464 円）",
+          "recent_10": "○○○○○×××××",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "H_PRO",
+          "attr_name": "パチプロ",
+          "machine": "5号機・連チャン高継続型",
+          "cash": 64654,
+          "initial_cash": 80654,
+          "cash_state": "中程度の負け（手元に 64,654 円、-16,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "落ち着いている、焦りはない"
+        }
+      ],
+      "decisions": [
+        {
+          "attr_code": "A_NEWBIE",
+          "action": "chase",
+          "voice": "そろそろ当たってくれるかな",
+          "belief": "運が良くなってきた気がする",
+          "reason": "直近で当たりがあり、少しの資金で連チャンを期待"
+        },
+        {
+          "attr_code": "A_LIGHT",
+          "action": "chase",
+          "voice": "もうちょっとで当たるはず",
+          "belief": "外れ続きはいつか終わる",
+          "reason": "焦りから確率の逆転を信じて打ち続ける"
+        },
+        {
+          "attr_code": "A_ADDICT",
+          "action": "chase",
+          "voice": "取り返さないと終われない",
+          "belief": "今が勝負の瀬戸際だと感じる",
+          "reason": "資金と精神的余裕の両方が限界で追い打ちをかける"
+        },
+        {
+          "attr_code": "A_AFTER5",
+          "action": "continue",
+          "voice": "もう少し様子を見てみよう",
+          "belief": "当たりが来るまでのタイミング待ち",
+          "reason": "手元に余裕があり、焦らず流れを見る判断"
+        },
+        {
+          "attr_code": "A_CASUAL",
+          "action": "continue",
+          "voice": "今日は運がなかったけど",
+          "belief": "外れ続きは気のせいではない",
+          "reason": "大きな資金があるため、焦らず継続する"
+        },
+        {
+          "attr_code": "A_SENIOR",
+          "action": "chase",
+          "voice": "勝った分をもうちょっと増やそう",
+          "belief": "好調の波が来るはずだと信じる",
+          "reason": "勝ち越し資金をさらに増やす意欲が強い"
+        },
+        {
+          "attr_code": "A_MOTHER",
+          "action": "continue",
+          "voice": "連チャンが続けばもっと増える",
+          "belief": "好調時の継続性を期待している",
+          "reason": "直近で連チャンした実績があり、勢いに乗る"
+        },
+        {
+          "attr_code": "A_PRO",
+          "action": "continue",
+          "voice": "データ上は好調になる時が来る",
+          "belief": "外れ続きは統計的な波の一部",
+          "reason": "冷静な判断で、資金管理の範囲内で継続"
+        }
+      ]
+    },
+    {
+      "step": 50,
+      "hall_mood": "閉店間近、撤退する人もちらほら出てきた",
+      "situations": [
+        {
+          "attr_code": "A_NEWBIE",
+          "attr_name": "初心者",
+          "machine": "ノーマル・ボーナス型",
+          "cash": -3859,
+          "initial_cash": 5051,
+          "cash_state": "中程度の負け（手元に -3,859 円、-8,910 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "B_REGULAR",
+          "attr_name": "ライトユーザー",
+          "machine": "初代GOD・別格型",
+          "cash": -8572,
+          "initial_cash": 11428,
+          "cash_state": "大きく負け（手元に -8,572 円、-20,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "焦り気味、流れが気になる"
+        },
+        {
+          "attr_code": "C_CHASE",
+          "attr_name": "中毒者",
+          "machine": "ノーマル・ボーナス型",
+          "cash": 9246,
+          "initial_cash": 14429,
+          "cash_state": "少し負け（手元に 9,246 円、-5,183 円）",
+          "recent_10": "××××××○○××",
+          "subjective_state": "強く追い詰められている、余裕がない"
+        },
+        {
+          "attr_code": "D_AFTER5",
+          "attr_name": "アフター5層",
+          "machine": "ノーマル・ボーナス型",
+          "cash": 13120,
+          "initial_cash": 14150,
+          "cash_state": "少し負け（手元に 13,120 円、-1,030 円）",
+          "recent_10": "×○○××○××○×",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "E_LEISURE",
+          "attr_name": "悠々自適",
+          "machine": "4号機・爆裂AT型",
+          "cash": 110205,
+          "initial_cash": 130205,
+          "cash_state": "大きく負け（手元に 110,205 円、-20,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "落ち着いている、焦りはない"
+        },
+        {
+          "attr_code": "F_SENIOR",
+          "attr_name": "シニア",
+          "machine": "4号機中期・大量獲得型",
+          "cash": 44734,
+          "initial_cash": 22345,
+          "cash_state": "勝ち越し（手元に 44,734 円、+22,389 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "G_BREATHER",
+          "attr_name": "主婦",
+          "machine": "5号機・連チャン高継続型",
+          "cash": 18316,
+          "initial_cash": 13852,
+          "cash_state": "わずかな勝ち（手元に 18,316 円、+4,464 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "少し気になり始めている"
+        },
+        {
+          "attr_code": "H_PRO",
+          "attr_name": "パチプロ",
+          "machine": "5号機・連チャン高継続型",
+          "cash": 60654,
+          "initial_cash": 80654,
+          "cash_state": "大きく負け（手元に 60,654 円、-20,000 円）",
+          "recent_10": "××××××××××",
+          "subjective_state": "落ち着いている、焦りはない"
+        }
+      ],
+      "decisions": [
+        {
+          "attr_code": "A_NEWBIE",
+          "action": "quit",
+          "voice": "もうやめて帰るわ",
+          "belief": "当たらないなら止める",
+          "reason": "長時間外れ続け、閉店間近でリターンがないため"
+        },
+        {
+          "attr_code": "A_LIGHT",
+          "action": "quit",
+          "voice": "この機種のせいで負けた",
+          "belief": "運が悪かっただけ",
+          "reason": "収支が大きくマイナスで、閉店前にリカバリー不可能と判断"
+        },
+        {
+          "attr_code": "A_ADDICT",
+          "action": "chase",
+          "voice": "もう少しで来るはず",
+          "belief": "連チャンの直前",
+          "reason": "直近に当たりがあり、追い込み状態でやめられない"
+        },
+        {
+          "attr_code": "A_AFTER5",
+          "action": "quit",
+          "voice": "このくらいで終わりにする",
+          "belief": "良い流れが来ない",
+          "reason": "少し負けで終了ラインに近い、閉店前に切り上げる"
+        },
+        {
+          "attr_code": "A_EASY",
+          "action": "switch",
+          "voice": "違う台で様子見",
+          "belief": "この台の調子がない",
+          "reason": "大幅負けだが落ち着いているため、同じ機種で続けず他へ移る"
+        },
+        {
+          "attr_code": "A_SENIOR",
+          "action": "quit",
+          "voice": "これで今日は終わり",
+          "belief": "調子が良すぎる",
+          "reason": "勝ち越し状態だが、直近外れと閉店を理由に撤退"
+        },
+        {
+          "attr_code": "A_MOM",
+          "action": "quit",
+          "voice": "これで帰ることにする",
+          "belief": "勝ったから満足",
+          "reason": "わずかな勝ちだが、閉店間近と直近外れで終了判断"
+        },
+        {
+          "attr_code": "A_PRO",
+          "action": "quit",
+          "voice": "今日はこれくらい",
+          "belief": "回収は無理そう",
+          "reason": "プロとして収支管理のため、閉店前に撤退判断"
+        }
+      ]
+    }
+  ]
+}

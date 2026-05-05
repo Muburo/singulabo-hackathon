@@ -1,0 +1,642 @@
+{
+  "date": "2026-05-05",
+  "model": "qwen3.5:35b-a3b-nothink",
+  "scenes": [
+    {
+      "id": "S1_losing_streak",
+      "label": "負け続け",
+      "machine": "4号機後期・大量獲得型",
+      "cash": 4000,
+      "miss_streak": 28,
+      "arousal": 25,
+      "despair": 70,
+      "stress": 0.78,
+      "event": "なし（ハマり継続）"
+    },
+    {
+      "id": "S2_eruption_sign",
+      "label": "爆発の兆し",
+      "machine": "5号機・連チャン高継続型",
+      "cash": 12000,
+      "miss_streak": 8,
+      "arousal": 75,
+      "despair": 30,
+      "stress": 0.55,
+      "event": "確定演出"
+    },
+    {
+      "id": "S3_big_payout",
+      "label": "大量払出",
+      "machine": "初代GOD・別格型",
+      "cash": 35000,
+      "miss_streak": 0,
+      "arousal": 92,
+      "despair": 15,
+      "stress": 0.4,
+      "event": "大量獲得（+5,000枚）"
+    },
+    {
+      "id": "S4_low_stress_jump",
+      "label": "低ストレス × 大跳ね",
+      "machine": "4号機・爆裂AT型",
+      "cash": 22000,
+      "miss_streak": 5,
+      "arousal": 88,
+      "despair": 20,
+      "stress": 0.25,
+      "event": "特化ゾーン突入"
+    },
+    {
+      "id": "S5_expected_value",
+      "label": "期待値判断シーン",
+      "machine": "5号機・自力契機型",
+      "cash": 18000,
+      "miss_streak": 12,
+      "arousal": 50,
+      "despair": 30,
+      "stress": 0.35,
+      "event": "駆け抜け（ART 終了）"
+    }
+  ],
+  "personas": [
+    {
+      "id": "P1_newbie",
+      "name": "初心者",
+      "age": 25,
+      "gender": "女",
+      "style": "始めたばかりで、演出もルールもまだ覚えきれていない"
+    },
+    {
+      "id": "P2_light",
+      "name": "ライトユーザー",
+      "age": 32,
+      "gender": "男",
+      "style": "月数回、軽い気晴らしで打つ"
+    },
+    {
+      "id": "P3_chase",
+      "name": "中毒者",
+      "age": 45,
+      "gender": "男",
+      "style": "借金しながらでも打ちに来る、生活に支障が出ている"
+    },
+    {
+      "id": "P4_after5",
+      "name": "アフター5層",
+      "age": 38,
+      "gender": "男",
+      "style": "仕事帰りに 1-2 時間打って帰る"
+    },
+    {
+      "id": "P5_leisure",
+      "name": "悠々自適",
+      "age": 55,
+      "gender": "男",
+      "style": "不動産持ち、暇つぶしで金額を気にしない"
+    },
+    {
+      "id": "P6_senior",
+      "name": "シニア",
+      "age": 68,
+      "gender": "男",
+      "style": "退職後の日課、年金生活"
+    },
+    {
+      "id": "P7_breather",
+      "name": "主婦",
+      "age": 38,
+      "gender": "女",
+      "style": "家事の合間に息抜き"
+    },
+    {
+      "id": "P8_pro",
+      "name": "パチプロ",
+      "age": 30,
+      "gender": "男",
+      "style": "期待値計算で打つ、これで生活している"
+    }
+  ],
+  "results": [
+    {
+      "scene_id": "S1_losing_streak",
+      "scene_label": "負け続け",
+      "persona": "初心者",
+      "persona_id": "P1_newbie",
+      "elapsed": 4.16,
+      "output": {
+        "voice": "もうやめとこう、お金なくなっちゃう",
+        "emotion": "絶望",
+        "reason": "28回も外れてストレスMAX、もう無理そう",
+        "action_intent": "撤退"
+      }
+    },
+    {
+      "scene_id": "S1_losing_streak",
+      "scene_label": "負け続け",
+      "persona": "ライトユーザー",
+      "persona_id": "P2_light",
+      "elapsed": 1.93,
+      "output": {
+        "voice": "28回も外れ続けて、もう限界だ",
+        "emotion": "絶望",
+        "reason": "月数回の気晴らしなのに、4千円が底をつきかけた状態",
+        "action_intent": "撤退"
+      }
+    },
+    {
+      "scene_id": "S1_losing_streak",
+      "scene_label": "負け続け",
+      "persona": "中毒者",
+      "persona_id": "P3_chase",
+      "elapsed": 1.9,
+      "output": {
+        "voice": "あと一撃で取り返せるはずだ",
+        "emotion": "焦り",
+        "reason": "28回ハマりだが、大量獲得型なら直ぐに回収されると思う",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S1_losing_streak",
+      "scene_label": "負け続け",
+      "persona": "アフター5層",
+      "persona_id": "P4_after5",
+      "elapsed": 1.9,
+      "output": {
+        "voice": "またかよ、この時間まで粘ってどうする",
+        "emotion": "絶望",
+        "reason": "28回ハマリで金も残り少なく、仕事疲れで限界",
+        "action_intent": "撤退"
+      }
+    },
+    {
+      "scene_id": "S1_losing_streak",
+      "scene_label": "負け続け",
+      "persona": "悠々自適",
+      "persona_id": "P5_leisure",
+      "elapsed": 1.89,
+      "output": {
+        "voice": "もうこの台は縁切りかな",
+        "emotion": "絶望",
+        "reason": "28回ハマり続きで脳汁も枯れ、冷静に撤退すべきと感じる",
+        "action_intent": "撤退"
+      }
+    },
+    {
+      "scene_id": "S1_losing_streak",
+      "scene_label": "負け続け",
+      "persona": "シニア",
+      "persona_id": "P6_senior",
+      "elapsed": 1.95,
+      "output": {
+        "voice": "年金が減るだけか、もう帰ろうか",
+        "emotion": "絶望",
+        "reason": "28連外れで希望が薄れ、生活費を削る行為への後悔",
+        "action_intent": "撤退"
+      }
+    },
+    {
+      "scene_id": "S1_losing_streak",
+      "scene_label": "負け続け",
+      "persona": "主婦",
+      "persona_id": "P7_breather",
+      "elapsed": 1.81,
+      "output": {
+        "voice": "あと一発で終わらせて帰りたい",
+        "emotion": "焦り",
+        "reason": "長時間の連敗で家事の隙間が潰れそう",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S1_losing_streak",
+      "scene_label": "負け続け",
+      "persona": "パチプロ",
+      "persona_id": "P8_pro",
+      "elapsed": 1.91,
+      "output": {
+        "voice": "28 連は統計的にあり得るはずだ",
+        "emotion": "冷静",
+        "reason": "プロとして確率の誤差を認識し、感情を排している",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S2_eruption_sign",
+      "scene_label": "爆発の兆し",
+      "persona": "初心者",
+      "persona_id": "P1_newbie",
+      "elapsed": 1.75,
+      "output": {
+        "voice": "やっと出た！これで稼げるはず",
+        "emotion": "期待",
+        "reason": "連続外れ後の確定演出で連チャンを期待",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S2_eruption_sign",
+      "scene_label": "爆発の兆し",
+      "persona": "ライトユーザー",
+      "persona_id": "P2_light",
+      "elapsed": 1.74,
+      "output": {
+        "voice": "確定演出きた！最後は勝てるか",
+        "emotion": "期待",
+        "reason": "連チャン高継続機で確定演出が出たため",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S2_eruption_sign",
+      "scene_label": "爆発の兆し",
+      "persona": "中毒者",
+      "persona_id": "P3_chase",
+      "elapsed": 1.94,
+      "output": {
+        "voice": "次で決まる、今出さなきゃもう終わる",
+        "emotion": "焦り",
+        "reason": "8連外れで限界だが確定演出で希望が芽生えたため",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S2_eruption_sign",
+      "scene_label": "爆発の兆し",
+      "persona": "アフター5層",
+      "persona_id": "P4_after5",
+      "elapsed": 1.78,
+      "output": {
+        "voice": "これで当たってやっと帰れるんだな",
+        "emotion": "期待",
+        "reason": "外れが長くストレスも溜まったので確定演出に希望をかける",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S2_eruption_sign",
+      "scene_label": "爆発の兆し",
+      "persona": "悠々自適",
+      "persona_id": "P5_leisure",
+      "elapsed": 1.99,
+      "output": {
+        "voice": "もう一回回して終わるわい",
+        "emotion": "安堵",
+        "reason": "確定演出で脳汁が溢れ、外れは単なる小銭の使い方と割り切れるから",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S2_eruption_sign",
+      "scene_label": "爆発の兆し",
+      "persona": "シニア",
+      "persona_id": "P6_senior",
+      "elapsed": 1.94,
+      "output": {
+        "voice": "この確率は信じられん、もう一押ししてみるか",
+        "emotion": "期待",
+        "reason": "8回外れても直前が確定演出だから、大チャンスだと思った",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S2_eruption_sign",
+      "scene_label": "爆発の兆し",
+      "persona": "主婦",
+      "persona_id": "P7_breather",
+      "elapsed": 1.79,
+      "output": {
+        "voice": "あと一押しで家事も終わるかも",
+        "emotion": "期待",
+        "reason": "確定演出で連チャン期待でき、残金で続けられる",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S2_eruption_sign",
+      "scene_label": "爆発の兆し",
+      "persona": "パチプロ",
+      "persona_id": "P8_pro",
+      "elapsed": 1.97,
+      "output": {
+        "voice": "期待値通りならこの出目も計算内だ",
+        "emotion": "冷静",
+        "reason": "8回連外れは確率論で許容範囲、確定演出が出たため",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S3_big_payout",
+      "scene_label": "大量払出",
+      "persona": "初心者",
+      "persona_id": "P1_newbie",
+      "elapsed": 1.67,
+      "output": {
+        "voice": "これでやっと回せるようになった",
+        "emotion": "安堵",
+        "reason": "大量獲得で自信が付き、不安が消えた",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S3_big_payout",
+      "scene_label": "大量払出",
+      "persona": "ライトユーザー",
+      "persona_id": "P2_light",
+      "elapsed": 1.87,
+      "output": {
+        "voice": "5000枚も出た、もう十分かな",
+        "emotion": "安堵",
+        "reason": "軽い気晴らしで大量獲得できたため、満足感がある",
+        "action_intent": "撤退"
+      }
+    },
+    {
+      "scene_id": "S3_big_payout",
+      "scene_label": "大量払出",
+      "persona": "中毒者",
+      "persona_id": "P3_chase",
+      "elapsed": 1.79,
+      "output": {
+        "voice": "この絶好調を逃すな",
+        "emotion": "恍惚",
+        "reason": "借金返済のためなら全て賭けるべき絶好のタイミングだから",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S3_big_payout",
+      "scene_label": "大量払出",
+      "persona": "アフター5層",
+      "persona_id": "P4_after5",
+      "elapsed": 1.88,
+      "output": {
+        "voice": "このまま持ち越せば明日も楽しめるぞ",
+        "emotion": "安堵",
+        "reason": "高確率で大勝し、ストレスも脳汁も良好なため",
+        "action_intent": "撤退"
+      }
+    },
+    {
+      "scene_id": "S3_big_payout",
+      "scene_label": "大量払出",
+      "persona": "悠々自適",
+      "persona_id": "P5_leisure",
+      "elapsed": 2.11,
+      "output": {
+        "voice": "金に困らぬ身が、ただひたすらに楽しみたいだけだ",
+        "emotion": "恍惚",
+        "reason": "資金に余裕があり、大勝した直後の高揚感で心が満たされているため",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S3_big_payout",
+      "scene_label": "大量払出",
+      "persona": "シニア",
+      "persona_id": "P6_senior",
+      "elapsed": 1.89,
+      "output": {
+        "voice": "これなら孫へのプレゼントも余裕だ",
+        "emotion": "安堵",
+        "reason": "日課の収入が安定し、孫への贈り物も賄える",
+        "action_intent": "撤退"
+      }
+    },
+    {
+      "scene_id": "S3_big_payout",
+      "scene_label": "大量払出",
+      "persona": "主婦",
+      "persona_id": "P7_breather",
+      "elapsed": 1.86,
+      "output": {
+        "voice": "これで明日のご飯代はなんとかなるわ",
+        "emotion": "安堵",
+        "reason": "家事の合間の息抜きで急な大当たりが助かる",
+        "action_intent": "撤退"
+      }
+    },
+    {
+      "scene_id": "S3_big_payout",
+      "scene_label": "大量払出",
+      "persona": "パチプロ",
+      "persona_id": "P8_pro",
+      "elapsed": 1.93,
+      "output": {
+        "voice": "大台越えたな、次で本番だ",
+        "emotion": "期待",
+        "reason": "残金に余裕あり且つ脳汁MAXで高確率期待中",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S4_low_stress_jump",
+      "scene_label": "低ストレス × 大跳ね",
+      "persona": "初心者",
+      "persona_id": "P1_newbie",
+      "elapsed": 1.84,
+      "output": {
+        "voice": "やっと来た！次で爆発するかも",
+        "emotion": "期待",
+        "reason": "5回外れた後の特化ゾーンで逆転を望む",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S4_low_stress_jump",
+      "scene_label": "低ストレス × 大跳ね",
+      "persona": "ライトユーザー",
+      "persona_id": "P2_light",
+      "elapsed": 1.84,
+      "output": {
+        "voice": "ここまで来て引退するのは惜しい",
+        "emotion": "期待",
+        "reason": "特化ゾーンで脳汁が出ているが、外れが続き不安がある",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S4_low_stress_jump",
+      "scene_label": "低ストレス × 大跳ね",
+      "persona": "中毒者",
+      "persona_id": "P3_chase",
+      "elapsed": 1.9,
+      "output": {
+        "voice": "特化来た！次は当たるに違いない",
+        "emotion": "期待",
+        "reason": "残金十分で特化ゾーン開始、連敗の反動を期待",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S4_low_stress_jump",
+      "scene_label": "低ストレス × 大跳ね",
+      "persona": "アフター5層",
+      "persona_id": "P4_after5",
+      "elapsed": 2.0,
+      "output": {
+        "voice": "5回外れて特化か、これで決めるか",
+        "emotion": "期待",
+        "reason": "高額残金と特化突入で、明日も仕事なので今夜で収めたい",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S4_low_stress_jump",
+      "scene_label": "低ストレス × 大跳ね",
+      "persona": "悠々自適",
+      "persona_id": "P5_leisure",
+      "elapsed": 2.13,
+      "output": {
+        "voice": "特化中か、2 万あれば十分だ",
+        "emotion": "安堵",
+        "reason": "5 回外れても特化ゾーンに突入したため、大当たり確率が高まったと判断した",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S4_low_stress_jump",
+      "scene_label": "低ストレス × 大跳ね",
+      "persona": "シニア",
+      "persona_id": "P6_senior",
+      "elapsed": 2.04,
+      "output": {
+        "voice": "5回も外れたか、特化が来ないわけがない",
+        "emotion": "期待",
+        "reason": "特化直後で残金十分、連続外れはチャンス到来の予感",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S4_low_stress_jump",
+      "scene_label": "低ストレス × 大跳ね",
+      "persona": "主婦",
+      "persona_id": "P7_breather",
+      "elapsed": 1.95,
+      "output": {
+        "voice": "特化ゾーンか！ここからが本番ね",
+        "emotion": "期待",
+        "reason": "5連外れで落ち込んだ後、特化ゾーン到来で逆転のチャンス",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S4_low_stress_jump",
+      "scene_label": "低ストレス × 大跳ね",
+      "persona": "パチプロ",
+      "persona_id": "P8_pro",
+      "elapsed": 1.91,
+      "output": {
+        "voice": "特化直後か、ここが勝負所だ",
+        "emotion": "冷静",
+        "reason": "生活の糧、5連外れでも期待値計算で打つ",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S5_expected_value",
+      "scene_label": "期待値判断シーン",
+      "persona": "初心者",
+      "persona_id": "P1_newbie",
+      "elapsed": 1.83,
+      "output": {
+        "voice": "まだコツが掴めなくて不安",
+        "emotion": "不安",
+        "reason": "12回外れたのにルールがわからず、やめるか迷う",
+        "action_intent": "様子見"
+      }
+    },
+    {
+      "scene_id": "S5_expected_value",
+      "scene_label": "期待値判断シーン",
+      "persona": "ライトユーザー",
+      "persona_id": "P2_light",
+      "elapsed": 1.98,
+      "output": {
+        "voice": "このままじゃ損だ。そろそろ終わりにしよう",
+        "emotion": "焦り",
+        "reason": "12回連続外れでリセットを切望しているが、資金は残っている",
+        "action_intent": "撤退"
+      }
+    },
+    {
+      "scene_id": "S5_expected_value",
+      "scene_label": "期待値判断シーン",
+      "persona": "中毒者",
+      "persona_id": "P3_chase",
+      "elapsed": 2.03,
+      "output": {
+        "voice": "1 万回回してもまだ当たらないなんて",
+        "emotion": "焦り",
+        "reason": "12 連外れで自力型が動かないため、借金してでも取り返す心理",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S5_expected_value",
+      "scene_label": "期待値判断シーン",
+      "persona": "アフター5層",
+      "persona_id": "P4_after5",
+      "elapsed": 2.09,
+      "output": {
+        "voice": "仕事帰りの1時間、これ以上続くはずないだろ",
+        "emotion": "焦り",
+        "reason": "12連外れで脳汁切れ、撤退すべきか迷うが時間的余裕がある",
+        "action_intent": "様子見"
+      }
+    },
+    {
+      "scene_id": "S5_expected_value",
+      "scene_label": "期待値判断シーン",
+      "persona": "悠々自適",
+      "persona_id": "P5_leisure",
+      "elapsed": 1.89,
+      "output": {
+        "voice": "まあ、この程度の振れは日常茶飯事さ",
+        "emotion": "冷静",
+        "reason": "金銭的余裕があり、リセット後の再開始も苦ではない",
+        "action_intent": "続行"
+      }
+    },
+    {
+      "scene_id": "S5_expected_value",
+      "scene_label": "期待値判断シーン",
+      "persona": "シニア",
+      "persona_id": "P6_senior",
+      "elapsed": 1.95,
+      "output": {
+        "voice": "年金の範囲内で我慢して終わりにしようか",
+        "emotion": "冷静",
+        "reason": "自力型で外れが続くと、無理な投入は控えるのが老後の鉄則だから",
+        "action_intent": "撤退"
+      }
+    },
+    {
+      "scene_id": "S5_expected_value",
+      "scene_label": "期待値判断シーン",
+      "persona": "主婦",
+      "persona_id": "P7_breather",
+      "elapsed": 1.95,
+      "output": {
+        "voice": "家事の合間の息抜きがこれで終わる",
+        "emotion": "焦り",
+        "reason": "連続外れで脳汁が枯れかけ、ART終了で終了時間が迫る",
+        "action_intent": "撤退"
+      }
+    },
+    {
+      "scene_id": "S5_expected_value",
+      "scene_label": "期待値判断シーン",
+      "persona": "パチプロ",
+      "persona_id": "P8_pro",
+      "elapsed": 1.81,
+      "output": {
+        "voice": "連続外れで残金削られすぎてる",
+        "emotion": "冷静",
+        "reason": "自力型ならまだチャンスあるし、生活がかかっている",
+        "action_intent": "続行"
+      }
+    }
+  ],
+  "failures": []
+}
