@@ -11,7 +11,7 @@ import time
 import requests
 
 OLLAMA_URL = "http://localhost:11434/api/chat"
-MODEL = "qwen3:4b-instruct-2507-q4_K_M"
+MODEL = "qwen3.5:35b-a3b-nothink"
 
 
 def generate_inner_voice(persona_ctx, voice_history=None):
@@ -19,9 +19,23 @@ def generate_inner_voice(persona_ctx, voice_history=None):
     voice_history = voice_history or []
     avoid_str = ""
     if voice_history:
-        avoid_str = f"\n\n直前に既に言ったセリフ: {' / '.join(voice_history[-3:])}\n→ これらと違う表現で書いてください。"
+        recent = voice_history[-6:]
+        bullet = "\n".join(f"  - {v}" for v in recent)
+        avoid_str = (
+            f"\n\n直前に他のプレイヤーが言ったセリフ（被り回避用）:\n{bullet}\n"
+            "→ 上記と **出だし・語感・言い回し** が被らないように。"
+            "  特に「また」「もう」「やっぱり」など同じ書き出しを避ける。"
+            "  数字（残金・連続外れ）の引用も控えめに（連発しない）。"
+        )
 
-    prompt = f"""あなたは「{persona_ctx['category']}」のパチスロプレイヤー（{persona_ctx['age']}歳、{persona_ctx['gender']}）。
+    life_themes = persona_ctx.get("life_themes", "")
+    themes_block = ""
+    if life_themes:
+        themes_block = (
+            f"\nこの人物が普段から考えがちなテーマ（参考、必ず使う必要はない）:\n  {life_themes}"
+        )
+
+    prompt = f"""あなたは「{persona_ctx['category']}」のパチスロプレイヤー（{persona_ctx['age']}歳、{persona_ctx['gender']}）。{themes_block}
 
 現在の状況:
 - 機種: {persona_ctx['machine']}
@@ -29,13 +43,20 @@ def generate_inner_voice(persona_ctx, voice_history=None):
 - 連続外れ: {persona_ctx['miss_streak']}回
 - 脳汁度（興奮）: {persona_ctx['arousal']:.0f}/100
 - 絶望度: {persona_ctx['despair']:.0f}/100
-- 追い詰められ度（借金・仕事ストレス等）: {persona_ctx['stress_load']:.2f}/1.0
+- 内面の追い詰められ度: {persona_ctx['stress_load']:.2f}/1.0
 
 直前のイベント: {persona_ctx['trigger_event']}{avoid_str}
 
-今、心の中でつぶやいている一言を **20字以内、一人称、句点なし** で書いてください。
-人名・地名・固有名詞は禁止。直前のイベントへの自然な反応を意識して。
-**心の声のテキストだけ**を出力してください。前置き・説明・引用符なし。"""
+今、この状況下でこの人物が心の中でふと漏らす一言を、**20 字以内、一人称、句点なし** で書いてください。
+
+【セリフの作り方の指針】
+- 性別・年齢・属性に合った口調を使う（女性なら女性らしい、シニアなら年配らしい言い回し）
+- お金の話だけにしない。属性ごとの生活感・感情・思い出・人との関係なども適度に混ぜる
+- 興奮・期待・焦り・諦め・歓喜・呆れ・冷静・恍惚など、感情の幅を出す
+- 人名・地名・固有名詞・パチンコ用語の専門略語は使わない
+- ありきたりな反応にならない、その人物ならではの一言
+
+**心の声のテキストだけ**を出力。前置き・説明・引用符なし。"""
 
     payload = {
         "model": MODEL,
@@ -46,7 +67,8 @@ def generate_inner_voice(persona_ctx, voice_history=None):
         "options": {
             "num_ctx": 2048,
             "num_predict": 60,
-            "temperature": 0.7,
+            "temperature": 0.95,
+            "top_p": 0.92,
         },
     }
 

@@ -47,8 +47,8 @@ class AttributePattern:
 
 ATTRIBUTES = [
     AttributePattern(
-        code="A_NEWBIE", display_name="新人",
-        description="はじめて来店、まだ波が読めない",
+        code="A_NEWBIE", display_name="初心者",
+        description="パチンコ屋やパチスロに慣れていない人",
         sens_mean=0.84, sens_sd=0.06,
         base_stress_mean=0.20, base_stress_sd=0.06,
         threshold_median=30000, threshold_cv=0.30,
@@ -57,8 +57,8 @@ ATTRIBUTES = [
         extras={"novelty_boost": 1.20},
     ),
     AttributePattern(
-        code="B_REGULAR", display_name="常連",
-        description="月数回、機種は決まってる",
+        code="B_REGULAR", display_name="ライトユーザー",
+        description="月に数回程度行く人たち",
         sens_mean=0.52, sens_sd=0.07,
         base_stress_mean=0.50, base_stress_sd=0.08,
         threshold_median=60000, threshold_cv=0.35,
@@ -67,8 +67,8 @@ ATTRIBUTES = [
         extras={"habituation": 0.80, "recovery_relief_weight": 0.85},
     ),
     AttributePattern(
-        code="C_CHASE", display_name="追い上げ",
-        description="取り戻したい、兆しに過敏",
+        code="C_CHASE", display_name="中毒者",
+        description="パチスロジャンキー。借金もあり、生活に支障をきたすような打ち方",
         sens_mean=0.92, sens_sd=0.05,
         base_stress_mean=0.78, base_stress_sd=0.07,
         threshold_median=15000, threshold_cv=0.40,
@@ -80,8 +80,8 @@ ATTRIBUTES = [
         },
     ),
     AttributePattern(
-        code="D_AFTER5", display_name="アフターファイブ",
-        description="仕事帰りの 2 時間",
+        code="D_AFTER5", display_name="アフター5層",
+        description="仕事帰りのサラリーマンなど",
         sens_mean=0.72, sens_sd=0.07,
         base_stress_mean=0.45, base_stress_sd=0.07,
         threshold_median=50000, threshold_cv=0.30,
@@ -91,7 +91,7 @@ ATTRIBUTES = [
     ),
     AttributePattern(
         code="E_LEISURE", display_name="悠々自適",
-        description="経済的余裕、暇つぶし",
+        description="経済的に余裕、暇つぶしで打つ地主や不動産持ち",
         sens_mean=0.35, sens_sd=0.06,
         base_stress_mean=0.08, base_stress_sd=0.04,
         threshold_median=220000, threshold_cv=0.30,
@@ -100,8 +100,8 @@ ATTRIBUTES = [
         extras={"emotion_damp": 0.85, "interruptibility": 0.90, "ev_focus": 0.10},
     ),
     AttributePattern(
-        code="F_SENIOR", display_name="シニア常連",
-        description="退職後の長居",
+        code="F_SENIOR", display_name="シニア",
+        description="退職後、時間的な余裕が相当ある人たち",
         sens_mean=0.42, sens_sd=0.06,
         base_stress_mean=0.34, base_stress_sd=0.07,
         threshold_median=80000, threshold_cv=0.30,
@@ -110,8 +110,8 @@ ATTRIBUTES = [
         extras={"long_stay": 1.20},
     ),
     AttributePattern(
-        code="G_BREATHER", display_name="息抜き",
-        description="家事や日常から離れたい",
+        code="G_BREATHER", display_name="主婦",
+        description="家事や日常から離れて来てる",
         sens_mean=0.68, sens_sd=0.07,
         base_stress_mean=0.48, base_stress_sd=0.08,
         threshold_median=35000, threshold_cv=0.30,
@@ -154,6 +154,8 @@ class Persona:
     hammari_tau: float
     # 潜在変数 z（追い詰められやすさ、サンプリング元）
     z: float
+    # v4.5: 48 セル格子の機種割り当て（assign_machines で in-place 設定）
+    assigned_machine: str = ""
 
 
 # ============ サンプリング ============

@@ -12,6 +12,13 @@ env/
 output/
 *.mp4
 *.log
+# 中間生成のフレーム画像（提出には不要）
+pachinko_hall_sim/outputs/frame_*.png
+pachinko_hall_sim/outputs/anim_*.png
+pachinko_hall_sim/outputs/spike_*.gif
+
+# 提出物のみ mp4 許可
+!submission/*.mp4
 
 # OS
 .DS_Store
