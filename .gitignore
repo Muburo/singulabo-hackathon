@@ -32,3 +32,6 @@ submission/.build.html
 submission/draft.pdf
 submission/singulabo-explainer-draft.md
 submission/singulabo-explainer.html
+
+# Desktop からの作業ファイル退避先（git 管理外）
+desktop-archive/
