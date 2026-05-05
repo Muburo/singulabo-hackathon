@@ -2,7 +2,7 @@
 spike_v43_video_mvp.py — 動画パイプライン MVP
 
 目的: spike_v43 の Phase 1（ホール俯瞰）を FuncAnimation 化して MP4 書き出し。
-横塚が「動画化スタックが本当に立つか」を体感するための最小実装。
+作者が「動画化スタックが本当に立つか」を体感するための最小実装。
 
 使い方:
     python spike_v43_video_mvp.py

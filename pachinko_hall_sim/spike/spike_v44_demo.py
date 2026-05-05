@@ -1,7 +1,7 @@
 """
 spike_v44_demo.py — v4.5 仮説検証デモ動画（Phase 1-6 統合、〜2 分）
 
-横塚の仮説検証ストーリーを 1 本の mp4 で見せる。
+作者の仮説検証ストーリーを 1 本の mp4 で見せる。
 構成（CLAUDE.md L1362-L1373）:
   Phase 1 (12s): 仮説提示
   Phase 2 (12s): 8 属性 × 6 機種 = 48 セル格子の説明
@@ -65,7 +65,7 @@ ATTR_DISPLAY = {a.code: a.display_name for a in ATTRIBUTES}
 MACHINE_DISPLAY = {m.code: m.display_name for m in MACHINES}
 
 # v4.6.3: 第三者向けの 1 行紹介（Phase 2 で機種ヘッダ下に表示）
-# v4.6.15: SELF_TRIGGER_5G を「事故待ち・爆裂」に更新（横塚指示）
+# v4.6.15: SELF_TRIGGER_5G を「事故待ち・爆裂」に更新（作者指示）
 MACHINE_TAGLINE = {
     "NORMAL_BONUS":     "コツコツ・爆発なし",
     "LATE_4G_MASS":     "大量獲得・中毒性高",
@@ -75,7 +75,7 @@ MACHINE_TAGLINE = {
     "GOD_ORIGIN":       "桁違い・別格",
 }
 
-# v4.6.11: 機種カテゴリのモデルとなる代表機種（横塚指示で更新）
+# v4.6.11: 機種カテゴリのモデルとなる代表機種（作者指示で更新）
 MACHINE_EXAMPLES = {
     "NORMAL_BONUS":     "ジャグラー / ハナハナ / ニューパルサー",
     "LATE_4G_MASS":     "北斗の拳 / 吉宗 / 主役は銭形",
@@ -85,7 +85,7 @@ MACHINE_EXAMPLES = {
     "GOD_ORIGIN":       "ミリオンゴッド初代 / ゴールドXR",
 }
 
-# v4.6.15: 機種ごとの固有カラー（Phase machines で 6 色に色分け、横塚指示）
+# v4.6.15: 機種ごとの固有カラー（Phase machines で 6 色に色分け、作者指示）
 MACHINE_COLOR = {
     "NORMAL_BONUS":     "#7FE07F",  # 緑 — 伝統・安定
     "LATE_4G_MASS":     "#A878D4",  # 紫 — 中毒性・ゲーム性
@@ -332,7 +332,7 @@ def top_brain_peaks(records: list[StepRecord], top_n: int = 5) -> list[StepRecor
 
 
 def factor_brain_means(records: list[StepRecord]) -> dict[str, dict[str, float]]:
-    """要因別 Δ脳汁の束集計（v4.6.4: 横塚指摘『瞬間だけだと特化ゾーンが過小評価』）。
+    """要因別 Δ脳汁の束集計（v4.6.4: 作者指摘『瞬間だけだと特化ゾーンが過小評価』）。
 
     各「契機」（chain_start / tokka_heavy / tokka_light / kakutei_engi）を発火点として、
     その契機が引き起こした連チャンの脳汁累積を契機に紐付ける。
@@ -393,7 +393,7 @@ def hypothesis_counter_evidence(
     records: list[StepRecord],
     brain_peaks: list[StepRecord],
 ) -> dict[str, object]:
-    """仮説への反証材料を集計（v4.6.5: 横塚指示『自己成就回避』）。
+    """仮説への反証材料を集計（v4.6.5: 作者指示『自己成就回避』）。
 
     軸:
       1) Top 5 の中、中毒者でない個人は何人いるか
@@ -427,7 +427,7 @@ def hypothesis_counter_evidence(
 
 
 def fmt_cash_jp(cash: int) -> str:
-    """円数を「X 万 Y 千円」形式に整える（千円未満切り捨て、v4.6.14 横塚指示）。"""
+    """円数を「X 万 Y 千円」形式に整える（千円未満切り捨て、v4.6.14 作者指示）。"""
     man = cash // 10000
     sen = (cash % 10000) // 1000
     if man > 0 and sen > 0:
@@ -438,7 +438,7 @@ def fmt_cash_jp(cash: int) -> str:
 
 
 def gen_persona_story(p: Persona, r: StepRecord, rank: int = 0) -> list[str]:
-    """属性別の個人ストーリー（v4.6.14 横塚指示で書き直し）。
+    """属性別の個人ストーリー（v4.6.14 作者指示で書き直し）。
 
     rank: 1/2/3 のいずれか（Phase 5 のランクに応じて借金額・所持金・文言が変わる）
     """
@@ -550,7 +550,7 @@ def chase_machine_brain_means(records: list[StepRecord]) -> dict[str, dict[str, 
 # ============ 動画ビルド ============
 
 FPS = 10
-# v4.6.1: 半日/1日切り替え可能（横塚指示）
+# v4.6.1: 半日/1日切り替え可能（作者指示）
 DURATION_MODE = "full_day"  # "half_day" or "full_day"
 DURATION_LABELS = {
     "half_day": ("半日", 4000),
@@ -558,12 +558,12 @@ DURATION_LABELS = {
 }
 DURATION_NAME, TOTAL_G = DURATION_LABELS[DURATION_MODE]
 
-# v4.6.1: 幸福度ランキング廃止、脳汁一点に絞る（横塚指示）
-# v4.6.7: Phase 7 圧縮 + Phase 3 拡張で吹き出しの読み時間確保（横塚指示）
+# v4.6.1: 幸福度ランキング廃止、脳汁一点に絞る（作者指示）
+# v4.6.7: Phase 7 圧縮 + Phase 3 拡張で吹き出しの読み時間確保（作者指示）
 PHASES = [
     ("phase1", 15),         # 仮説提示 + 脳汁の定義（v4.6.14: 余韻 +2s）
     ("phase_attrs", 8),     # v4.6.13: 8 属性の人物紹介
-    ("phase_machines", 8),  # v4.6.14: 6 機種の機種紹介（横塚指示）
+    ("phase_machines", 8),  # v4.6.14: 6 機種の機種紹介（作者指示）
     ("phase2", 11),         # 48 セル格子（一括表示 + 機種上の説明）
     ("phase3", 20),         # シミュ実行 + LLM 吹き出し
     ("phase4", 13),         # 属性別 脳汁ランキング
@@ -768,7 +768,7 @@ MACHINE_VOICE_LABEL = {
     "GOD_ORIGIN":       "初代GOD（別格）",
 }
 
-# 属性コード → カテゴリ + 性別分布 + 年齢範囲（v4.6.8: バリエーション化、横塚指示）
+# 属性コード → カテゴリ + 性別分布 + 年齢範囲（v4.6.8: バリエーション化、作者指示）
 # male_prob = 男性が選ばれる確率。残りは女性。
 # age_range = (min, max)、その範囲から rng で 1 値サンプル
 # category: プロンプトに直接入る属性ラベル（中立な表現）
@@ -836,7 +836,7 @@ def pick_voice_targets(
       3) 中毒者 × 高ストレス × hit
       4) 大ハマり中の絶望（hit なしが続く + cash 減少）
       5) 大量上乗せ・軽い特化ゾーン
-    重なり禁止: 同じ機種で exclusion_window step 以内に別 bubble を出さない（横塚指示）。
+    重なり禁止: 同じ機種で exclusion_window step 以内に別 bubble を出さない（作者指示）。
     """
     rng = np.random.default_rng(seed)
     rep_pids = {p.pid for p in reps}
@@ -1036,12 +1036,12 @@ def render_demo(
             ax.text(8, 3.6,
                     "①当たりの身体反応  ②大量取得感  ③期待が裏切られず叶った瞬間  ④異常な連チャン",
                     ha="center", va="center", color=(0.95, 0.95, 1.0), fontsize=12, alpha=sub_alpha)
-            # v4.6.13: 第三者向けの補足（横塚指示で C 案採用）
+            # v4.6.13: 第三者向けの補足（作者指示で C 案採用）
             ax.text(8, 2.7,
                     "※ いずれも、実際にパチスロを打った人なら一度は体験する「脳が震える瞬間」",
                     ha="center", va="center", color=(0.75, 0.75, 0.85),
                     fontsize=11, style="italic", alpha=sub_alpha)
-        # 6-16 秒: 仮説（3 段論法、v4.6.11 横塚指示）
+        # 6-16 秒: 仮説（3 段論法、v4.6.11 作者指示）
         else:
             f2 = local_frame - FPS * 6
             sub_alpha = min(1.0, f2 / (FPS * 1.0))
@@ -1071,7 +1071,7 @@ def render_demo(
                         "そして、最もストレスを抱えているのは「中毒者」である。",
                         ha="left", va="center", color="white", fontsize=14, alpha=a2)
 
-            # ③ 仮説: ゆえに、最も脳汁を出す瞬間は… (v4.6.12 横塚指示で2行展開)
+            # ③ 仮説: ゆえに、最も脳汁を出す瞬間は… (v4.6.12 作者指示で2行展開)
             if f2 > FPS * 3.0:
                 a3 = min(1.0, (f2 - FPS * 3.0) / (FPS * 1.0))
                 ax.text(2.5, 3.95, "③",
@@ -1100,7 +1100,7 @@ def render_demo(
                         ha="center", va="center", color=(0.85, 0.85, 0.9),
                         fontsize=13, style="italic", alpha=a4)
 
-    # v4.6.13: 属性紹介ページ（横塚指示で Phase 2 の前に追加）
+    # v4.6.13: 属性紹介ページ（作者指示で Phase 2 の前に追加）
     ATTR_DESCRIPTIONS = {
         "A_NEWBIE":   "はじめての店で慎重に打つ若者層。新鮮な驚きと戸惑いを抱えながら 1G ずつ。",
         "B_REGULAR":  "月数回通うライト層。軽い遊び感覚で、無理しない範囲を楽しむ常連。",
@@ -1113,7 +1113,7 @@ def render_demo(
     }
 
     def draw_phase_attrs(local_frame, total):
-        """8 属性の人物紹介（v4.6.13: 横塚指示、v4.6.14: サンプリング説明追加）。"""
+        """8 属性の人物紹介（v4.6.13: 作者指示、v4.6.14: サンプリング説明追加）。"""
         clear()
         # フェードイン
         a_t = min(1.0, local_frame / (FPS * 1.0))
@@ -1173,7 +1173,7 @@ def render_demo(
                     ha="left", va="center", color="white",
                     fontsize=10, alpha=card_alpha)
 
-    # v4.6.15: 6 機種の説明文（横塚指示で全面差し替え）
+    # v4.6.15: 6 機種の説明文（作者指示で全面差し替え）
     MACHINE_DESCRIPTIONS = {
         "NORMAL_BONUS":
             "ボーナス当選のみでメダルが純増する伝統的なタイプ。爆発力はないが、安定して積み上げる楽しさがある王道機種群。",
@@ -1190,7 +1190,7 @@ def render_demo(
     }
 
     def draw_phase_machines(local_frame, total):
-        """6 機種の機種紹介（v4.6.14: 横塚指示で 8 属性紹介の次に追加）。"""
+        """6 機種の機種紹介（v4.6.14: 作者指示で 8 属性紹介の次に追加）。"""
         clear()
         a_t = min(1.0, local_frame / (FPS * 1.0))
         ax.text(8, 8.65, "6 機種の機種紹介",
@@ -1217,7 +1217,7 @@ def render_demo(
             x = col_x[col_idx]
             y = row_y[row_idx]
 
-            # v4.6.15: 機種ごとに固有のカラー（横塚指示で 6 色に分離）
+            # v4.6.15: 機種ごとに固有のカラー（作者指示で 6 色に分離）
             edge_color = MACHINE_COLOR.get(m.code, "#FFD700")
             from matplotlib.colors import to_rgb
             r_, g_, b_ = to_rgb(edge_color)
@@ -1245,7 +1245,7 @@ def render_demo(
                     MACHINE_TAGLINE.get(m.code, ""),
                     ha="right", va="center", color="white",
                     fontsize=11, fontweight="bold", alpha=card_alpha)
-            # 説明文を「。」で分割して 2 行表示（横塚指示で右端見切れ防止）
+            # 説明文を「。」で分割して 2 行表示（作者指示で右端見切れ防止）
             desc = MACHINE_DESCRIPTIONS.get(m.code, "")
             desc_parts = [s.strip() + "。" for s in desc.split("。") if s.strip()]
             for li, line in enumerate(desc_parts[:2]):
@@ -1407,7 +1407,7 @@ def render_demo(
                 bubble_y = py + 0.68
                 tail_base_y = bubble_y - text_h / 2 + 0.01
                 tail_tip_y = py + 0.18
-            # v4.6.14: bubble x 中心を画面内にクランプ（右端見切れ防止、横塚指示）
+            # v4.6.14: bubble x 中心を画面内にクランプ（右端見切れ防止、作者指示）
             half_w = text_w / 2
             margin = 0.25
             bubble_x = px
@@ -1444,7 +1444,7 @@ def render_demo(
                     color="#101020", fontsize=10, fontweight="bold",
                     alpha=alpha, zorder=11)
 
-        # v4.6.8: 左下・右下のステータスは第三者にわかりにくいため削除（横塚指示）
+        # v4.6.8: 左下・右下のステータスは第三者にわかりにくいため削除（作者指示）
 
     def draw_ranking_card(rank: int, s: PersonaSummary, kind: str, alpha: float):
         # kind: "happy" or "stress"
@@ -1489,7 +1489,7 @@ def render_demo(
                 color="black", fontsize=13, fontweight="bold", alpha=alpha)
 
     def draw_phase4(local_frame, total):
-        """属性別 脳汁ランキング（v4.6.2: 横塚再指示）。"""
+        """属性別 脳汁ランキング（v4.6.2: 作者再指示）。"""
         clear()
         ax.text(8, 8.3, "属性別 脳汁ランキング",
                 ha="center", va="center", color="#FFD700",
@@ -1523,7 +1523,7 @@ def render_demo(
             ax.text(13.7, y, f"max +{vals['max_brain']:.0f}　ピーク {vals['peak_count']} 回",
                     ha="left", va="center", color=(0.7, 0.7, 0.8), fontsize=9)
 
-        # v4.6.12: 重なる矢印を削除（横塚指示）。代わりに第三者向けの読み方ガイドを下部に追加。
+        # v4.6.12: 重なる矢印を削除（作者指示）。代わりに第三者向けの読み方ガイドを下部に追加。
         ax.text(8, 1.30, "── 数値の読み方 ──",
                 ha="center", va="center", color="#FFD700",
                 fontsize=11, fontweight="bold")
@@ -1557,12 +1557,12 @@ def render_demo(
         return f"{ATTR_DISPLAY[r.attribute]} の感受性 × イベントの意味づけ"
 
     def draw_individual_top_card(rank: int, r: StepRecord, alpha: float):
-        """個人 Top 3 の詳細カード（v4.6.3: ストーリー強化、横塚指示）。"""
+        """個人 Top 3 の詳細カード（v4.6.3: ストーリー強化、作者指示）。"""
         p = p_by_pid[r.pid]
         attr_jp = ATTR_DISPLAY[r.attribute]
         machine_jp = MACHINE_DISPLAY[r.machine]
         event_jp = EVENT_JP.get(r.trigger_event, r.trigger_event)
-        # v4.6.16: GOD_ORIGIN 機種の「初当たり」は「GODゲーム当選」表記に（横塚指示）
+        # v4.6.16: GOD_ORIGIN 機種の「初当たり」は「GODゲーム当選」表記に（作者指示）
         if r.machine == "GOD_ORIGIN" and event_jp == "初当たり":
             event_jp = "GODゲーム当選"
         rank_color = "#FFD700" if rank == 1 else ("#CCCCCC" if rank == 2 else "#CD7F32")
@@ -1585,7 +1585,7 @@ def render_demo(
                     ha="center", va="center", color=(1.0, 0.95, 0.85),
                     fontsize=15, alpha=alpha)
 
-        # v4.6.8: 第三者向けに簡素化（横塚指示）— 個人パラメータ・step 等の詳細は PDF へ
+        # v4.6.8: 第三者向けに簡素化（作者指示）— 個人パラメータ・step 等の詳細は PDF へ
         # 「どういう瞬間に最も興奮したか」だけ大きく見せる
         ax.text(8, 2.95, "その瞬間に起きたこと",
                 ha="center", va="center", color="#FFD700",
@@ -1593,7 +1593,7 @@ def render_demo(
         ax.text(8, 2.20, event_jp,
                 ha="center", va="center", color="white",
                 fontsize=22, fontweight="bold", alpha=alpha)
-        # v4.6.10: GOD_ORIGIN 機種の場合は伝説の解説を差し込む（横塚指示）
+        # v4.6.10: GOD_ORIGIN 機種の場合は伝説の解説を差し込む（作者指示）
         if r.machine == "GOD_ORIGIN":
             ax.text(8, 1.30,
                     "初代GOD：1/8,192 で「一撃 5,000 枚」が約束された、2000 年代のプレミアムフラグ",
@@ -1626,7 +1626,7 @@ def render_demo(
             draw_individual_top_card(display_rank, brain_peaks_top5[display_rank - 1], alpha)
 
     def draw_phase6(local_frame, total):
-        """脳汁が出やすかった「機種の特徴」を 2 つの抽象要素で示す（v4.6.8: 横塚指示）。
+        """脳汁が出やすかった「機種の特徴」を 2 つの抽象要素で示す（v4.6.8: 作者指示）。
 
         数値ランキングをやめ、第三者にも伝わる抽象化:
           要素①: 一撃の爆発力（ミリオンゴッド級の大量払い出し）
@@ -1697,7 +1697,7 @@ def render_demo(
                     fontsize=13, fontweight="bold")
 
     def draw_phase7(local_frame, total):
-        """多面的な仮説検証（v4.6.8: 横塚指示で「人の心理 vs 機種の力」の二面構成に再設計）。"""
+        """多面的な仮説検証（v4.6.8: 作者指示で「人の心理 vs 機種の力」の二面構成に再設計）。"""
         clear()
 
         # ── 心理側スコアの計算 ──
@@ -1722,7 +1722,7 @@ def render_demo(
                 ha="center", va="center", color="#FFD700",
                 fontsize=22, fontweight="bold")
         ax.text(8, 7.85,
-                "横塚の仮説:「脳汁の主役は人の心理（属性 × ストレス × 兆し）」",
+                "作者の仮説:「脳汁の主役は人の心理（属性 × ストレス × 兆し）」",
                 ha="center", va="center", color=(0.85, 0.85, 0.9),
                 fontsize=12, style="italic")
         ax.text(8, 7.35,
@@ -1816,7 +1816,7 @@ def render_demo(
 
     # ── update 関数 ────────────────────────────────
     def draw_phase8(local_frame, total):
-        """結論（v4.6.8: 横塚指示で「反論」から「結論」セクションに書き換え）。
+        """結論（v4.6.8: 作者指示で「反論」から「結論」セクションに書き換え）。
 
         第三者でも一目でわかる結論プレゼンテーション。
         反論軸の数値は「人 × 機種の合作」というメッセージに昇華する。

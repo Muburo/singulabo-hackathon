@@ -77,7 +77,7 @@ MACHINE_TYPES = [
         chain_start_impact=0.20,
         continuation_excitement_multiplier=0.55,
         # 純A は中間イベントなし（実機でもジャグラーのプレミア告知は当たり確定告知に過ぎず、
-        # 興奮の爆発は伴わない。横塚の実機判断 2026-05-01 で削除）
+        # 興奮の爆発は伴わない。作者の実機判断 2026-05-01 で削除）
         event_probs={},
         event_impacts={},  # chain_start は __post_init__ で自動同期
     ),
