@@ -1,7 +1,7 @@
 # パチスロ実践！脳汁が出る瞬間のシミュレーション
 
 **チーム名**: 鶴子 ／ **シンギュラボハッカソン 2026 提出資料**
-**提出物**: ソースコード（リポジトリ全体）／ 可視化動画 185 秒（Phase 1〜10）／ 本資料（解説 PDF）
+**提出物**: ソースコード（リポジトリ全体）／ 可視化動画 180 秒（Phase 1〜10）／ 本資料（解説 PDF）
 
 ---
 
@@ -110,7 +110,7 @@ PDF では枠組みだけを示し、40 件のコメントと 40 件の判断は
 | 言語・主要ライブラリ | Python 3.12 / numpy / matplotlib |
 | LLM | ollama + qwen3.5:35b-a3b-nothink |
 | LLM の用途 | Phase 3 の心の声生成、Phase 9 の Persona Reaction Probe、Phase 10 の状況判断。抽選・払出・心理更新には使わない |
-| 動画出力 | matplotlib による 185 秒 MP4 レンダリング / ffmpeg |
+| 動画出力 | matplotlib による 180 秒 MP4 レンダリング / ffmpeg |
 | 主な実装 | `spike_v44.py`, `spike_v44_personas.py`, `spike_v44_demo.py`, `spike_llm_voice.py`, `spike_persona_probe.py`, `spike_llm_situations.py` |
 
 再現は `pachinko_hall_sim/spike/spike_v44_demo.py` を実行する。

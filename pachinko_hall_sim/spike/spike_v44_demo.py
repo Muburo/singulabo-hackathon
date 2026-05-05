@@ -572,7 +572,7 @@ PHASES = [
     ("phase7", 8),          # 多面的検証（人 × 機種）
     ("phase8", 8),          # 結論（人 × 機種の合作）
     ("phase9", 32),         # v4.6.20: AI が生んだ 8 つの感情（Persona Reaction Probe 全 40 件）
-    ("phase10", 33),        # v4.6.24: 説明スライド 8 秒 + 5 状況シーン × 5 秒
+    ("phase10", 28),        # v4.6.25: 3 分規定対応で 5 秒短縮 — 説明スライド 8 秒 + 5 状況シーン × 4 秒
 ]
 
 
@@ -1901,7 +1901,7 @@ def render_demo(
         "連チャン終了直後",
     ]
     INTRO_SECS = 8
-    SCENE_SECS = 5
+    SCENE_SECS = 4
 
     def draw_phase10_intro(local_frame: int):
         """Phase 10 の説明スライド（8 秒）。"""
